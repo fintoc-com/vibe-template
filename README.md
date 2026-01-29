@@ -18,10 +18,10 @@ Creado por [Daniel Leal](https://github.com/daleal).
 
 0. Clona este repositorio y entra a la carpeta
 
-1. Instala dependencias:
+1. Inicia Postgres (en Docker):
 
 ```bash
-bun install
+docker compose up
 ```
 
 2. Ejecuta el script de setup:
@@ -30,25 +30,13 @@ bun install
 ./scripts/setup.sh
 ```
 
-3. Inicia Postgres (en Docker):
-
-```bash
-docker compose up -d
-```
-
-4. Aplica las migraciones de la base de datos:
-
-```bash
-bun run db:migrate
-```
-
-5. Inicia el servidor de desarrollo:
+3. Inicia el servidor de desarrollo:
 
 ```bash
 bun run dev
 ```
 
-6. Abre la app:
+4. Abre la app:
 
 http://localhost:3000. Para detenerlo: Ctrl+C.
 
@@ -56,7 +44,7 @@ http://localhost:3000. Para detenerlo: Ctrl+C.
 
 - UI de base de datos (Drizzle Studio):
 
-Drizzle Studio es una interfaz web local para ver tablas y datos que hay en tu aplicación. Requiere que Postgres esté corriendo (paso 2).
+Drizzle Studio es una interfaz web local para ver tablas y datos que hay en tu aplicación. Requiere que Postgres esté corriendo (paso 1).
 
 ```bash
 bun run db:studio
