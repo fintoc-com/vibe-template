@@ -8,6 +8,13 @@
       "when": 1769637665690,
       "tag": "0000_numerous_stellaris",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1769695022332,
+      "tag": "0001_loose_killer_shrike",
+      "breakpoints": true
     }
   ]
 }

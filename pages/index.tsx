@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Index() {
   return (
@@ -29,12 +30,18 @@ export default function Index() {
           >
             Documentation
           </a>
-          <a
+          <Link
+            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+            href="/protected"
+          >
+            Protected View
+          </Link>
+          <Link
             className="flex h-12 w-full items-center justify-center rounded-full bg-sky-300 px-5 text-black shadow-sm transition-all hover:bg-sky-200 hover:shadow-md hover:shadow-sky-200/50 md:w-[158px]"
             href="/about"
           >
             About
-          </a>
+          </Link>
         </div>
       </main>
     </div>

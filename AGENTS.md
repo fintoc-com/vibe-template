@@ -85,6 +85,41 @@ const { data, isLoading } = useQuery({
 
 Docs: https://tanstack.com/query/latest/docs/framework/react/overview
 
+## Auth (BetterAuth)
+
+**VERY IMPORTANT: EVERY API endpoint that will be used by users of the application MUST be protected. Use `protectedHandler` for all user-facing endpoints.**
+
+- **API Route protection**: use `protectedHandler` from `~/lib/api/protected-handler`:
+  ```ts
+  import type { NextApiRequest, NextApiResponse } from 'next';
+  import { protectedHandler } from '~/lib/api/protected-handler';
+
+  export default protectedHandler(async (req: NextApiRequest, res: NextApiResponse, session) => {
+    // session.user available here
+    return res.status(200).json({ data: 'value' });
+  });
+  ```
+- **Pages Router protection**: protect pages using `getServerSideProps` + `requireAuth()` from `lib/ssr/require-auth.ts` (preferred; no client redirects / no flash).
+- **Serialization**: use `serializeUser()` to convert `Date` fields to ISO strings for Next.js props.
+- **Pattern**:
+  ```ts
+  import type { InferGetServerSidePropsType } from 'next';
+  import { requireAuth, serializeUser } from '~/lib/ssr/require-auth';
+
+  export const getServerSideProps = requireAuth(async (_ctx, session) => ({
+    props: {
+      user: serializeUser(session.user),
+    },
+  }));
+
+  export default function Page(
+    props: InferGetServerSidePropsType<typeof getServerSideProps>
+  ) {
+    // ...render protected content
+  }
+  ```
+- **Do not** use `useEffect` redirects for page protection unless you have a specific reason.
+
 ## Database
 
 PostgreSQL runs via Docker:
@@ -135,4 +170,16 @@ export default async function handler(
   // Handle request
   return res.status(200).json({ data: 'value' });
 }
+```
+
+For protected API routes, use `protectedHandler` from `~/lib/api/protected-handler`:
+
+```ts
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { protectedHandler } from '~/lib/api/protected-handler';
+
+export default protectedHandler(async (req: NextApiRequest, res: NextApiResponse, session) => {
+  // session.user available here
+  return res.status(200).json({ data: 'value' });
+});
 ```

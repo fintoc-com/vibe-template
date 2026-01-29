@@ -6,13 +6,13 @@ Creado por [Daniel Leal](https://github.com/daleal).
 
 ## Requisitos previos
 
-1. Instala Bun: https://bun.sh/docs/installation
+0. Instala Bun: https://bun.sh/docs/installation
 
     ```sh
     curl -fsSL https://bun.com/install | bash
     ```
 
-2. Instala Docker (incluye Docker Compose): https://docs.docker.com/get-docker/
+1. Instala Docker (incluye Docker Compose): https://docs.docker.com/get-docker/
 
 ## Ejecutar en local (paso a paso)
 
@@ -24,25 +24,31 @@ Creado por [Daniel Leal](https://github.com/daleal).
 bun install
 ```
 
-2. Inicia Postgres (en Docker):
+2. Ejecuta el script de setup:
+
+```bash
+./scripts/setup.sh
+```
+
+3. Inicia Postgres (en Docker):
 
 ```bash
 docker compose up -d
 ```
 
-3. Aplica las migraciones de la base de datos:
+4. Aplica las migraciones de la base de datos:
 
 ```bash
 bun run db:migrate
 ```
 
-4. Inicia el servidor de desarrollo:
+5. Inicia el servidor de desarrollo:
 
 ```bash
 bun run dev
 ```
 
-5. Abre la app:
+6. Abre la app:
 
 http://localhost:3000. Para detenerlo: Ctrl+C.
 
