@@ -10,6 +10,10 @@ Creado por [Daniel Leal](https://github.com/daleal).
 
     ```sh
     curl -fsSL https://bun.com/install | bash
+
+    echo -e '\nexport BUN_INSTALL="$HOME/.bun"\nexport PATH="$BUN_INSTALL/bin:$PATH"' >> ~/.zshrc
+
+    source ~/.zshrc
     ```
 
 1. Instala Docker (incluye Docker Compose): https://docs.docker.com/get-docker/
