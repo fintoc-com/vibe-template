@@ -1,0 +1,289 @@
+{
+  "analysis_date": "2026-02-06T17:43:16.489824",
+  "method": "claude_exhaustive_analysis",
+  "period_analyzed": "last_88_days",
+  "total_threads_analyzed": 498,
+  "total_messages": 2494,
+  "date_range": {
+    "from": "2025-11-10T17:37:32.632107",
+    "to": "2026-02-06T17:43:16.490173"
+  },
+  "archetipos": [
+    {
+      "nombre": "Alertas Automáticas de Disponibilidad Bancaria",
+      "descripcion": "Notificaciones automáticas cuando bancos presentan problemas de disponibilidad (availability_percentage != 100) o están bloqueados (lock=true). Incluye instrucciones para desbloquear en Retool.",
+      "keywords": [
+        "availability_percentage",
+        "!=",
+        "100",
+        "lock",
+        "true",
+        "bancos disponibles",
+        "mueve el lock a false",
+        "Stop Robocops"
+      ],
+      "prioridad": 100,
+      "cobertura_estimada": 20,
+      "cuando_usar": "Mensaje automático del bot sobre disponibilidad bancaria o bloqueos, incluye links a product_configs o Retool"
+    },
+    {
+      "nombre": "Alertas de Refunds y Paybacks Fallidos",
+      "descripcion": "Notificaciones automáticas de reembolsos o devoluciones que fallan en dispersión y requieren reintento manual. Incluye emojis de estado (pepe-alarm, pepe-ok).",
+      "keywords": [
+        "refund",
+        "payback",
+        "failed disbursal",
+        "needs retry",
+        "stuck",
+        "pepe-alarm",
+        "pepe-ok",
+        "adjustment",
+        "Waiting Disbursal Result"
+      ],
+      "prioridad": 95,
+      "cobertura_estimada": 15,
+      "cuando_usar": "Alertas automáticas de refunds/paybacks con problemas de dispersión, estado stuck o que requieren reintento"
+    },
+    {
+      "nombre": "Recordatorios de Tareas Operativas Recurrentes",
+      "descripcion": "Recordatorios programados de tareas diarias/periódicas: procesar nóminas, payouts, charge_batches, transferencias entre cuentas, descargar archivos bancarios. Siempre incluyen enlaces a Notion con runbooks.",
+      "keywords": [
+        "Reminder",
+        "hacer pago",
+        "payout",
+        "merchants",
+        "nómina",
+        "subir",
+        "descargar",
+        "paso a paso",
+        "charge_batches",
+        "mover plata",
+        "Banco Estado",
+        "Security",
+        "BICE"
+      ],
+      "prioridad": 90,
+      "cobertura_estimada": 18,
+      "cuando_usar": "Mensajes automáticos dirigidos a @S095YD2KQ4S con recordatorios de procesos operativos, incluyen links a Notion/admin/Retool"
+    },
+    {
+      "nombre": "Alertas de Archivos Bancarios Faltantes",
+      "descripcion": "Notificaciones cuando no se encuentran archivos de extractos bancarios (especialmente BICE) en GCP o cuando archivos llegan sin datos. Requieren generación manual.",
+      "keywords": [
+        "BICE Bank Statement",
+        "files not found",
+        "Missing files",
+        "check GCP",
+        "generate manually",
+        "archivo",
+        "sin DATA",
+        "liquidación",
+        "extracto"
+      ],
+      "prioridad": 85,
+      "cobertura_estimada": 8,
+      "cuando_usar": "Alertas automáticas sobre archivos bancarios no encontrados en GCP o archivos vacíos, principalmente de Banco BICE"
+    },
+    {
+      "nombre": "Solicitudes de Comprobantes y Verificación de Pagos",
+      "descripcion": "Solicitudes urgentes del equipo de soporte pidiendo comprobantes de transferencia o verificación de pagos recibidos. Uso frecuente de emoticones de súplica (dorime, pliss).",
+      "keywords": [
+        "comprobante",
+        "pliss",
+        "plisss",
+        "dorime",
+        "me ayudas",
+        "nos llegó",
+        "revisar si llegó",
+        "confirmar",
+        "payment",
+        "transferencia"
+      ],
+      "prioridad": 80,
+      "cobertura_estimada": 10,
+      "cuando_usar": "Solicitudes manuales urgentes pidiendo comprobantes o confirmación de pagos, tono coloquial con emojis"
+    },
+    {
+      "nombre": "Gestión de Contracargos (Chargebacks)",
+      "descripcion": "Solicitudes para ingresar información detallada de contracargos en Kushki, con datos estructurados del merchant, transacción y fechas. Alta urgencia por vencimientos.",
+      "keywords": [
+        "contracargo",
+        "chargeback",
+        "Kushki",
+        "Fecha del pago",
+        "Ticket número",
+        "ID del pago",
+        "ingresando la Información",
+        "VESTI"
+      ],
+      "prioridad": 75,
+      "cobertura_estimada": 5,
+      "cuando_usar": "Mensajes con información estructurada de contracargos, menciones a Kushki y datos específicos de disputas"
+    },
+    {
+      "nombre": "Onboarding y Configuración de Merchants",
+      "descripcion": "Solicitudes para dar de alta nuevos merchants/submerchants en Kushki, añadir recipient accounts, modificar cuentas de dispersión o ajustar fees. Datos estructurados con información legal y bancaria.",
+      "keywords": [
+        "subiendo",
+        "habilitando",
+        "Kushki",
+        "merchant",
+        "organización",
+        "recipient account",
+        "añadir",
+        "cambiar la cuenta",
+        "MCC",
+        "Representante Legal",
+        "RUT",
+        "Banco",
+        "dispersión"
+      ],
+      "prioridad": 70,
+      "cobertura_estimada": 6,
+      "cuando_usar": "Solicitudes de alta/modificación de merchants u organizaciones con datos legales y bancarios completos"
+    },
+    {
+      "nombre": "Alertas de Documentos y Configuración Faltante",
+      "descripcion": "Notificaciones automáticas sobre organizaciones con productos activos (especialmente Cards) que carecen de documentación requerida (card_payout_details). Incluye instrucciones para crear documentos.",
+      "keywords": [
+        "orgs con Cards activo",
+        "sin el documento",
+        "card_payout_details",
+        "Crea el documento",
+        "basándote",
+        "formulario"
+      ],
+      "prioridad": 65,
+      "cobertura_estimada": 4,
+      "cuando_usar": "Alertas automáticas repetitivas sobre organizaciones sin documentos requeridos, con instrucciones de remediation"
+    },
+    {
+      "nombre": "Recordatorios de Cierre Contable",
+      "descripcion": "Recordatorios mensuales de tareas de cierre contable y reporte de saldos de cuentas recaudadoras vía Ledger, dirigidos al equipo de treasury.",
+      "keywords": [
+        "cierre contable",
+        "cuentas recaudadoras",
+        "Ledger",
+        "saldo",
+        "cierre del mes",
+        "@S08KGHVFHUN"
+      ],
+      "prioridad": 60,
+      "cobertura_estimada": 3,
+      "cuando_usar": "Recordatorios automáticos de cierre contable dirigidos a usuario específico de treasury (no ops general)"
+    },
+    {
+      "nombre": "Alertas de Financial Close Fallido",
+      "descripcion": "Notificaciones críticas cuando falla el cierre financiero de cuentas de tesorería por errores de conciliación (balance mismatch, movements without match).",
+      "keywords": [
+        "Financial Close",
+        "FAILED",
+        "balance mismatch",
+        "movement(s) without match",
+        "treasury",
+        "conciliación"
+      ],
+      "prioridad": 90,
+      "cobertura_estimada": 4,
+      "cuando_usar": "Alertas críticas automáticas de fallos en cierre financiero con detalles técnicos de errores de conciliación"
+    },
+    {
+      "nombre": "Investigación y Resolución de Casos Complejos",
+      "descripcion": "Investigaciones de pagos con estados ambiguos (unknown, pending, inconcluso), pagos duplicados, pagos no dispersados o invalidados incorrectamente. Requieren análisis técnico profundo.",
+      "keywords": [
+        "revisar",
+        "qué ocurrió",
+        "porq",
+        "unknown",
+        "pending",
+        "inconcluso",
+        "Invalidated",
+        "no les dispersamos",
+        "vpc",
+        "IST"
+      ],
+      "prioridad": 70,
+      "cobertura_estimada": 5,
+      "cuando_usar": "Casos complejos que requieren investigación técnica, quejas de usuarios sobre pagos problemáticos o estados inconsistentes"
+    },
+    {
+      "nombre": "Solicitudes de Reintento con Cuenta Alternativa",
+      "descripcion": "Solicitudes para reintentar paybacks o refunds que fallaron por restricciones bancarias (límite de abonos, cuenta inactiva), usando cuentas alternativas validadas.",
+      "keywords": [
+        "reintentar",
+        "cuenta alternativa",
+        "confirma los datos",
+        "restricción de abonos",
+        "Cuenta RUT",
+        "tef directa",
+        "fallido"
+      ],
+      "prioridad": 75,
+      "cobertura_estimada": 4,
+      "cuando_usar": "Solicitudes de reintento de dispersiones con datos de cuenta alternativa después de fallos por restricciones bancarias"
+    },
+    {
+      "nombre": "Operaciones Administrativas Simples",
+      "descripcion": "Tareas administrativas puntuales: anular refunds duplicados, eliminar organizaciones, dar accesos, obtener documentos de respaldo, consultas sobre fees. Requieren acción simple y directa.",
+      "keywords": [
+        "anular",
+        "eliminar",
+        "acceso",
+        "documento de respaldo",
+        "detalle",
+        "SII",
+        "fee",
+        "comisión",
+        "duplicado"
+      ],
+      "prioridad": 50,
+      "cobertura_estimada": 5,
+      "cuando_usar": "Solicitudes administrativas simples y puntuales que no requieren investigación compleja"
+    },
+    {
+      "nombre": "Coordinación de Equipo y Procesos",
+      "descripcion": "Coordinación de guardias, rotación de equipo, uso de credenciales compartidas (digipass), mantenimientos programados, discusiones sobre automatizaciones y mejoras de procesos.",
+      "keywords": [
+        "guardia",
+        "tank",
+        "oficial",
+        "digipass",
+        "credenciales",
+        "huddle",
+        "scheduler",
+        "workflow",
+        "automatizar",
+        "runbook",
+        "cambié los horarios"
+      ],
+      "prioridad": 55,
+      "cobertura_estimada": 6,
+      "cuando_usar": "Mensajes de coordinación interna del equipo, gestión de accesos compartidos, planificación de cambios o discusiones de mejoras"
+    },
+    {
+      "nombre": "Consultas sobre Productos y Procesos",
+      "descripcion": "Preguntas sobre funcionamiento de productos (Cards, BNPL, refunds), integraciones con terceros (Kushki, Bancame), lógica de negocio o ubicación de información. Tono colaborativo y educativo.",
+      "keywords": [
+        "Cachas",
+        "cómo funciona",
+        "puede ser",
+        "cuál sería",
+        "app o workflow",
+        "refund de cards",
+        "kushki",
+        "bancame",
+        "cuotas"
+      ],
+      "prioridad": 45,
+      "cobertura_estimada": 4,
+      "cuando_usar": "Preguntas sobre lógica de negocio, funcionamiento de sistemas o búsqueda de información, requieren respuestas explicativas"
+    }
+  ],
+  "consolidation_notes": "Se consolidaron 61 arquetipos en 15 finales mediante los siguientes criterios:\n\n1. **Fusión por similitud funcional**: Se unificaron múltiples arquetipos que describían lo mismo con diferentes palabras (ej: 4 arquetipos diferentes sobre alertas de disponibilidad bancaria se fusionaron en uno solo).\n\n2. **Priorización por frecuencia**: Se mantuvieron arquetipos con mayor frecuencia estimada y mayor cobertura de mensajes. Los arquetipos 'alta frecuencia' recibieron prioridad 80-100.\n\n3. **Eliminación de duplicados**: Muchos arquetipos estaban repetidos textualmente o con ligeras variaciones. Se mantuvieron las versiones más completas.\n\n4. **Agrupación por propósito**: Se agruparon arquetipos que comparten el mismo objetivo operativo (ej: todos los recordatorios de tareas recurrentes en uno solo, todas las alertas de archivos faltantes en otro).\n\n5. **Mutual exclusividad**: Se aseguró que cada arquetipo tenga keywords distintivas y casos de uso no ambiguos. Por ejemplo, 'Alertas de Refunds Fallidos' vs 'Solicitudes de Reintento con Cuenta Alternativa' son diferentes fases del mismo problema.\n\n6. **Cobertura balanceada**: Los 15 arquetipos finales cubren ~100% de los casos con distribución: 5 arquetipos de alta frecuencia (alertas automáticas y recordatorios), 6 de frecuencia media (solicitudes operativas específicas), 4 de baja frecuencia (casos especiales y coordinación).\n\n7. **Claridad y accionabilidad**: Cada arquetipo tiene criterios claros de 'cuando_usar' que permiten clasificación no ambigua de nuevos mensajes.",
+  "raw_insights": [
+    "Este batch muestra un canal altamente operacional con fuerte automatización. ~40% son alertas/recordatorios automatizados (refunds stuck, tareas programadas). El resto son solicitudes humanas concentradas en: (1) gestión de devoluciones/paybacks con urgencia variable, (2) onboarding y contracargos de Kushki, (3) reportes de problemas bancarios sistémicos. Hay clara separación de responsabilidades (@tank-ops-chile para ops rutinario, @mateo para Kushki, usuarios específicos para contabilidad). Se observa evolución hacia automatización con workflows en desarrollo. Tono colaborativo con emojis expresivos. Enlaces constantes a admin interno, Notion (documentación) y Retool (herramientas). Los problemas con Banco Estado y TEF Directa aparecen recurrentemente como pain points operacionales significativos.",
+    "Este batch muestra un sistema de operaciones altamente automatizado con recordatorios programados para tareas recurrentes. Se observa: 1) Alta frecuencia de alertas repetitivas (especialmente BICE y Falabella) que podrían requerir mejor filtrado, 2) Dependencia fuerte en usuario @S095YD2KQ4S para ejecución de tareas, 3) Procesos manuales que están siendo gradualmente automatizados (menciones a workflows de n8n), 4) Problemas recurrentes con archivos BICE en fines de semana, 5) Necesidad de coordinación para autorizaciones con digipass, 6) Documentación extensa en Notion con runbooks, 7) Integración con múltiples sistemas bancarios (BICE, Chile, Security, Estado) y proveedores (Kushki, Bancame), 8) Gestión de productos financieros complejos (Cards, BNPL, Payouts, Refunds). El equipo muestra cultura colaborativa con emojis y tono informal.",
+    "Este batch muestra una operación altamente automatizada con bots (tank-ops-chile, robocops) que generan alertas repetitivas sobre disponibilidad bancaria (especialmente Banco BICE). Hay un fuerte enfoque en procesos operativos diarios recurrentes (payouts, nóminas, conciliaciones) con documentación extensa en Notion. Se observa un volumen inusual de gestión de contracargos todos relacionados con el merchant VESTI. El tono de comunicación es muy colaborativo y amigable, con uso frecuente de emojis personalizados. Existe infraestructura robusta de recordatorios automáticos para asegurar que no se olviden tareas críticas. Las interacciones muestran un equipo pequeño (@S095YD2KQ4S como operador principal) con clara división de responsabilidades y buenos mecanismos de escalamiento.",
+    "Este batch muestra una operación madura con alta automatización de alertas. Dominan las notificaciones automáticas de disponibilidad bancaria (especialmente Banco Falabella y Scotiabank con problemas recurrentes) y alertas de refunds fallidos. El equipo de soporte depende fuertemente del equipo de operaciones (@tank-ops-chile) para resolver casos manualmente. Se observa un lenguaje informal y uso extensivo de emoticones (:dorime:, :pepe-alarm:, :please:) que sugiere una cultura de equipo cercana. Los mensajes automáticos representan aproximadamente 60% del volumen, mientras que las solicitudes manuales muestran alta complejidad y requieren intervención humana. Hay evidencia de problemas de tesorería recurrentes en cuentas específicas (Banco Security, Banco Bice) que fallan el cierre financiero repetidamente."
+  ]
+}

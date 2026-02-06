@@ -15,6 +15,41 @@
       "when": 1769695022332,
       "tag": "0001_loose_killer_shrike",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1770145811824,
+      "tag": "0002_round_nextwave",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1770146016007,
+      "tag": "0003_majestic_devos",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1770154027987,
+      "tag": "0004_classy_christian_walker",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1770155792229,
+      "tag": "0005_moaning_iron_patriot",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1770218643795,
+      "tag": "0006_slim_spot",
+      "breakpoints": true
     }
   ]
 }

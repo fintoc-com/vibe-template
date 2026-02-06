@@ -40,3 +40,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ML models and Python artifacts
+bertopic_model
+*.pkl
+*.pickle
+__pycache__/
+*.pyc

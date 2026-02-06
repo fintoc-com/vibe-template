@@ -1,0 +1,1 @@
+ALTER TABLE "slack_messages" ADD COLUMN "is_ignored" boolean DEFAULT false NOT NULL;

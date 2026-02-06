@@ -1,0 +1,12 @@
+bertopic
+sentence-transformers
+psycopg2-binary
+python-dotenv
+slack-sdk
+pandas
+numpy
+scikit-learn
+plotly
+jupyter
+ipykernel
+anthropic

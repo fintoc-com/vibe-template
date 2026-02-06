@@ -1,0 +1,1192 @@
+id,text,archetype_name,datetime,discovered_topic,pc1,pc2,pc3
+1770139806.632619,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-02-03 17:30:06.632,9,0.0014214773,0.17256975,0.38579556
+1770130823.779029,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-02-03 15:00:23.779,4,0.03200581,-0.37301385,0.09576414
+1770127345.738139,"@S095YD2KQ4S me ayudas con la actualización del estado de este [pago](http://admin.prd.fin/payments/118102120) plisss, se completó ayer antes de las 14:00hrs pero después de las 1300hrs, entonces, no se alcanzó a actualizar el estado del pago con la conciliación de hoy, pero si está dentro del archivo que nos envió el banco. :dorime:",Que + Me + No,2026-02-03 14:02:25.738,0,-0.020389047,0.25796694,0.43246874
+1770122921.095049,"@S095YD2KQ4S Me ayudan a cancelar este [reembolso](http://admin.prd.fin/refunds/ref_jEDpJ47HpEgdnr5V) (shopify) plisss, el merchant lo creó por error :dorime:",Que + Me + No,2026-02-03 12:48:41.095,0,-0.2736197,-0.03216476,0.39749503
+1770122722.578089,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-02-03 12:45:22.578,15,0.02960225,-0.5161034,-0.06651698
+1770121827.953289,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-02-03 12:30:27.953,13,-0.11631487,0.030190436,0.15175919
+1770121827.572239,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-02-03 12:30:27.572,5,-0.3949151,-0.35502967,0.4161199
+1770121811.398819,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-02-03 12:30:11.398,12,-0.9349955,-0.4704821,0.10213135
+1770121805.717999,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-02-03 12:30:05.717,6,-0.4931348,1.0502489,0.5204485
+1770120028.855109,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Mariscos de La Concha
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-02-03 12:00:28.855,16,0.4071557,-0.30131644,-0.02709691
+1770120000.968829,:pepe-alarm: Refund [ref_375bz6wHd47rnvap](http://admin.prd.fin/refunds/155313)'s refund adjustment is stuck!,Alarm + Refund + Needs,2026-02-03 12:00:00.968,17,0.050669495,0.2244118,0.8830199
+1770070815.472509,:pepe-alarm: Refund [ref_eyx0neYHjPWen2mv](http://admin.prd.fin/refunds/157170) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-02-02 22:20:15.472,17,0.05873628,0.3249457,0.7804624
+1770068459.876319,"lo del viernes si, ahora hay otros documentos fallando pero por otras razones que sigo investigando",Sin Clasificar,2026-02-02 21:40:59.876,-1,-0.5402165,-0.2512849,0.08635191
+1770068014.508759,se arregló lo de los docs? @S095YD2KQ4S,Amp + Paysheets + 5D,2026-02-02 21:33:34.508,5,-0.6624617,-0.061732844,-0.12992334
+1770066340.633079,:friendly-reminder: @mateo los 4 contracargos (uno fue levantado el viernes los otros 3 hoy) deben quedar listos hoy si o si plisssss :dorime: Gracias!,Que + El + La,2026-02-02 21:05:40.633,10,-0.45322457,-0.5231243,-0.24196129
+1770066028.241959,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-02-02 21:00:28.241,14,-0.7555126,-0.3302428,0.60108334
+1770064219.832669,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-02-02 20:30:19.832,11,-0.119387284,-0.16949992,0.6980122
+1770058691.189669,"@mateo me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/20](http://admin.prd.fin/chargebacks/20)
+    ◦ Fecha del pago: 27/12/2025
+    ◦ Monto: $16.950
+    ◦ ID del pago en Fintoc: pi_37Rq6G3elXCAvvW1aVNqK98NUWU
+    ◦ Ticket número: 68198461
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-02-02 18:58:11.189,7,-0.08170489,-0.1797436,-0.6522759
+1770058561.780999,:gta-here-we-go-again:,Que + El + La,2026-02-02 18:56:01.780,10,-0.5111172,-0.6967794,-0.3074806
+1770058542.642519,"@mateo me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/19](http://admin.prd.fin/chargebacks/19)
+    ◦ Fecha del pago: 27/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_37Rpber0ChOmMGQx4XVZNL98Nf0
+    ◦ Ticket número: 68198458
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-02-02 18:55:42.642,7,-0.051969327,-0.16552907,-0.6469629
+1770058038.659519,"@mateo me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/18](http://admin.prd.fin/chargebacks/18)
+    ◦ Fecha del pago: 27/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_37S0afA0Knnv4zjfRjIOxrrW7NR
+    ◦ Ticket número: 68198454
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-02-02 18:47:18.659,7,-0.048941888,-0.16922717,-0.6444
+1770057615.840489,"@S095YD2KQ4S me ayudan a revisar en nuestra cuenta del BE si nos llegó esta TEF pliss.
+• Cuenta: [21268778](http://admin.prd.fin/bank_accounts/acc_MJnK51TGXBOVK7AB)
+• RUT: 212687782
+• Nombre: Katherine Andrea Ahumada Bravo
+• [PI](http://admin.prd.fin/payments/117482316)",Que + Me + No,2026-02-02 18:40:15.840,0,0.1422218,0.55174315,-0.02715844
+1770055947.631429,grande mateo esta joya la automatizacion :pepe-coin: :rambo-minigun:,Security + Banco + Estado,2026-02-02 18:12:27.631,4,0.15520704,-0.62585807,-0.13260892
+1770055862.867689,"*Onboarding Kushki* :mateo-yells-at-kushki: 
+@S095YD2KQ4S quedó funcionando bien el form de onboarding. Sólo me queda pendiente actualizar la guía. Igual voy a dejar las dos maneras de onboarding, la nueva y la manual. Ahora quedan en tus manos los subcomercios que tienen docs pendientes",De + Del + Vesti,2026-02-02 18:11:02.867,7,-0.5775266,-0.32060018,-0.79287803
+1770053427.229479,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-02-02 17:30:27.229,9,0.0014214565,0.17256959,0.38579583
+1770044430.084449,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-02-02 15:00:30.084,4,0.03200568,-0.37301266,0.095762715
+1770037210.661979,Reminder: @S095YD2KQ4S hacer movimiento semanal de BICE a Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-BICE-Banco-Security-1e40ff41a1e98063b074f3d24800e7b1)),Sin Clasificar,2026-02-02 13:00:10.661,-1,-0.32765424,0.16809732,0.049250185
+1770036303.940079,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-02-02 12:45:03.940,15,0.029602252,-0.5161034,-0.066516966
+1770036033.303989,"@S095YD2KQ4S me ayudas porfa añadiendo para esta organización, [Skualo](http://admin.prd.fin/organizations/wB7EAkb8FGrMJYy8), esta recipient account? :dog-porfis:
+76462822-5
+Skualo SpA
+Banco de Chile
+Cuenta Corriente <tel:408-05731-09|408-05731-09>",Que + Me + No,2026-02-02 12:40:33.303,0,-0.040814266,-0.17436802,-0.3247937
+1770035426.124489,Reminder: @S095YD2KQ4S Cambiar los miembros de los tags de ops-auth según [este](https://docs.google.com/spreadsheets/d/1UBmOGkcFJms9e2EU8MYbpkIL6OycVTMC/edit?gid=1884171324#gid=1884171324) calendario.,Sin Clasificar,2026-02-02 12:30:26.124,-1,-0.80101705,-0.50718397,-0.004275347
+1770035425.756019,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-02-02 12:30:25.756,5,-0.3949151,-0.35502967,0.41611987
+1770035416.588619,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-02-02 12:30:16.588,13,-0.11631487,0.030190436,0.15175918
+1770035412.054509,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-02-02 12:30:12.054,12,-0.9349955,-0.4704821,0.10213135
+1770035409.518019,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-02-02 12:30:09.518,6,-0.4931348,1.0502489,0.5204485
+1770033931.287369,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Mariscos de La Concha
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-02-02 12:05:31.287,16,0.4071557,-0.30131644,-0.027096909
+1769947208.806549,Reminder: @S095YD2KQ4S deja acá el saldo de las cuentas recaudadoras de fintoc spa al cierre del mes (cc: <@U0266UT4H25|ignacia> <@U09CX2YEEQ5|pilar>),Que + Me + No,2026-02-01 12:00:08.806,0,-0.28541225,0.15696439,0.024908332
+1769808078.441169,@S095YD2KQ4S me ayudas a ver qué ocurrió con este [pago unknow](http://admin.prd.fin/payment_intents/pi_NKm1MVSjkWGmwxaR) que está `pending` :dorime:,Que + Me + No,2026-01-30 21:21:18.441,0,-0.25723067,0.14287286,0.11915508
+1769807129.509199,"no creo que alcance a tener el workflow funcionando bien hoy, manda los otros contracargos nomás y los subo @soledad :pepe-sadge:",Que + El + La,2026-01-30 21:05:29.509,10,-0.39640102,-0.38429704,0.07910385
+1769806822.257279,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-30 21:00:22.257,14,-0.7555126,-0.3302428,0.60108334
+1769806022.044269,"@mateo me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/17](http://admin.prd.fin/chargebacks/17)
+    ◦ Fecha del pago: 14/11/2025
+    ◦ Monto: $16.500
+    ◦ ID del pago en Fintoc: pi_35SOv6DPa5VnOaog9l6zUlkFG6o
+    ◦ Ticket número: 68197474
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-30 20:47:02.044,7,-0.042925388,-0.20532653,-0.63874894
+1769805010.351619,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-30 20:30:10.351,11,-0.119387284,-0.16949992,0.6980122
+1769801950.025789,"@S095YD2KQ4S me ayudas porfa añadiendo esta recipient account a esta organización, [Vesti Payments](http://admin.prd.fin/organizations/org_DQopZLwFoj5kWGy3), porfa? :dog-porfis: :
+{
+  ""id"": 1960,
+  ""holder_id"": ""768245274"",
+  ""account_number"": ""73624517"",
+  ""account_subtype"": ""checking_account"",
+  ""organization_id"": 6051,
+  ""bank_id"": 2,
+  ""created_at"": ""2024-02-23T17:47:49.299Z"",
+  ""updated_at"": ""2024-02-23T17:47:49.299Z"",
+  ""holder_name"": ""VESTI INGENIERIAS SPA"",
+  ""is_internal"": false
+}",Que + Me + No,2026-01-30 19:39:10.025,0,-0.09468161,0.43076408,-0.036309674
+1769794220.717899,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-30 17:30:20.717,9,0.0014214565,0.17256959,0.38579583
+1769790071.618579,"@S095YD2KQ4S está todo bien con TEF directa?? nos están llegando demasiados casos de pagos fallidos, que tienen payback :eyes:",Que + Me + No,2026-01-30 16:21:11.618,0,0.22027238,-0.09113011,0.39185423
+1769785209.461009,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-30 15:00:09.461,4,0.03200568,-0.37301266,0.095762715
+1769784500.408769,"holii @mateo para enviar la información de los contracargos, creaste un wf? o aún no está listo? :dorime:",Que + El + La,2026-01-30 14:48:20.408,10,-0.6981092,-0.45166185,-0.4006742
+1769784295.721809,:pepe-alarm: Refund [ref_7y5KJ56Hdv11RAPW](http://admin.prd.fin/refunds/156140) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-30 14:44:55.721,17,0.06731835,0.30224013,0.84017473
+1769781955.793549,"@S095YD2KQ4S me ayudas subiendo a The Qualis a la plataforma de kushki. Los datos son:
+Nombre: 	Ebrands spa
+Url: [www.thequalis.com](http://www.thequalis.com)
+Fecha nacimiento: 16/04/1990
+Dirección: Av. Vitacura 3565, Vitacura
+MCC: 5699
+TyC:  [https://docs.google.com/document/d/144wRAAN5e0KOm947OZeI14GENLC8WIhqgfC9qQiEbYU/edit?tab=t.0](https://docs.google.com/document/d/144wRAAN5e0KOm947OZeI14GENLC8WIhqgfC9qQiEbYU/edit?tab=t.0)",Https + Tab + Google,2026-01-30 14:05:55.793,2,-0.5992997,-0.45607066,-1.3327432
+1769781449.208689,"@S095YD2KQ4S me ayudas subiendo a Rebalance | Origen Lab a la plataforma de kushki. Los datos son:
+Nombre: Origen Lab Spa
+Url: [www.re-balance.cl](http://www.re-balance.cl)
+Fecha nacimiento: 10/10/1975
+Dirección: 	Av TAJAMAR 481, TORRE NORTE OF 908, Las Condes
+MCC: 5999
+TyC:  [https://docs.google.com/document/d/1OlV8h3bP8ifXWbvkeUV9lXVok_SHG573TziuUkDRvMY/edit?tab=t.0](https://docs.google.com/document/d/1OlV8h3bP8ifXWbvkeUV9lXVok_SHG573TziuUkDRvMY/edit?tab=t.0)",Https + Tab + Google,2026-01-30 13:57:29.208,2,-0.6063999,-0.3879792,-0.8150072
+1769781125.192339,"@S095YD2KQ4S Me ayudas a revisar si recibimos esta TEF en nuestra cuenta del BE plis
+[PI](http://admin.prd.fin/payment_intents/pi_lLKw2XS2gJQ0Anv9)",Que + Me + No,2026-01-30 13:52:05.192,0,0.07805482,0.30349863,0.29432184
+1769777113.531369,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-30 12:45:13.531,15,0.029602252,-0.5161034,-0.066516966
+1769776706.001469,"buenas @raimundo.sandoval!
+a partir del lunes vay de tank solano oficial (seguiré en el tag un rato igual) :celebrate:
+dudas: tienes instalado incident en tu celu?",Que + El + La,2026-01-30 12:38:26.001,10,-0.46923146,-0.5097245,-0.48572436
+1769776230.387709,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-30 12:30:30.387,13,-0.11631487,0.030190436,0.15175918
+1769776229.908149,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-30 12:30:29.908,6,-0.4931348,1.0502489,0.5204485
+1769776224.336479,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-30 12:30:24.336,5,-0.3949151,-0.35502967,0.41611987
+1769776217.508169,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-30 12:30:17.508,12,-0.9349955,-0.4704821,0.10213135
+1769774753.577299,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Joyería Saviér SPA
+• Mariscos de La Concha
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-30 12:05:53.577,16,0.395833,-0.3485319,-0.05760176
+1769729819.412029,"@S095YD2KQ4S tengo un usuario que sí tuvo descuento de dinero pero que el pago quedó `failed` ni siquiera quedó como IST, podemos revisar para hacer la devolución si corresponde
+• [Payment](http://admin.prd.fin/payments/117238343)",Que + Me + No,2026-01-29 23:36:59.412,0,0.15970023,0.505658,0.57345945
+1769721014.033599,"@S095YD2KQ4S duda, el merchant ya tiene saldo para completar este [refund](http://admin.prd.fin/refunds/ref_m985nYQHAxp0nqaM) vdd?? se hará hoy?",Que + Me + No,2026-01-29 21:10:14.033,0,-0.06417389,-0.04218041,0.39956886
+1769720424.438389,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-29 21:00:24.438,14,-0.7555126,-0.3302428,0.60108334
+1769720098.904529,"@S095YD2KQ4S me ayudas cancelando el siguiente [refund](http://admin.prd.fin/refunds/ref_OAwbnqpH3KjvzBXK), ya que el merchant hará una devolución directa al usuario para que no tenga que esperar más :dorime:",Que + Me + No,2026-01-29 20:54:58.904,0,-0.2500476,0.09608031,0.6054167
+1769719347.160589,"@S095YD2KQ4S me ayudas subiendo a Mercado Vitamina a la plataforma de kushki. Los datos son:
+Nombre: Kiwi SpA
+Url: [https://mercadovitamina.cl/](https://mercadovitamina.cl/)
+Fecha nacimiento: 31/05/1988
+Dirección: Gertrudis Echeñique 285, Las Condes
+MCC: 5499
+TyC: [ https://docs.google.com/document/d/1plbBgCk4kjc_D2hf8ZI5rG-fFqnGm4dTisIi8leQ52E/edit?tab=t.0](https://docs.google.com/document/d/1wi695PJjrIvO5vtDgXKuu2h4dpGAXAtcR70qOeSHS24/edit?tab=t.0)",Https + Tab + Google,2026-01-29 20:42:27.160,2,-0.38674688,-0.47590467,-1.3024995
+1769719210.940009,"@S095YD2KQ4S una usuaria nos comenta que está intentando hacer un pago desde su banco BCI, pero le indicamos que la clave es incorrecta. Asegura que su clave es correcta y que ingresó directo a su banco y si logra ingresar pero no puede hacer el banco.
+El rut que ingresa 86988143. es posible revisar los intentos de pagos con esa información. A mi no me sale nada en AA. :sad-cat:",Que + Me + No,2026-01-29 20:40:10.940,0,0.12447755,1.0650337,-0.27141112
+1769718659.624739,"@S095YD2KQ4S me ayudas subiendo a Maroa a la plataforma de kushki. Los datos son:
+Nombre: IMPORTADORA Y COMERCIALIZADORA ORNELLA GAUDIN EIRL
+Url: [https://maroastore.cl/](https://maroastore.cl/)
+Fecha nacimiento: 01/11/1990
+Dirección: Versalles 3069, Las Condes
+MCC: 5699
+TyC:  [https://docs.google.com/document/d/1plbBgCk4kjc_D2hf8ZI5rG-fFqnGm4dTisIi8leQ52E/edit?tab=t.0](https://docs.google.com/document/d/1plbBgCk4kjc_D2hf8ZI5rG-fFqnGm4dTisIi8leQ52E/edit?tab=t.0)",Https + Tab + Google,2026-01-29 20:30:59.624,2,-0.35997003,-0.42104286,-1.4255674
+1769718627.081379,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-29 20:30:27.081,11,-0.119387284,-0.16949992,0.6980122
+1769718120.060549,@S095YD2KQ4S me tinca que este [payback](http://admin.prd.fin/paybacks?q[regularizations_irregular_statement_transaction_id_eq]=1664795) está pegado. Me ayudan a revisar pliss. gracias!,Que + Me + No,2026-01-29 20:22:00.060,0,-0.10035012,0.15862025,0.4781304
+1769714372.597859,"@S095YD2KQ4S me ayudan a cambiar la cuenta de dispersión del merchant [AirPure.cl](http://AirPure.cl)
+&gt; 77.903.684-7
+&gt; n de cuenta: 924115 cuenta corriente
+&gt; Banco de Chile
+Además me piden cambiar el correo de todas partes, por el correo  <mailto:hola@corelink.cl|hola@corelink.cl>
+Me ayudan con eso pliss",Que + Me + No,2026-01-29 19:19:32.597,0,0.29624495,0.0963838,-0.14429693
+1769713604.286169,"@S095YD2KQ4S me ayudas subiendo a Cristaleon Spa a la plataforma de kushki. Los datos son:
+Nombre: Cristaleon Spa
+Url: [https://cristaleon.com/](https://cristaleon.com/)
+Fecha nacimiento: 07/10/1993
+Dirección: la cascada 239, Machali
+MCC: 5947
+TyC:  [https://docs.google.com/document/d/1ak9BId9mbu67vTYQ6h-nMIyIDiADgYHrHG41Nm28NsY/edit?tab=t.0](https://docs.google.com/document/d/1ak9BId9mbu67vTYQ6h-nMIyIDiADgYHrHG41Nm28NsY/edit?tab=t.0)",Https + Tab + Google,2026-01-29 19:06:44.286,2,-0.66972727,-0.27008,-1.3260673
+1769710218.704499,"@S095YD2KQ4S me ayudan a corroborar el motivo por el cual no logramos hacer este [payback](http://admin.prd.fin/paybacks?q%5Bregularizations_irregular_statement_transaction_id_eq%5D=1664744) pliss. Dice que tiene restricción de abonos, pero creo que no había visto eso para una cuenta del Banco de Chile. No es posible reitantarlo?",Que + Me + No,2026-01-29 18:10:18.704,0,0.44049096,-0.18851073,0.34507614
+1769707829.118629,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-29 17:30:29.118,9,0.0014214565,0.17256959,0.38579583
+1769698829.299579,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-29 15:00:29.299,4,0.03200568,-0.37301266,0.095762715
+1769690722.879199,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-29 12:45:22.879,15,0.029602252,-0.5161034,-0.066516966
+1769689818.321249,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-29 12:30:18.321,13,-0.11631487,0.030190436,0.15175918
+1769689813.249179,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-29 12:30:13.249,6,-0.4931348,1.0502489,0.5204485
+1769689809.421449,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-29 12:30:09.421,12,-0.9349955,-0.4704821,0.10213135
+1769689804.743349,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-29 12:30:04.743,5,-0.3949151,-0.35502967,0.41611987
+1769688150.579599,:ya-basta-freezer:,Que + El + La,2026-01-29 12:02:30.579,10,-0.32046896,-0.35773745,-0.5951109
+1769688069.090049,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• gaete y araneda asociados SpA
+• Kippi
+• London Profesional Beauty
+• Haze Concept
+• Raceworks SpA
+• Anka Joyería
+• Mariscos de La Concha
+• RM Partes 
+• Micelio Corp SpA
+• Omnistock SpA
+• Joyería Saviér SPA
+• Masbien Wellness Market
+• Dermotienda Chile
+• Modoko
+• Lookout SpA
+• Luminavida
+• Bolgen
+• La timbrería
+• Kaulini
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-29 12:01:09.090,16,0.59943116,-0.28696552,-0.4826593
+1769673745.993939,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• La timbrería
+• Mariscos de La Concha
+• Masbien Wellness Market
+• Joyería Saviér SPA
+• Haze Concept
+• RM Partes 
+• Modoko
+• gaete y araneda asociados SpA
+• Anka Joyería
+• Raceworks SpA
+• Bolgen
+• Dermotienda Chile
+• Luminavida
+• Micelio Corp SpA
+• Kaulini
+• Omnistock SpA
+• London Profesional Beauty
+• Kippi
+• Lookout SpA
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-29 08:02:25.993,16,0.5692088,-0.3177185,-0.47059986
+1769659343.528729,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Micelio Corp SpA
+• La timbrería
+• Mariscos de La Concha
+• Kaulini
+• Masbien Wellness Market
+• Omnistock SpA
+• Dermotienda Chile
+• Raceworks SpA
+• London Profesional Beauty
+• Joyería Saviér SPA
+• Haze Concept
+• Luminavida
+• RM Partes 
+• Modoko
+• gaete y araneda asociados SpA
+• Bolgen
+• Kippi
+• Anka Joyería
+• Lookout SpA
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-29 04:02:23.528,16,0.6151224,-0.29624584,-0.4699947
+1769644912.432449,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• London Profesional Beauty
+• Haze Concept
+• Raceworks SpA
+• Anka Joyería
+• Bolgen
+• Omnistock SpA
+• Joyería Saviér SPA
+• Mariscos de La Concha
+• RM Partes 
+• Micelio Corp SpA
+• gaete y araneda asociados SpA
+• Kippi
+• Dermotienda Chile
+• Modoko
+• Lookout SpA
+• Luminavida
+• Masbien Wellness Market
+• La timbrería
+• Kaulini
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-29 00:01:52.432,16,0.5523736,-0.2633354,-0.54080755
+1769634020.425529,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-28 21:00:20.425,14,-0.7555126,-0.3302428,0.60108334
+1769632218.768639,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-28 20:30:18.768,11,-0.119387284,-0.16949992,0.6980122
+1769630621.254259,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Comercial Urubamba Ltda
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-28 20:03:41.254,16,0.38820994,-0.18352263,-0.17359619
+1769621423.071609,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-28 17:30:23.071,9,0.0014214565,0.17256959,0.38579583
+1769612428.446559,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-28 15:00:28.446,4,0.03200568,-0.37301266,0.095762715
+1769604310.055389,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-28 12:45:10.055,15,0.029602252,-0.5161034,-0.066516966
+1769603424.290769,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-28 12:30:24.290,5,-0.3949151,-0.35502967,0.41611987
+1769603420.045979,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-28 12:30:20.045,6,-0.4931348,1.0502489,0.5204485
+1769603416.661669,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-28 12:30:16.661,13,-0.11631487,0.030190436,0.15175918
+1769603413.910069,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-28 12:30:13.910,12,-0.9349955,-0.4704821,0.10213135
+1769602982.373059,:ojito:,Que + Me + No,2026-01-28 12:23:02.373,0,-0.5393763,-0.5386654,-1.0823076
+1769602241.660539,"@S095YD2KQ4S :infra-alert: Me ayudan a cancelar este [refund](http://admin.prd.fin/refunds/ref_qWVOJAPHklYrn345) pliss, El problema es que ya está en `Waiting User Disbursal Result` (Es de Mexico, las devoluciones se hacen temprano) :pray-intensifies:",Que + Me + No,2026-01-28 12:10:41.660,0,-0.30657142,-0.099402845,0.2836414
+1769548687.949189,@S095YD2KQ4S kushki todavia no aprueba los merchants que mande? En general lo estan revisando o llega una notificacion? para no venir a molestar jajaja,Que + El + La,2026-01-27 21:18:07.949,10,-0.39012343,-0.34495175,-0.4862099
+1769547612.910959,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-27 21:00:12.910,14,-0.7555126,-0.3302428,0.60108334
+1769546105.036719,:pepe-alarm: Refund [ref_OEKezbKHlkv6nYpm](http://admin.prd.fin/refunds/153398) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-27 20:35:05.036,17,0.06090968,0.3186642,0.76835364
+1769545812.092949,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-27 20:30:12.092,11,-0.119387284,-0.16949992,0.6980122
+1769538998.838409,"@S095YD2KQ4S me ayudas con esta duda pliss (quizás @mateo :mateo-yells-at-kushki: sabe)
+&gt; Quería preguntar por un reembolso si ya está reflejado en la cancelación de las cuotas del banco del cliente.
+• [PI](http://admin.prd.fin/payments/pi_35hFi7KzDASehSX7xCTCJOFtsuj) ",Que + Me + No,2026-01-27 18:36:38.838,0,0.058055338,0.11161912,0.19470109
+1769535024.378059,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-27 17:30:24.378,9,0.0014214565,0.17256959,0.38579583
+1769528981.688929,@S095YD2KQ4S me ayudas con este [refund](http://admin.prd.fin/payments/108579608) de BNPL porfa? Esperemos bancame cumpla su SLA de 12 horas xd,Que + Me + No,2026-01-27 15:49:41.688,0,-0.086184084,0.23739316,0.17341581
+1769527359.725729,"@S095YD2KQ4S me ayudas porfa añadiendo este recipient account a esta organización, [LEVI STRAUSS CHILE LIMITADA](http://admin.prd.fin/organizations/org_br5LkzDFE2WMmA4l):
+Banco Santander
+Cuenta corriente
+74969666",Que + Me + No,2026-01-27 15:22:39.725,0,0.1061349,0.17014183,-0.17961863
+1769526020.239509,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-27 15:00:20.239,4,0.03200568,-0.37301266,0.095762715
+1769525787.839579,"Holi @S095YD2KQ4S, me ayudas a revisar si realmente nos llegó este pago a nuestra cuenta BE pliss. gracias!
+• [http://admin.prd.fin/payments/116785294](http://admin.prd.fin/payments/116785294)",Que + Me + No,2026-01-27 14:56:27.839,0,0.21001914,0.2871795,0.21234131
+1769517929.885289,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-27 12:45:29.885,15,0.029602252,-0.5161034,-0.066516966
+1769517716.422179,"@raimundo.sandoval recuerda lo de los docs pls <#C05ADHG3WAF>
+hay unos del viernes y otros de ayer que siguen failed
+los docs deberían quedar siempre succeeded",Sin Clasificar,2026-01-27 12:41:56.422,-1,-0.4642921,-0.42625898,-0.0821559
+1769517028.077339,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-27 12:30:28.077,12,-0.9349955,-0.4704821,0.10213135
+1769517023.755539,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-27 12:30:23.755,5,-0.3949151,-0.35502967,0.41611987
+1769517018.395389,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-27 12:30:18.395,13,-0.11631487,0.030190436,0.15175918
+1769517004.423239,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-27 12:30:04.423,6,-0.4931348,1.0502489,0.5204485
+1769469019.747799,"@S095YD2KQ4S me ayudas encontrando el comprobante de un [payback](http://admin.prd.fin/paybacks/3997) de julio/2024, un usuario cree que nunca se le regresó el dinero y es bastante. Yo entré al portal del banco y no hay caso que pueda dar con el comprobante, tampoco está en el correo :tiredpepe:",Que + Me + No,2026-01-26 23:10:19.747,0,0.13674821,0.8497025,0.32597554
+1769465671.575669,:pepe-alarm: Refund [ref_jEDpJ47Hpw75nr5V](http://admin.prd.fin/refunds/152554) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-26 22:14:31.575,17,0.06312228,0.30580637,0.8052903
+1769465671.463069,:pepe-alarm: Refund [ref_Q7pvnxNHldkjRkYD](http://admin.prd.fin/refunds/152553) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-26 22:14:31.463,17,0.05501171,0.27341548,0.7681273
+1769465548.275699,:pepe-alarm: Refund [ref_130qJp5HEYEYRyKZ](http://admin.prd.fin/refunds/153023) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-26 22:12:28.275,17,0.04650094,0.29633656,0.7686945
+1769462387.740229,@S095YD2KQ4S me ayudan a cancelar  este [refund](http://admin.prd.fin/refunds/ref_m27bJ29HY9dXnAkB) pliss. El merchant lo hará directo al usuario porq no tiene ventas y se lo hará directo. Gracias!!!!,Que + Me + No,2026-01-26 21:19:47.740,0,-0.20284219,-0.025584169,0.3828424
+1769461204.910779,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-26 21:00:04.910,14,-0.7555126,-0.3302428,0.60108334
+1769459425.148509,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-26 20:30:25.148,11,-0.119387284,-0.16949992,0.6980122
+1769457461.248469,"rai, sobre los ajustes de los payouts:
+• hay que hacer el ajuste correspondiente al refund de bancame que hiciste. en el [runbook](https://www.notion.so/fintoc/Refunds-BNPL-2b20ff41a1e98087ba05e9b1df74dd6c) sale el paso a paso
+• el otro caso es modificar los fees asociados a [este caso](https://fintoc.slack.com/archives/C06MVR75Z6D/p1768503446463839). [este](https://www.notion.so/fintoc/Regularizaci-n-de-fees-2450ff41a1e980969faecaaf307254f0) es el runbook",Payouts + Merchants + Refunds,2026-01-26 19:57:41.248,11,-0.20164233,0.1277817,0.69459367
+1769450581.993639,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-25
+Missing files: current: 2026_01_25
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-26 18:03:01.993,3,-0.13443269,1.8983498,-0.61386144
+1769450534.589549,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-25
+Missing files: current: 2026_01_25
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-26 18:02:14.589,3,-0.13443269,1.8983498,-0.61386144
+1769449839.126729,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-26
+Missing files: previous: 2026_01_24
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-26 17:50:39.126,3,-0.16433565,1.8939875,-0.5950033
+1769449798.138859,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-24
+Missing files: current: 2026_01_24
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-26 17:49:58.138,3,-0.14622085,1.892783,-0.6156107
+1769448618.842339,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-26 17:30:18.842,9,0.0014214565,0.17256959,0.38579583
+1769443298.122819,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 0%",35 + Product_Configs + Falabella,2026-01-26 16:01:38.122,1,1.684156,-0.14551653,-0.031828072
+1769439760.633999,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 0%",35 + Product_Configs + Falabella,2026-01-26 15:02:40.633,1,1.684156,-0.14551653,-0.031828072
+1769439624.940559,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-26 15:00:24.940,4,0.03200568,-0.37301266,0.095762715
+1769436173.590389,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 0%",35 + Product_Configs + Falabella,2026-01-26 14:02:53.590,1,1.684156,-0.14551653,-0.031828072
+1769432412.165349,Reminder: @S095YD2KQ4S hacer movimiento semanal de BICE a Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-BICE-Banco-Security-1e40ff41a1e98063b074f3d24800e7b1)),Sin Clasificar,2026-01-26 13:00:12.165,-1,-0.32765424,0.16809732,0.049250185
+1769432401.432549,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-24
+Missing files: current: 2026_01_24
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-26 13:00:01.432,3,-0.13489196,1.9013343,-0.61563593
+1769432400.504729,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-24
+Missing files: current: 2026_01_24
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-26 13:00:00.504,3,-0.14622085,1.892783,-0.6156107
+1769431717.951539,"me dijeron de kushki que arreglaron el problema de la api, pal prox onboarding podrías usar [este workflow](https://fintoc.app.n8n.cloud/form/7452b5eb-d3af-4f14-acc3-b0f3b87e08eb) @S095YD2KQ4S?
+cc @antonia.fuenzalida",Que + El + La,2026-01-26 12:48:37.951,10,-0.46685374,-0.2853605,-0.6196033
+1769431508.150289,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-26 12:45:08.150,15,0.029602252,-0.5161034,-0.066516966
+1769430626.471929,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-26 12:30:26.471,12,-0.9349955,-0.4704821,0.10213135
+1769430625.918619,Reminder: @S095YD2KQ4S Cambiar los miembros de los tags de ops-auth según [este](https://docs.google.com/spreadsheets/d/1UBmOGkcFJms9e2EU8MYbpkIL6OycVTMC/edit?gid=1884171324#gid=1884171324) calendario.,Sin Clasificar,2026-01-26 12:30:25.918,-1,-0.80101705,-0.50718397,-0.004275347
+1769430621.816369,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-26 12:30:21.816,6,-0.4931348,1.0502489,0.5204485
+1769430621.078969,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-26 12:30:21.078,13,-0.11631487,0.030190436,0.15175918
+1769430614.490619,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-26 12:30:14.490,5,-0.3949151,-0.35502967,0.41611987
+1769428873.080879,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 0%",35 + Product_Configs + Falabella,2026-01-26 12:01:13.080,1,1.684156,-0.14551653,-0.031828072
+1769425359.167889,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 0%",35 + Product_Configs + Falabella,2026-01-26 11:02:39.167,1,1.684156,-0.14551653,-0.031828072
+1769421928.523019,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 0%",35 + Product_Configs + Falabella,2026-01-26 10:05:28.523,1,1.684156,-0.14551653,-0.031828072
+1769206672.391609,"@paula.​yoma esto fue lo [único](https://fintoc.slack.com/archives/C018V6ABKAB/p1769205858988209?thread_ts=1769201099.052889&amp;cid=C018V6ABKAB) que no pude tomar
+1. no entiendo mucho de que hablan
+2. no supe hacer el [instatus](https://fintoc.slack.com/archives/C07887PF18F/p1769206190247189), usé la app de retool y se lanzó ese de pagos, lo resolví ahí mismo pero no se si me habra quedado algo pendiente
+si me puedes ayudar con eso en caso de que haya quedado colgado!",Que + El + La,2026-01-23 22:17:52.391,10,-0.53985775,-0.25844046,-0.29860878
+1769202017.133859,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-23 21:00:17.133,14,-0.7555126,-0.3302428,0.60108334
+1769200204.434559,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-23 20:30:04.434,11,-0.119387284,-0.16949992,0.6980122
+1769189404.595269,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-23 17:30:04.595,9,0.0014214565,0.17256959,0.38579583
+1769185732.627229,"*Kushki Onboarding*
+Nuevo merchant registrado:
+```
+{
+  requestId: 256878c7-6889-4d0d-a32f-ce7ae33961f6,
+  submerchantId: 866d1ea7-a1e6-4ca5-91d8-0a6fee127b70,
+  submerchantName: Comercial Urubamba,
+  status: VALID
+}
+```
+_Automated with this [n8n workflow](https://fintoc.app.n8n.cloud/workflow/qXkFR-lzxzgBg4Iz3rDEz?utm_source=n8n-internal&amp;utm_medium=powered_by&amp;utm_campaign=n8n-nodes-base.slack_cd08dc07a5b9394f799bc9448b6b85fda48d6a5f7b2954d8684222f74de8ea6d)_",De + Del + Vesti,2026-01-23 16:28:52.627,7,-0.23764314,-0.19499786,-1.0020548
+1769185502.064019,"*Kushki Onboarding*
+Nuevo merchant registrado:
+
+_Automated with this [n8n workflow](https://fintoc.app.n8n.cloud/workflow/qXkFR-lzxzgBg4Iz3rDEz?utm_source=n8n-internal&amp;utm_medium=powered_by&amp;utm_campaign=n8n-nodes-base.slack_cd08dc07a5b9394f799bc9448b6b85fda48d6a5f7b2954d8684222f74de8ea6d)_",De + Del + Vesti,2026-01-23 16:25:02.064,7,-0.32969466,-0.19187889,-0.7645026
+1769181432.680649,"@S095YD2KQ4S me ayudas cambiando la recipient account de esta [org](http://admin.prd.fin/organizations/org_rVbJkpNFEDdM2RX3) pls. Estos son los nuevos:
+&gt; Libry SpA
+&gt; Rut: 78.277.679-7
+&gt; Cuenta Corriente No. 27484050
+&gt; Banco Santander",Que + Me + No,2026-01-23 15:17:12.680,0,-0.019067748,0.49399954,-0.07784552
+1769180423.545599,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-23 15:00:23.545,4,0.03200568,-0.37301266,0.095762715
+1769180192.975449,"@S095YD2KQ4S me ayudas a revisar si nos llegó esta TEF en nuestra cuenta del BE plisss, para confirmar si se realizará o no un reembolso (cuando la cuenta concilie). :dorime:
+• [PI](http://admin.prd.fin/payments/116120120)",Que + Me + No,2026-01-23 14:56:32.975,0,0.015902685,0.32831883,0.33117688
+1769176105.416529,"@S095YD2KQ4S me ayudas subiendo a Lookout SpA a la plataforma de kushki. Los datos son:
+Nombre: Lookout SpA
+Url: [https://www.holasomosdeep.com/](https://www.holasomosdeep.com/)
+Fecha nacimiento: 20/02/1989
+TyC:  [https://docs.google.com/document/d/1G_bL9_fpVl74JchJJM1Kx_fal5EtuQkoUtCUnGJv8Yg/edit?tab=t.0](https://docs.google.com/document/d/1G_bL9_fpVl74JchJJM1Kx_fal5EtuQkoUtCUnGJv8Yg/edit?tab=t.0)",Https + Tab + Google,2026-01-23 13:48:25.416,2,-0.7308755,-0.32930246,-1.2679999
+1769175629.195629,"@S095YD2KQ4S me ayudas subiendo a Anka Joyería a la plataforma de kushki. Los datos son:
+Nombre: Anka SpA
+Url: [https://ankajoyeria.com/](https://ankajoyeria.com/)
+Fecha nacimiento: 16/09/1991
+TyC:  [https://docs.google.com/document/d/1GVPg2yZ369JxNyCzfgh7AoYVau4SNK60QVAaQtUzwEk/edit?tab=t.0](https://docs.google.com/document/d/1GVPg2yZ369JxNyCzfgh7AoYVau4SNK60QVAaQtUzwEk/edit?tab=t.0)",Https + Tab + Google,2026-01-23 13:40:29.195,2,-0.56923664,-0.36478707,-1.5918897
+1769173419.959309,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-23
+Missing files: current: 2026_01_23
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-23 13:03:39.959,3,-0.15337153,1.8906685,-0.6159521
+1769173200.815769,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-23
+Missing files: current: 2026_01_23
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-23 13:00:00.815,3,-0.14065969,1.9035128,-0.61692333
+1769173200.680969,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-23
+Missing files: current: 2026_01_23
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-23 13:00:00.680,3,-0.15337153,1.8906685,-0.6159521
+1769172304.250349,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-23 12:45:04.250,15,0.029602252,-0.5161034,-0.066516966
+1769171428.045789,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-23 12:30:28.045,6,-0.4931348,1.0502489,0.5204485
+1769171421.028219,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-23 12:30:21.028,5,-0.3949151,-0.35502967,0.41611987
+1769171421.008069,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-23 12:30:21.008,13,-0.11631487,0.030190436,0.15175918
+1769171404.007939,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-23 12:30:04.007,12,-0.9349955,-0.4704821,0.10213135
+1769169847.901229,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 12:04:07.901,1,1.6963745,-0.2244311,-0.03839952
+1769166337.207549,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 11:05:37.207,1,1.6963745,-0.2244311,-0.03839952
+1769162512.875429,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 10:01:52.875,1,1.6963745,-0.2244311,-0.03839952
+1769159000.555339,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 09:03:20.555,1,1.6963745,-0.2244311,-0.03839952
+1769155238.947669,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 08:00:38.947,1,1.6963745,-0.2244311,-0.03839952
+1769151921.115589,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 07:05:21.115,1,1.6963745,-0.2244311,-0.03839952
+1769148259.004149,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 06:04:19.004,1,1.6963745,-0.2244311,-0.03839952
+1769144422.647159,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 05:00:22.647,1,1.6963745,-0.2244311,-0.03839952
+1769140977.135259,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 04:02:57.135,1,1.6963745,-0.2244311,-0.03839952
+1769137225.069849,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 03:00:25.069,1,1.6963745,-0.2244311,-0.03839952
+1769133716.323449,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 02:01:56.323,1,1.6963745,-0.2244311,-0.03839952
+1769130099.571569,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 01:01:39.571,1,1.6963745,-0.2244311,-0.03839952
+1769126542.731319,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-23 00:02:22.731,1,1.6963745,-0.2244311,-0.03839952
+1769122968.631609,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-22 23:02:48.631,1,1.6963745,-0.2244311,-0.03839952
+1769119430.777719,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-22 22:03:50.777,1,1.6963745,-0.2244311,-0.03839952
+1769115804.595469,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-22 21:03:24.595,1,1.6963745,-0.2244311,-0.03839952
+1769115604.746089,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-22 21:00:04.746,14,-0.7555126,-0.3302428,0.60108334
+1769113810.605839,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-22 20:30:10.605,11,-0.119387284,-0.16949992,0.6980122
+1769112151.383509,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 50%",35 + Product_Configs + Falabella,2026-01-22 20:02:31.383,1,1.6963745,-0.2244311,-0.03839952
+1769108592.088419,"@S095YD2KQ4S me ayudas a adelantar este refund plisss. Era para ayer, pero no tenían saldo porq tienen muchos refund activos, por lo mismo no me deja adelantarlo por retool. Se podrá adelantar solo este?  (igual me extraña que yaneken no tenga saldo)
+• [Refund](http://admin.prd.fin/refunds/ref_B5qVz8KHxlqORaY6) ",Que + Me + No,2026-01-22 19:03:12.088,0,-0.27447838,0.27810612,0.35087258
+1769106497.244509,"@tank-ops-chile no se han [subido las nóminas](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836?source=copy_link) del [BancoEstado](https://www.bancoestado.cl/content/bancoestado-public/cl/es/home/inicio---bancoestado-empresas.html#/login-empresa)  :banco-estado:.  Al finalizar, marca el toggle [acá](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1).",Bancoestado + Chile + Ops,2026-01-22 18:28:17.244,18,0.4767712,-0.5247944,-0.34527248
+1769103001.198999,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-22 17:30:01.198,9,0.0014214565,0.17256959,0.38579583
+1769098710.759269,@mateo status update de esto?,De + Del + Vesti,2026-01-22 16:18:30.759,7,-0.6898931,-0.3789088,-0.37778232
+1769097458.322619,:listeilor::hehe::vamos-ekipo:,Que + El + La,2026-01-22 15:57:38.322,10,-0.41082183,-0.7933233,-0.6809541
+1769097386.351889,"@S095YD2KQ4S me ayudas subiendo a Kippi a la plataforma de kushki. Los datos son:
+Nombre: Retail investimenti spa
+Url: [https://kippichile.cl/](https://kippichile.cl/)
+Fecha nacimiento: 12/10/1990
+TyC:  [https://docs.google.com/document/d/1L9az96vU0GKk2l4IaQdibpC0LVlxY0zKvrAcNZbXoUw/edit?tab=t.0](https://docs.google.com/document/d/1L9az96vU0GKk2l4IaQdibpC0LVlxY0zKvrAcNZbXoUw/edit?tab=t.0)",Https + Tab + Google,2026-01-22 15:56:26.351,2,-0.3708011,-0.45747912,-1.3723114
+1769096625.064979,"@S095YD2KQ4S me ayudas subiendo a Bolgen a la plataforma de kushki. Los datos son:
+Nombre: KHUMBU SPA
+Url: [https://www.bolg.cl/](https://www.bolg.cl/)
+Fecha nacimiento: 10/10/1986
+TyC:  [https://docs.google.com/document/d/1dpcJ9MBA8Z_rIL2cg3_icOSdM4xC3kuqjXtdiWBdk_s/edit?tab=t.0](https://docs.google.com/document/d/1dpcJ9MBA8Z_rIL2cg3_icOSdM4xC3kuqjXtdiWBdk_s/edit?tab=t.0)",Https + Tab + Google,2026-01-22 15:43:45.064,2,-0.54040915,-0.045464117,-1.4874035
+1769095740.515839,"@S095YD2KQ4S me ayudas subiendo a Agua Antukuyen a la plataforma de kushki. Los datos son:
+Nombre: GAETE Y ARANEDA ASOCIADOS SPA
+Url: [https://aguaantukuyen.cl/](https://aguaantukuyen.cl/)
+Fecha nacimiento: 05/05/1977
+TyC:  [https://docs.google.com/document/d/1yykqPR7eSgvnKLb_ZDxyX00b-hweH_WgmTM97pEx_cI/edit?tab=t.0](https://docs.google.com/document/d/1yykqPR7eSgvnKLb_ZDxyX00b-hweH_WgmTM97pEx_cI/edit?tab=t.0)",Https + Tab + Google,2026-01-22 15:29:00.515,2,-0.58618015,-0.4398794,-1.4412802
+1769095434.966289,"@S095YD2KQ4S me ayudas subiendo a Modoko a la plataforma de kushki. Los datos son:
+Nombre: MODOKO SpA
+Url: [https://modoko.cl/](https://modoko.cl/)
+Fecha nacimiento: 23/05/1996
+TyC:  [https://docs.google.com/document/d/1DjTl62A6NoTWf4lpHsYwjrtqFvCPUoJ0RoKKoDOUBD4/edit?tab=t.0](https://docs.google.com/document/d/1DjTl62A6NoTWf4lpHsYwjrtqFvCPUoJ0RoKKoDOUBD4/edit?tab=t.0)",Https + Tab + Google,2026-01-22 15:23:54.966,2,-0.62586015,-0.4615509,-1.4529197
+1769095007.957859,"@S095YD2KQ4S me ayudas subiendo a RM Partes SpA a la plataforma de kushki. Los datos son:
+Nombre: RM Partes SpA
+Url: [https://rmpartes.cl/](https://rmpartes.cl/)
+Fecha nacimiento: 02/03/1990
+TyC:  [https://docs.google.com/document/d/1T6LmnV7NYMtYQPdGaasyorz56tqmF8Yjz7zEI1Ykobk/edit?tab=t.0](https://docs.google.com/document/d/1T6LmnV7NYMtYQPdGaasyorz56tqmF8Yjz7zEI1Ykobk/edit?tab=t.0)",Https + Tab + Google,2026-01-22 15:16:47.957,2,-0.6897351,-0.35270262,-1.2323773
+1769094447.947039,"@S095YD2KQ4S me ayudas subiendo a Luminavida a la plataforma de kushki. Los datos son:
+Nombre: Luminavida SPA
+Url: [https://luminavida.cl/](https://luminavida.cl/)
+Fecha nacimiento: 20/08/1990
+TyC:  [https://docs.google.com/document/d/1cGl4wk-DYh2eMFORzXJ74F11ni0zljD_ndoBUf8HnTg/edit?tab=t.0](https://docs.google.com/document/d/1cGl4wk-DYh2eMFORzXJ74F11ni0zljD_ndoBUf8HnTg/edit?tab=t.0)",Https + Tab + Google,2026-01-22 15:07:27.947,2,-0.67990845,-0.3405391,-1.4416165
+1769094021.758669,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-22 15:00:21.758,4,0.03200568,-0.37301266,0.095762715
+1769092657.397819,"@S095YD2KQ4S me ayudas subiendo aHaze Concept a la plataforma de kushki. Los datos son:
+Nombre: Textil Holy Concept Limitada
+Url: [https://hazeconcept.com/](https://hazeconcept.com/)
+Fecha nacimiento: 03/01/2000
+TyC:  [https://docs.google.com/document/d/15sx4TQGjKG8d0j2qmixUiwHZeT61yhG9ULhfYggZJZE/edit?tab=t.0](https://docs.google.com/document/d/15sx4TQGjKG8d0j2qmixUiwHZeT61yhG9ULhfYggZJZE/edit?tab=t.0)",Https + Tab + Google,2026-01-22 14:37:37.397,2,-0.8086858,-0.55715793,-1.1754615
+1769091650.877209,"@S095YD2KQ4S me ayudas subiendo a Baby Steps a la plataforma de kushki. Los datos son:
+Nombre: Baby Steps Spa
+Url: [https://babysteps.cl/](https://babysteps.cl/)
+Fecha nacimiento: 22/04/1957
+TyC:  [https://docs.google.com/document/d/1b1pOAFD1tFlnIwrVwox62tDmAzvfY0pRJllE0hk8Sz0/edit?tab=t.0](https://docs.google.com/document/d/1b1pOAFD1tFlnIwrVwox62tDmAzvfY0pRJllE0hk8Sz0/edit?tab=t.0)",Https + Tab + Google,2026-01-22 14:20:50.877,2,-0.82970333,-0.3572821,-1.371714
+1769090996.341679,:bombardino-crocodilo:,Que + El + La,2026-01-22 14:09:56.341,10,-0.330728,-0.43243575,-0.7004128
+1769090944.323739,[https://open.spotify.com/intl-es/track/0oOhHNAXE8nJSoLGCyGDDK?si=f3246719e49347bb](https://open.spotify.com/intl-es/track/0oOhHNAXE8nJSoLGCyGDDK?si=f3246719e49347bb),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-22 14:09:04.323,12,-0.5510866,-0.35321265,-0.38627782
+1769090917.483769,"@S095YD2KQ4S me ayudas subiendo a Joyería Saviér SPA a la plataforma de kushki. Los datos son:
+Nombre: Joyería Saviér SPA
+Url: [https://joyeriasavier.cl/](https://joyeriasavier.cl/)
+Fecha nacimiento: 17/08/2004
+TyC: [ https://docs.google.com/document/d/1PDjH5PvO2ukyQovMMmiixQeNH-IxC-av6lFK5VhE7Nc/edit?tab=t.0](https://docs.google.com/document/d/1DJT45Aax89iYGitScMNgf9QWB_MufW167w2V0YX-eX4/edit?tab=t.0)",Https + Tab + Google,2026-01-22 14:08:37.483,2,-0.584113,-0.47621754,-1.3496009
+1769090509.272919,:omg-cat:,Que + El + La,2026-01-22 14:01:49.272,10,-0.4313732,-0.3395744,-0.7261119
+1769090170.120859,:despair:,Sin Clasificar,2026-01-22 13:56:10.120,-1,-0.5706032,-0.53462005,-0.32944262
+1769090057.267919,"@S095YD2KQ4S me ayudas subiendo a Raceworks SpA a la plataforma de kushki. Los datos son:
+Nombre: Raceworks SpA
+Url: [https://www.raceworks.cl/?srsltid=AfmBOorcaUW9EdiCqWiyJTFZ600djvJQhM9WLLjHQqlySUWcs90qtLnM](https://www.raceworks.cl/?srsltid=AfmBOorcaUW9EdiCqWiyJTFZ600djvJQhM9WLLjHQqlySUWcs90qtLnM)
+Fecha nacimiento: 10/09/1990
+TyC: [https://docs.google.com/document/d/1PDjH5PvO2ukyQovMMmiixQeNH-IxC-av6lFK5VhE7Nc/edit?tab=t.0](https://docs.google.com/document/d/1PDjH5PvO2ukyQovMMmiixQeNH-IxC-av6lFK5VhE7Nc/edit?tab=t.0)",Https + Tab + Google,2026-01-22 13:54:17.267,2,-0.71771747,-0.31837428,-1.2100062
+1769089223.096489,"@S095YD2KQ4S me ayudas subiendo a [MONS.CL](http://MONS.CL) a la plataforma de kushki. Los datos son:
+Nombre: AZ SOCIEDAD INVERSIONES COMERCIALES SPA
+Url: [https://mons.cl/](https://mons.cl/)
+Fecha nacimiento: 10/02/1984
+TyC: [https://docs.google.com/document/d/1nQrI6X22KsEed_xbiEbggt0ryfqcWBzn8SyAu0qrd3s/edit?tab=t.0](https://docs.google.com/document/d/1nQrI6X22KsEed_xbiEbggt0ryfqcWBzn8SyAu0qrd3s/edit?tab=t.0)",Https + Tab + Google,2026-01-22 13:40:23.096,2,-0.45358238,-0.3602791,-1.0711161
+1769086862.465849,"@S095YD2KQ4S me ayudas subiendo a Dermotienda Chile a la plataforma de kushki. Los datos son:
+Nombre: Dermotienda Limitada
+Url: [https://dermotienda.cl/](https://dermotienda.cl/)
+Fecha nacimiento: 10/05/1990
+TyC: [https://docs.google.com/document/d/1hUSwzHJF93qdVkYRG3tkUnwvjOQzQx7Z7fblzTkEABU/edit?tab=t.0](https://docs.google.com/document/d/1hUSwzHJF93qdVkYRG3tkUnwvjOQzQx7Z7fblzTkEABU/edit?tab=t.0)",Https + Tab + Google,2026-01-22 13:01:02.465,2,-0.3161325,-0.75127906,-1.2167456
+1769086412.124729,"@mateo hay que hacer algo con esto jaaj
+ahora que lanzamos tarjeta con todo se viene el :suffering-from-success:",Que + El + La,2026-01-22 12:53:32.124,10,-0.46755418,-0.6440335,-0.32465512
+1769086316.788889,"@S095YD2KQ4S me ayudas subiendo a London Profesional Beauty a la plataforma de kushki. Los datos son:
+Nombre: Inversiones Gaocje philippe
+Url: [https://lpb.cl/](https://lpb.cl/)
+Fecha nacimiento: 03/07/1993
+TyC: [https://docs.google.com/document/d/1bORjaUJmkoS9UgexX0WQg_GNnQ1jfsOVBPZObUJTmB4/edit?tab=t.0](https://docs.google.com/document/d/1bORjaUJmkoS9UgexX0WQg_GNnQ1jfsOVBPZObUJTmB4/edit?tab=t.0)",Https + Tab + Google,2026-01-22 12:51:56.788,2,-0.5919606,-0.3050611,-1.43714
+1769085928.945679,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-22 12:45:28.945,15,0.029602252,-0.5161034,-0.066516966
+1769085700.924879,:bee-up:,Que + El + La,2026-01-22 12:41:40.924,10,-0.7639997,-0.45502067,-0.33845425
+1769085582.574839,"@S095YD2KQ4S me ayudas subiendo a Omnistock SpA a la plataforma de kushki. Los datos son:
+Nombre: Omnistock SpA
+Url: [https://www.omnipack.cl/](https://www.omnipack.cl/)
+Fecha nacimiento: 31/12/1979
+TyC: [https://docs.google.com/document/d/1majTRXDunooJRTNMqxC37kAFEw3RsGvxHxrTyW8dEs0/edit?tab=t.0](https://docs.google.com/document/d/1majTRXDunooJRTNMqxC37kAFEw3RsGvxHxrTyW8dEs0/edit?tab=t.0)",Https + Tab + Google,2026-01-22 12:39:42.574,2,-0.450683,-0.37457895,-1.2827349
+1769085288.061269,"@S095YD2KQ4S me ayudas subiendo a Masbien Wellness Market a la plataforma de kushki. Los datos son:
+Nombre: Masbien SpA
+Url: [https://masbien.cl/](https://masbien.cl/)
+Fecha nacimiento: 11/08/1987
+TyC: [https://docs.google.com/document/d/1YhuUo_XijhZDmqv9SKnEE4gmpqpRhKyz0X33j26JLD0/edit?tab=t.0](https://docs.google.com/document/d/1YhuUo_XijhZDmqv9SKnEE4gmpqpRhKyz0X33j26JLD0/edit?tab=t.0)",Https + Tab + Google,2026-01-22 12:34:48.061,2,-0.6453181,-0.124127366,-1.3559576
+1769085027.976859,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-22 12:30:27.976,5,-0.3949151,-0.35502967,0.41611987
+1769085024.781639,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-22 12:30:24.781,12,-0.9349955,-0.4704821,0.10213135
+1769085011.508059,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-22 12:30:11.508,6,-0.4931348,1.0502489,0.5204485
+1769085003.690669,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-22 12:30:03.690,13,-0.11631487,0.030190436,0.15175918
+1769084531.856959,"@S095YD2KQ4S me ayudas subiendo a Kaulini a la plataforma de kushki. Los datos son:
+Nombre: kaulini spa
+Url: [https://kaulini.cl/](https://kaulini.cl/)
+Fecha nacimiento: 21/02/1995
+TyC: [https://docs.google.com/document/d/11OSCYwlVurMKUouRxfyaqRXe3zI1JH69B6e15xfhbAQ/edit?tab=t.0](https://docs.google.com/document/d/11OSCYwlVurMKUouRxfyaqRXe3zI1JH69B6e15xfhbAQ/edit?tab=t.0)",Https + Tab + Google,2026-01-22 12:22:11.856,2,-0.6969637,-0.43822792,-1.647958
+1769084061.939269,"@S095YD2KQ4S me ayudas subiendo a Mariscos de La Concha a la plataforma de kushki. Los datos son:
+Nombre: De la Concha Comercial SpA
+Url: [https://mariscosdelaconcha.cl/](https://mariscosdelaconcha.cl/)
+Fecha nacimiento: 21/08/1981
+TyC: [https://docs.google.com/document/d/1G9PEoVJhEw7HlXai1PTVD1IjF5cr1KLgoQwav_KqIto/edit?tab=t.0](https://docs.google.com/document/d/1G9PEoVJhEw7HlXai1PTVD1IjF5cr1KLgoQwav_KqIto/edit?tab=t.0)",Https + Tab + Google,2026-01-22 12:14:21.939,2,-0.43435818,-0.5683227,-1.2653524
+1769040202.102199,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Asesorias e inversiones IVYCORP Limitada
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-22 00:03:22.102,16,0.44178268,-0.095241316,-0.016642185
+1769032966.945259,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35) : 0%",35 + Product_Configs + Falabella,2026-01-21 22:02:46.945,1,1.684156,-0.14551653,-0.031828072
+1769031248.063709,"@S095YD2KQ4S me ayudas subiendo a La timbrería a la plataforma de kushki. Los datos son:
+Nombre: DANIAC SPA
+Url: [https://latimbreria.cl/](https://latimbreria.cl/)
+Fecha nacimiento: 27/03/1995
+TyC: [https://docs.google.com/document/d/1-njIRNpk9iujudcIQDqB6yoEc0yuvUcwhg_MzbA0H8o/edit?tab=t.0](https://docs.google.com/document/d/1-njIRNpk9iujudcIQDqB6yoEc0yuvUcwhg_MzbA0H8o/edit?tab=t.0)",Https + Tab + Google,2026-01-21 21:34:08.063,2,-0.6041328,-0.46790764,-1.4315066
+1769029266.070879,"@raimundo.sandoval, [este](https://app.datadoghq.com/monitors/239730244?from_ts=1768824184000&amp;to_ts=1768825384000&amp;event_id=8465150848433579462&amp;link_source=monitor_notif) es el monitor de direct transfer que hay que corregir",Que + Me + No,2026-01-21 21:01:06.070,0,-0.648224,-0.075360484,-0.22113082
+1769029217.288779,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-21 21:00:17.288,14,-0.7555126,-0.3302428,0.60108334
+1769028661.327959,"@S095YD2KQ4S me ayudas subiendo a Micelio Corp SpA a la plataforma de kushki. Los datos son:
+Nombre: Micelio Corp SpA
+Url: [https://bazarfungi.cl/](https://bazarfungi.cl/)
+Fecha nacimiento: 23/12/1983
+TyC:[https://docs.google.com/document/d/1EqtI24w62jQ4wVFuZCW1QOE-XEWafy2swPUYOhCLi9c/edit?tab=t.0](https://docs.google.com/document/d/1EqtI24w62jQ4wVFuZCW1QOE-XEWafy2swPUYOhCLi9c/edit?tab=t.0)",Https + Tab + Google,2026-01-21 20:51:01.327,2,-0.3682374,-0.34723395,-1.272943
+1769028117.607649,"@S095YD2KQ4S me ayudas subiendo a Comercial Urubamba Ltda a la plataforma de kushki. Los datos son:
+Nombre: Comercial Urubamba Ltda
+Url: [https://casabougie.cl/](https://casabougie.cl/)
+Fecha nacimiento: 19/03/1977
+TyC: [https://docs.google.com/document/d/1nvs_HYClcsBHIabRG7WyyLRCFnhYmFs5qkAyfQ3Cdrc/edit?tab=t.0](https://docs.google.com/document/d/1nvs_HYClcsBHIabRG7WyyLRCFnhYmFs5qkAyfQ3Cdrc/edit?tab=t.0)",Https + Tab + Google,2026-01-21 20:41:57.607,2,-0.4527369,-0.3649435,-1.3590162
+1769027406.282909,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-21 20:30:06.282,11,-0.119387284,-0.16949992,0.6980122
+1769025896.547419,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BCI](http://admin.prd.fin/product_configs/6/edit) (ID 6) : 0%",18 + Product_Configs + Bancos,2026-01-21 20:04:56.547,8,1.5337259,0.009048928,-0.047391206
+1769025606.392839,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Asesorias e inversiones IVYCORP Limitada
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-21 20:00:06.392,16,0.44178268,-0.095241316,-0.016642185
+1769024708.691579,":ojito:  mantención programada again, muuuucho ojo @S095YD2KQ4S",Security + Banco + Estado,2026-01-21 19:45:08.691,4,-0.62165827,-0.21026483,-0.40761477
+1769022654.333089,"@raimundo.sandoval hice este documento ""[documents 101](https://www.notion.so/fintoc/Documents-101-2ef0ff41a1e98087a30dd5e1b298e4a1)"" que introduce a grandes rasgos como funciona el envío de documentos
+deberíamos apuntar que todos los grandes procesos tengan su 101 que explica el funcionamiento, como este de [conciliación](https://www.notion.so/fintoc/Conciliaci-n-101-2b80ff41a1e9801fb6c5c0be7ae54807)
+por ejemplo: faltaría un dispersiones 101 (payouts, refunds, paybacks), recaudación 101, cierres de tesorería 101, direct debit 101 etc",Cierres + Cierre + Contables,2026-01-21 19:10:54.333,13,-0.3619612,-0.6756642,-0.16487126
+1769016615.616539,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-21 17:30:15.616,9,0.0014214565,0.17256959,0.38579583
+1769007623.948819,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-21 15:00:23.948,4,0.03200568,-0.37301266,0.095762715
+1769001340.676229,@S095YD2KQ4S me ayudan a confirmar si llegó este [pago](http://admin.prd.fin/payment_intents/pi_GMldp3SGomlYwynz) (Unknown) a nuestra cuenta del BICE pliss. :dorime:,Que + Me + No,2026-01-21 13:15:40.676,0,-0.09921628,0.55880517,-0.12943247
+1769000404.338199,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-21
+Missing files: current: 2026_01_21
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-21 13:00:04.338,3,-0.16001894,1.8859236,-0.6137711
+1769000404.183179,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-21
+Missing files: current: 2026_01_21
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-21 13:00:04.183,3,-0.14710201,1.8985682,-0.61497414
+1768999530.843919,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-21 12:45:30.843,15,0.029602252,-0.5161034,-0.066516966
+1768998629.327049,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-21 12:30:29.327,13,-0.11631487,0.030190436,0.15175918
+1768998627.881099,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-21 12:30:27.881,5,-0.3949151,-0.35502967,0.41611987
+1768998614.188619,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-21 12:30:14.188,6,-0.4931348,1.0502489,0.5204485
+1768998612.152809,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-21 12:30:12.152,12,-0.9349955,-0.4704821,0.10213135
+1768943222.761179,:pepe-alarm: Refund [ref_Yy7ZJXVHj0kQzmGD](http://admin.prd.fin/refunds/148453) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-20 21:07:02.761,17,-0.013486312,0.2822486,0.74436575
+1768942804.534639,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-20 21:00:04.534,14,-0.7555126,-0.3302428,0.60108334
+1768941015.705779,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-20 20:30:15.705,11,-0.119387284,-0.16949992,0.6980122
+1768931892.070549,"@S095YD2KQ4S me ayudan a ver si nos llegó este pago plisss. Y en el caso que si lo tengamos, no hay forma de adelantar la devolución?? :pray-intensifies:
+[PI](http://admin.prd.fin/payments/115722099)",Que + Me + No,2026-01-20 17:58:12.070,0,0.006444795,0.14374214,0.4022518
+1768931525.824739,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/16](http://admin.prd.fin/chargebacks/16)
+    ◦ Fecha del pago: 30/11/2025
+    ◦ Monto: $29.900
+    ◦ ID del pago en Fintoc: pi_36DNZT4LHaIiLiOPYGnBTadVIh3
+    ◦ Ticket número: 65776702
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-20 17:52:05.824,7,-0.12855092,0.016821913,-0.65437776
+1768930218.161229,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-20 17:30:18.161,9,0.0014214565,0.17256959,0.38579583
+1768927017.986649,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-20
+Missing files: previous: 2026_01_19
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-20 16:36:57.986,3,-0.14969762,1.9014448,-0.5985377
+1768925921.948639,"@mateo manejar los contracargos así no escala nada :point_up:
+es demasiado ruido además tanto tag a tank ops
+hay que crear una manera de gestionar esto mejor",Que + El + La,2026-01-20 16:18:41.948,10,-0.290637,-0.71328247,-0.1014876
+1768925084.638999,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/15](http://admin.prd.fin/chargebacks/15)
+    ◦ Fecha del pago: 18/12/2025
+    ◦ Monto: $33.000
+    ◦ ID del pago en Fintoc: pi_370Og3uZYARkHq7u3xRgYTvLxtG
+    ◦ Ticket número: 65024383
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-20 16:04:44.638,7,-0.1143535,0.030053893,-0.67499256
+1768924946.906149,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-20
+Missing files: current: 2026_01_20
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-20 16:02:26.906,3,-0.1483606,1.8834769,-0.61456907
+1768924789.611979,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/14](http://admin.prd.fin/chargebacks/14)
+    ◦ Fecha del pago: 17/12/2025
+    ◦ Monto: $33.000
+    ◦ ID del pago en Fintoc: pi_36ysp5xSZcsB61sFSFXWT2BJE3y
+    ◦ Ticket número: 65024013
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-20 15:59:49.611,7,-0.12810792,0.0481381,-0.67409927
+1768924435.190889,@S095YD2KQ4S Me ayudas con [este](http://admin.prd.fin/payments/90838292) refund de BNPL? Le informe a Ticketplus que estara listo en 1 dia habil,Que + Me + No,2026-01-20 15:53:55.190,0,-0.13170855,0.42888072,0.24535011
+1768923550.693789,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-20
+Missing files: current: 2026_01_20
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-20 15:39:10.693,3,-0.1483606,1.8834769,-0.61456907
+1768921215.753039,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-20 15:00:15.753,4,0.03200568,-0.37301266,0.095762715
+1768919557.581639,@S095YD2KQ4S me ayudan a cancelar este [reembolso](http://admin.prd.fin/refunds/ref_qWVOJAPHkaVdn345) plisss la cuenta está inhabilitada para recibir TEF.  :dorime:,Que + Me + No,2026-01-20 14:32:37.581,0,-0.087637834,0.6209036,0.41642302
+1768915159.806129,"@S095YD2KQ4S Me ayudan a verificar si el usuario nos envió esta TEF a nosotros plisss . Revisé el archivo del banco y no lo encuentro, pero quiero estar 10000% segura que no lo recibimos :dorime: RUT: 19318042-6 [PI](http://admin.prd.fin/payments/115252342) fallido",Que + Me + No,2026-01-20 13:19:19.806,0,0.12367944,0.67067915,0.04782562
+1768914010.008869,Reminder: @S095YD2KQ4S hacer movimiento semanal de BICE a Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-BICE-Banco-Security-1e40ff41a1e98063b074f3d24800e7b1)),Sin Clasificar,2026-01-20 13:00:10.008,-1,-0.32765424,0.16809732,0.049250185
+1768914001.788499,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-20
+Missing files: current: 2026_01_20
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-20 13:00:01.788,3,-0.13629866,1.8938794,-0.61540973
+1768914001.322999,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-20
+Missing files: current: 2026_01_20
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-20 13:00:01.322,3,-0.1483606,1.8834769,-0.61456907
+1768913118.068569,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-20 12:45:18.068,15,0.029602252,-0.5161034,-0.066516966
+1768912223.118239,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-20 12:30:23.118,6,-0.4931348,1.0502489,0.5204485
+1768912221.716269,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-20 12:30:21.716,5,-0.3949151,-0.35502967,0.41611987
+1768912218.489979,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-20 12:30:18.489,13,-0.11631487,0.030190436,0.15175918
+1768912204.567499,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-20 12:30:04.567,12,-0.9349955,-0.4704821,0.10213135
+1768864228.424649,"@S095YD2KQ4S me ayudas, mequivoque seteando la recipient account de esta [org](http://admin.prd.fin/organizations/org_LrJ7ZDgFnRDka892). Estos son los datos correctos:
+&gt; Razón social: Micelio Corp SpA
+&gt; Número de cuenta:  223192488
+&gt; Tipo de cuenta: Cuenta corriente
+&gt; Banco: Banco Itaú",Que + Me + No,2026-01-19 23:10:28.424,0,0.009473789,0.23121056,-0.25145534
+1768856411.618139,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-19 21:00:11.618,14,-0.7555126,-0.3302428,0.60108334
+1768854616.672479,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-19 20:30:16.672,11,-0.119387284,-0.16949992,0.6980122
+1768853135.726819,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• prueba-vicente-2
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-19 20:05:35.726,16,0.28930956,-0.081618026,0.0027061056
+1768849544.505079," set up a reminder “@tank-ops-chile hacer movimiento semanal de BICE a Security (paso a paso)” in this channel at 10AM tomorrow, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-19 19:05:44.505,18,0.11282098,-0.7401152,-0.29496735
+1768843806.411269,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-19 17:30:06.411,9,0.0014214565,0.17256959,0.38579583
+1768840849.990569,":point_up: Volví a dejar esos reminders en la hora que estaban antes, dado que no los vamos a hacer más tarde ahora que los refunds se van a dispersar automáticamente cc @S095YD2KQ4S",Que + Me + No,2026-01-19 16:40:49.990,0,-0.43341458,-0.029020114,0.9345236
+1768840796.884519," set up a reminder “@tank-ops-chile Revisar este dashboard (pestaña Daily Tasks) antes de cerrar el día” in this channel at 6PM every weekday, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-19 16:39:56.884,18,-0.021040259,-0.8927452,-0.1492727
+1768840771.129509," set up a reminder “@tank-ops-chile hacer pago de payouts a merchants y refunds (paso a paso)” in this channel at 5:30PM every weekday, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-19 16:39:31.129,18,0.54120785,-0.7736612,0.2233581
+1768839686.247909,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-17
+Missing files: current: 2026_01_17
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-19 16:21:26.247,3,-0.15017657,1.8849199,-0.61005336
+1768834822.333689,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-19 15:00:22.333,4,0.03200568,-0.37301266,0.095762715
+1768831352.346939,"Update caso error 3ds de Kushki
+hace rato venimos arrastrando esto y me tienen medio tostado los de kushki. Les pedi una reu la semana pasada para cerrar finalmente esto lo antes posible y aún no he podido tenerla.",De + Del + Vesti,2026-01-19 14:02:32.346,7,-0.55948156,-0.17399554,-0.9150066
+1768829831.209799,@pablo algo para el handoff? :pray:,Que + El + La,2026-01-19 13:37:11.209,10,-0.51847273,-0.4731495,-0.06267925
+1768827620.284489,Reminder: @S095YD2KQ4S hacer movimiento semanal de BICE a Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-BICE-Banco-Security-1e40ff41a1e98063b074f3d24800e7b1)),Sin Clasificar,2026-01-19 13:00:20.284,-1,-0.32765424,0.16809732,0.049250185
+1768827600.693109,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-17
+Missing files: current: 2026_01_17
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-19 13:00:00.693,3,-0.1381032,1.8945402,-0.6107664
+1768827600.587489,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-17
+Missing files: current: 2026_01_17
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-19 13:00:00.587,3,-0.15017657,1.8849199,-0.61005336
+1768826704.853429,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-19 12:45:04.853,15,0.029602252,-0.5161034,-0.066516966
+1768825828.817379,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-19 12:30:28.817,13,-0.11631487,0.030190436,0.15175918
+1768825828.727409,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-19 12:30:28.727,6,-0.4931348,1.0502489,0.5204485
+1768825825.085379,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-19 12:30:25.085,12,-0.9349955,-0.4704821,0.10213135
+1768825812.148219,Reminder: @S095YD2KQ4S Cambiar los miembros de los tags de ops-auth según [este](https://docs.google.com/spreadsheets/d/1UBmOGkcFJms9e2EU8MYbpkIL6OycVTMC/edit?gid=1884171324#gid=1884171324) calendario.,Sin Clasificar,2026-01-19 12:30:12.148,-1,-0.80101705,-0.50718397,-0.004275347
+1768825810.669149,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-19 12:30:10.669,5,-0.3949151,-0.35502967,0.41611987
+1768741200.503029,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-17
+Missing files: current: 2026_01_17
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-18 13:00:00.503,3,-0.15017657,1.8849199,-0.61005336
+1768741200.462609,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-17
+Missing files: current: 2026_01_17
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-18 13:00:00.462,3,-0.1381032,1.8945402,-0.6107664
+1768654800.958339,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-17
+Missing files: current: 2026_01_17
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-17 13:00:00.958,3,-0.1381032,1.8945402,-0.6107664
+1768654800.865029,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-17
+Missing files: current: 2026_01_17
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-17 13:00:00.865,3,-0.15017657,1.8849199,-0.61005336
+1768599877.197079,:melt:,Que + El + La,2026-01-16 21:44:37.197,10,-0.5978641,-0.49856368,-0.57461923
+1768599806.269519,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-16
+Missing files: current: 2026_01_16
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-16 21:43:26.269,3,-0.14288552,1.89463,-0.61649734
+1768599795.539689,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-16
+Missing files: current: 2026_01_16
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-16 21:43:15.539,3,-0.15508895,1.885403,-0.61573106
+1768598102.987979,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-16 21:15:02.987,14,-0.7555126,-0.3302428,0.60108334
+1768597520.786669,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-16 21:05:20.786,11,-0.119387284,-0.16949992,0.6980122
+1768593757.949289,"@S095YD2KQ4S me ayudas con una query para saber el n de pagos que recibimos con 400 o 500 y saber su TPV? Intenté con cursor pero esta blufeando. Me fije que hay clientes como Starken que tienen muchos endpoints y que en algunos lo reciben y en otros no ensuciando la data, me ayudas porfa? [Aca](http://admin.prd.fin/webhook_events/evt_lAJZy9C1yWy2rZbM) un pago de ejemplo",Que + Me + No,2026-01-16 20:02:37.949,0,-0.057348624,0.019818306,-0.02855297
+1768585104.066739,"@S095YD2KQ4S una residente de greystar dice que transfirio por equivocación directamente a la cuenta de Fintoc del Security. La info es :
+Monto $1.981.952
+Banco Santander
+N° cuenta 85471562
+¿Puedes revisar si es asi?",Que + Me + No,2026-01-16 17:38:24.066,0,0.22235988,0.7001167,-0.09297288
+1768584611.965679,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-16 17:30:11.965,9,0.0014214565,0.17256959,0.38579583
+1768581496.639969,@S095YD2KQ4S Me ayudas urgente a cancelar este [reembolso](http://admin.prd.fin/refunds/ref_vLMez7qH3ve9Jdby) porfis. El merchant neceista reembolsarlo directamente al cliente que esta medio descesperado,Que + Me + No,2026-01-16 16:38:16.639,0,-0.058741517,0.21897167,0.5439941
+1768575619.938229,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-16 15:00:19.938,4,0.03200568,-0.37301266,0.095762715
+1768568434.653839,:que-sucede:,Refresh + Cuentas + Bice,2026-01-16 13:00:34.653,6,-0.48471713,-0.55383664,-0.47080725
+1768568400.718039,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1401335
+RUT: 760791814
+Statement Date: 2026-01-16
+Missing files: current: 2026_01_16
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-16 13:00:00.718,3,-0.14288552,1.89463,-0.61649734
+1768568400.619509,"@S095YD2KQ4S :warning: BICE Bank Statement files not found
+Account: 1383345
+RUT: 771433855
+Statement Date: 2026-01-16
+Missing files: current: 2026_01_16
+Please check GCP and generate manually if needed.",Files + Statement + 22,2026-01-16 13:00:00.619,3,-0.15508895,1.885403,-0.61573106
+1768567504.067999,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-16 12:45:04.067,15,0.029602252,-0.5161034,-0.066516966
+1768566620.764079,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-16 12:30:20.764,13,-0.11631487,0.030190436,0.15175918
+1768566613.555049,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-16 12:30:13.555,5,-0.3949151,-0.35502967,0.41611987
+1768566608.684289,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-16 12:30:08.684,12,-0.9349955,-0.4704821,0.10213135
+1768566604.512419,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-16 12:30:04.512,6,-0.4931348,1.0502489,0.5204485
+1768565111.152649,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Modo Tumbado
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-16 12:05:11.152,16,0.29740515,-0.106725305,-0.008062497
+1768550492.339389,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Modo Tumbado
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-16 08:01:32.339,16,0.29740515,-0.106725305,-0.008062497
+1768536105.483029,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Modo Tumbado
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-16 04:01:45.483,16,0.29740515,-0.106725305,-0.008062497
+1768521714.489669,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Modo Tumbado
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-16 00:01:54.489,16,0.29740515,-0.106725305,-0.008062497
+1768511716.941369,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-15 21:15:16.941,14,-0.7555126,-0.3302428,0.60108334
+1768511111.976259,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-15 21:05:11.976,11,-0.119387284,-0.16949992,0.6980122
+1768507227.989139,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• Modo Tumbado
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-15 20:00:27.989,16,0.29740515,-0.106725305,-0.008062497
+1768506582.787699,"holi @S095YD2KQ4S Me ayudan con esto pliss
+[Compara Online SOAP](http://admin.prd.fin/organizations/org_p8r3MWPFKENvlq57) :dorime:
+&gt; Les escribo para solicitar por favor su ayuda para ir cargando los archivos de recaudación diaria (payouts) mediante SFTP, así podremos tener todo más ordenado y simple para descargar los archivos.
+&gt; La información necesaria la pueden obtener en esta url:
+&gt; [https://share.1password.com/s#W5-JW1sFaeRBO1Hx9tzfXd9WUml96Vkllbjk3Tl62aY](https://share.1password.com/s#W5-JW1sFaeRBO1Hx9tzfXd9WUml96Vkllbjk3Tl62aY)
+",Login + Cargos + Bancochile,2026-01-15 19:49:42.787,9,-0.6095795,-0.21134226,-0.17674226
+1768503696.843379,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18) : 0%",18 + Product_Configs + Bancos,2026-01-15 19:01:36.843,8,1.5876476,0.088918045,-0.065902695
+1768503645.065599,"@tank-ops-chile Los siguientes bancos tienen lock = true. Si los bancos están disponibles, mueve el lock a false [acá](https://fintoc.retool.com/mobile/apps/c2ef5d7c-6c9c-11f0-9891-471fe05ae533?tab=bankStatus) (Sección Stop Robocops):
+1. cl_banco_bice",Sin Clasificar,2026-01-15 19:00:45.065,-1,0.6531061,0.06137931,-0.054419372
+1768501540.454459,"@tank-ops-chile no se han [subido las nóminas](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836?source=copy_link) del [BancoEstado](https://www.bancoestado.cl/content/bancoestado-public/cl/es/home/inicio---bancoestado-empresas.html#/login-empresa)  :banco-estado:.  Al finalizar, marca el toggle [acá](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1).",Bancoestado + Chile + Ops,2026-01-15 18:25:40.454,18,0.4767712,-0.5247944,-0.34527248
+1768500298.908549,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18) : 0%",18 + Product_Configs + Bancos,2026-01-15 18:04:58.908,8,1.5876476,0.088918045,-0.065902695
+1768500057.980599,"@tank-ops-chile Los siguientes bancos tienen lock = true. Si los bancos están disponibles, mueve el lock a false [acá](https://fintoc.retool.com/mobile/apps/c2ef5d7c-6c9c-11f0-9891-471fe05ae533?tab=bankStatus) (Sección Stop Robocops):
+1. cl_banco_bice",Sin Clasificar,2026-01-15 18:00:57.980,-1,0.6531061,0.06137931,-0.054419372
+1768498229.060999,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-15 17:30:29.060,9,0.0014214565,0.17256959,0.38579583
+1768496764.560929,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18) : 0%",18 + Product_Configs + Bancos,2026-01-15 17:06:04.560,8,1.5876476,0.088918045,-0.065902695
+1768496661.259359,"@tank-ops-chile Los siguientes bancos tienen lock = true. Si los bancos están disponibles, mueve el lock a false [acá](https://fintoc.retool.com/mobile/apps/c2ef5d7c-6c9c-11f0-9891-471fe05ae533?tab=bankStatus) (Sección Stop Robocops):
+1. cl_banco_bice",Sin Clasificar,2026-01-15 17:04:21.259,-1,0.6531061,0.06137931,-0.054419372
+1768493083.651809,"@tank-ops-chile Los siguientes bancos tienen lock = true. Si los bancos están disponibles, mueve el lock a false [acá](https://fintoc.retool.com/mobile/apps/c2ef5d7c-6c9c-11f0-9891-471fe05ae533?tab=bankStatus) (Sección Stop Robocops):
+1. cl_banco_bice",Sin Clasificar,2026-01-15 16:04:43.651,-1,0.6531061,0.06137931,-0.054419372
+1768492935.952869,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18) : 0%",18 + Product_Configs + Bancos,2026-01-15 16:02:15.952,8,1.5876476,0.088918045,-0.065902695
+1768491667.928019,"@tank-ops-chile Los siguientes bancos tienen lock = true. Si los bancos están disponibles, mueve el lock a false [acá](https://fintoc.retool.com/mobile/apps/c2ef5d7c-6c9c-11f0-9891-471fe05ae533?tab=bankStatus) (Sección Stop Robocops):
+1. cl_banco_bice
+2. cl_banco_itau",Sin Clasificar,2026-01-15 15:41:07.928,-1,0.6691247,0.050845936,-0.09286679
+1768489650.792069,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18) : 0%
+2. [Banco Itaú](http://admin.prd.fin/product_configs/41/edit) (ID 41) : 0%",18 + Product_Configs + Bancos,2026-01-15 15:07:30.792,8,1.5532606,-0.07632893,-0.0887897
+1768489218.713269,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-15 15:00:18.713,4,0.03200568,-0.37301266,0.095762715
+1768485675.710879,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Itaú](http://admin.prd.fin/product_configs/41/edit) (ID 41)",18 + Product_Configs + Bancos,2026-01-15 14:01:15.710,8,1.5312474,-0.12208082,-0.12106522
+1768482317.072589,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Itaú](http://admin.prd.fin/product_configs/41/edit) (ID 41)",18 + Product_Configs + Bancos,2026-01-15 13:05:17.072,8,1.5312474,-0.12208082,-0.12106522
+1768481104.006709,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-15 12:45:04.006,15,0.029602252,-0.5161034,-0.066516966
+1768480228.199399,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-15 12:30:28.199,12,-0.9349955,-0.4704821,0.10213135
+1768480220.420799,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-15 12:30:20.420,13,-0.11631487,0.030190436,0.15175918
+1768480218.794029,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-15 12:30:18.794,6,-0.4931348,1.0502489,0.5204485
+1768480209.868789,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-15 12:30:09.868,5,-0.3949151,-0.35502967,0.41611987
+1768478436.432359,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-15 12:00:36.432,8,1.5813843,0.04110754,-0.08478219
+1768475022.454019,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 11:03:42.454,1,1.5609615,-0.1609967,-0.094707124
+1768471367.301899,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 10:02:47.301,1,1.5609615,-0.1609967,-0.094707124
+1768467829.870609,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 09:03:49.870,1,1.5609615,-0.1609967,-0.094707124
+1768464043.617899,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 08:00:43.617,1,1.5609615,-0.1609967,-0.094707124
+1768460612.529759,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 07:03:32.529,1,1.5609615,-0.1609967,-0.094707124
+1768456852.261839,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 06:00:52.261,1,1.5609615,-0.1609967,-0.094707124
+1768453388.523589,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 05:03:08.523,1,1.5609615,-0.1609967,-0.094707124
+1768449861.805969,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)
+2. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-15 04:04:21.805,1,1.5609615,-0.1609967,-0.094707124
+1768446089.375999,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-15 03:01:29.375,8,1.5813843,0.04110754,-0.08478219
+1768442533.464359,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-15 02:02:13.464,8,1.5813843,0.04110754,-0.08478219
+1768439099.974959,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-15 01:04:59.974,8,1.5813843,0.04110754,-0.08478219
+1768435275.809489,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-15 00:01:15.809,8,1.5813843,0.04110754,-0.08478219
+1768431711.567769,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 23:01:51.567,8,1.5813843,0.04110754,-0.08478219
+1768428360.270509,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 22:06:00.270,8,1.5813843,0.04110754,-0.08478219
+1768425307.790839,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-14 21:15:07.790,14,-0.7555126,-0.3302428,0.60108334
+1768424755.345789,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 21:05:55.345,8,1.5813843,0.04110754,-0.08478219
+1768424709.939429,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-14 21:05:09.939,11,-0.119387284,-0.16949992,0.6980122
+1768421106.749829,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 20:05:06.749,8,1.5813843,0.04110754,-0.08478219
+1768417322.829739,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 19:02:02.829,8,1.5813843,0.04110754,-0.08478219
+1768415941.772379,"@S095YD2KQ4S me ayudas confirmando si nos llegó este [pago](http://admin.prd.fin/payment_intents/pi_pNGwmGSB2nyPAoey) que está unknow
+
+Y @pablo.vergara quizás también podríamos tener desde soporte un usuario en el BE para revisar este tipo de info, te parece?",Que + Me + No,2026-01-14 18:39:01.772,0,-0.17812696,0.010767395,-0.0442959
+1768415283.073879,"@tank-ops-chile no se han [subido las nóminas](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836?source=copy_link) del [BancoEstado](https://www.bancoestado.cl/content/bancoestado-public/cl/es/home/inicio---bancoestado-empresas.html#/login-empresa)  :banco-estado:.  Al finalizar, marca el toggle [acá](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1).",Bancoestado + Chile + Ops,2026-01-14 18:28:03.073,18,0.4767712,-0.5247944,-0.34527248
+1768413882.470479,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 18:04:42.470,8,1.5813843,0.04110754,-0.08478219
+1768411814.979989,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-14 17:30:14.979,9,0.0014214565,0.17256959,0.38579583
+1768410353.828849,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 17:05:53.828,8,1.5813843,0.04110754,-0.08478219
+1768406517.399859,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BICE](http://admin.prd.fin/product_configs/18/edit) (ID 18)",18 + Product_Configs + Bancos,2026-01-14 16:01:57.399,8,1.5813843,0.04110754,-0.08478219
+1768402821.146659,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-14 15:00:21.146,4,0.03200568,-0.37301266,0.095762715
+1768397855.726209,Holi @S095YD2KQ4S me ayudas a reintentar este [payback](http://admin.prd.fin/paybacks?q%5Bregularizations_irregular_statement_transaction_id_eq%5D=1658390) pliss. Fallo en diciembre por restricción de abonos. :dorime:,Que + Me + No,2026-01-14 13:37:35.726,0,-0.22181524,0.028698966,0.3784606
+1768394717.242969,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-14 12:45:17.242,15,0.029602252,-0.5161034,-0.066516966
+1768393823.119189,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-14 12:30:23.119,12,-0.9349955,-0.4704821,0.10213135
+1768393817.461919,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-14 12:30:17.461,5,-0.3949151,-0.35502967,0.41611987
+1768393815.239649,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-14 12:30:15.239,6,-0.4931348,1.0502489,0.5204485
+1768393814.980159,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-14 12:30:14.980,13,-0.11631487,0.030190436,0.15175918
+1768338908.795249,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-13 21:15:08.795,14,-0.7555126,-0.3302428,0.60108334
+1768338311.618349,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-13 21:05:11.618,11,-0.119387284,-0.16949992,0.6980122
+1768325402.406749,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-13 17:30:02.406,9,0.0014214565,0.17256959,0.38579583
+1768318998.633229,@S095YD2KQ4S Me ayudan a ver si nos llegó este [pago](http://admin.prd.fin/payments/pi_38BMDOR5rmTETEQzIimJFv5d6tC) pliss.,Que + Me + No,2026-01-13 15:43:18.633,0,-0.2446017,-0.16654538,0.1537623
+1768316421.589129,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-13 15:00:21.589,4,0.03200568,-0.37301266,0.095762715
+1768315976.336219,"@S095YD2KQ4S Me ayudas a revisar qué ocurrió con la dispersión de los pagos de [geometrias sagradas](http://admin.prd.fin/organizations/org_Bw18kwJFgGlvzNLj), veo que están `Failed`, con el error `063-Servicio no Disponible por IFR` qué es eso?? :dorime:
+Pregunta por estos pagos (no sé si hay más):
+• pi_381usk29zsDIhDLYsB5Yj4qoLtF
+• pi_381NSigIdUJ9GFrjB82zOnAVknS
+• pi_3819dkhlEwW2jPpIoU0wWEZ35Zn",Que + Me + No,2026-01-13 14:52:56.336,0,-0.15262075,0.10729969,0.03254396
+1768315522.802229,holaa @S095YD2KQ4S Me ayudan a ver si nos llegó este [pago](http://admin.prd.fin/payments/pi_389gdvcmTtqSDyo0jf219tNDLxR) pliss. :dorime:,Que + Me + No,2026-01-13 14:45:22.802,0,-0.25018936,-0.074267,0.084629945
+1768312716.820379,"Buenas! Una pregunta, la recipient account de un merch puede ser una cuenta vista de Global66? O debe ser una cuenta corriente sí o sí?",Que + Me + No,2026-01-13 13:58:36.820,0,0.052454665,0.37899047,-0.26176828
+1768308314.611279,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-13 12:45:14.611,15,0.029602252,-0.5161034,-0.066516966
+1768307424.701139,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-13 12:30:24.701,6,-0.4931348,1.0502489,0.5204485
+1768307413.104869,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-13 12:30:13.104,13,-0.11631487,0.030190436,0.15175918
+1768307406.738199,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-13 12:30:06.738,5,-0.3949151,-0.35502967,0.41611987
+1768307403.026679,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-13 12:30:03.026,12,-0.9349955,-0.4704821,0.10213135
+1768287675.166019,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-13 07:01:15.166,1,1.6773914,-0.192771,-0.056803636
+1768284163.371359,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-13 06:02:43.371,1,1.6773914,-0.192771,-0.056803636
+1768280614.488099,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-13 05:03:34.488,1,1.6773914,-0.192771,-0.056803636
+1768277112.597909,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Falabella](http://admin.prd.fin/product_configs/35/edit) (ID 35)",35 + Product_Configs + Falabella,2026-01-13 04:05:12.597,1,1.6773914,-0.192771,-0.056803636
+1768252525.549509,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-12 21:15:25.549,14,-0.7555126,-0.3302428,0.60108334
+1768252183.312449,cc @mateo @pablo.vergara cambié los horarios de los reminders de payouts debido a lo que conversamos con JP [acá](https://fintoc.slack.com/archives/C04H1HJ6TS6/p1768251559618529?thread_ts=1768250748.634529&amp;cid=C04H1HJ6TS6). ¿Lo ven bien o lo encuentran muy tarde?,Que + Me + No,2026-01-12 21:09:43.312,0,-0.2643117,-0.2164558,0.48692414
+1768252095.817329," set up a reminder “@tank-ops-chile Revisar este dashboard (pestaña Daily Tasks) antes de cerrar el día” in this channel at 6:15PM every weekday, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-12 21:08:15.817,18,0.005753006,-0.8907946,-0.1408655
+1768252055.910439," set up a reminder “@tank-ops-chile hacer pago de payouts a merchants y refunds (paso a paso)” in this channel at 6:05PM every weekday, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-12 21:07:35.910,18,0.50806516,-0.77097917,0.2221152
+1768251128.016869,:pepe-alarm: Refund [ref_D0vMnZjHZaMAn2OA](http://admin.prd.fin/refunds/142144) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-12 20:52:08.016,17,0.055947106,0.2622856,0.77199763
+1768251122.316209,:pepe-alarm: Refund [ref_qWVOJAPHkQX4n345](http://admin.prd.fin/refunds/142045) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-12 20:52:02.316,17,0.07294172,0.3493993,0.8057298
+1768250707.285419,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-12 20:45:07.285,14,-0.7555126,-0.3302428,0.60108334
+1768250321.427909,@soledad FYI: Los casos de los contracargos los va a tomar @mateo,Que + El + La,2026-01-12 20:38:41.427,10,-0.36986527,-0.7417175,-0.30889398
+1768249812.919039,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-12 20:30:12.919,11,-0.119387284,-0.16949992,0.6980122
+1768248686.278959,por qué hay tantos contracargos? :melt:,Que + Me + No,2026-01-12 20:11:26.278,0,-0.25402993,-0.5162378,-0.23572259
+1768248232.256989,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/13](http://admin.prd.fin/chargebacks/13)
+    ◦ Fecha del pago: 20/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_375qhDTFSIZ6oJpbxdzqzEWsL3j
+    ◦ Ticket número: 63506382
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 20:03:52.256,7,-0.10251777,-0.017023657,-0.61239004
+1768248063.932039,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/12](http://admin.prd.fin/chargebacks/12)
+    ◦ Fecha del pago: 20/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_3767UIyisRZlXJPZuow9CelH21L
+    ◦ Ticket número: 63506373
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 20:01:03.932,7,-0.11740372,0.03359825,-0.6690387
+1768247766.090389,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/10](http://admin.prd.fin/chargebacks/10)
+    ◦ Fecha del pago: 20/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_376nW9NmZHIhscEvuvOA9QmEVd2
+    ◦ Ticket número: 63506264
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 19:56:06.090,7,-0.09807533,-0.0433113,-0.63157684
+1768247614.935709,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/11](http://admin.prd.fin/chargebacks/11)
+    ◦ Fecha del pago: 20/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_3768csG65NxU1IgsJHVaq9MNArf
+    ◦ Ticket número: 63506266
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 19:53:34.935,7,-0.13665663,0.053304892,-0.66096294
+1768245408.979339,"@S095YD2KQ4S me ayudan habilitando ésta nueva org en la consola de Kushki please? [IvyCorp](http://admin.prd.fin/organizations/org_B7EAkb8FGyGMJYy8) - *MCC: 7399 – Business Services, Not Elsewhere Classified (Servicios comerciales, no clasificados en otra parte).*
+
+Representante Legal: Matias Andres Fontecilla Correa
+RUT Rep Legal: 10.851.289-k
+Fecha Nacimiento: 30 de noviembre 1979
+
+*NEW*",Https + Tab + Google,2026-01-12 19:16:48.979,2,-0.2819543,-0.39020523,-0.7147885
+1768244823.171969,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/9](http://admin.prd.fin/chargebacks/9)
+    ◦ Fecha del pago: 20/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_376Cp8kdi1KrJGWIVVaKylmEihI
+    ◦ Ticket número: 63506263
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 19:07:03.171,7,-0.13612425,0.023294564,-0.6526184
+1768244525.842989,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/7](http://admin.prd.fin/chargebacks/7)
+    ◦ Fecha del pago: 20/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_3769tLSFDZzLFAPugfetY2kz5ZD
+    ◦ Ticket número: 63504992
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 19:02:05.842,7,-0.11370829,0.040961586,-0.6296608
+1768240312.372709,@S095YD2KQ4S me puedes mandar el comprobante de deposito de este [payout](http://admin.prd.fin/payouts/po_1BGgKA2uE0d646Dx) porfa? El merchant lo esta pidiendo,Que + Me + No,2026-01-12 17:51:52.372,0,0.27837604,0.25551006,0.24550235
+1768239006.636219,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-12 17:30:06.636,9,0.0014214565,0.17256959,0.38579583
+1768235120.167919,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/5](http://admin.prd.fin/chargebacks/5)
+    ◦ Fecha del pago: 28/11/2025
+    ◦ Monto: $16.350
+    ◦ ID del pago en Fintoc: pi_368FtiU9TUzeLKb1e0VUZlsbzic
+    ◦ Ticket número: 63504634
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 16:25:20.167,7,-0.13092184,0.04408557,-0.6474433
+1768234909.552449,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/6](http://admin.prd.fin/chargebacks/6)
+    ◦ Fecha del pago: 28/11/2025
+    ◦ Monto: $10.900
+    ◦ ID del pago en Fintoc: pi_368NV66quSS2rfLel6UP1kecTMO
+    ◦ Ticket número: 63504945
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 16:21:49.552,7,-0.13993655,0.03260879,-0.66294193
+1768234724.840539,"@S095YD2KQ4S me ayudas a ver qué pasó con este [pago](http://admin.prd.fin/payment_intents/pi_MBL1zlS3OaLRd8Vj) que fue `failed`, pero al usuario se le descontó la plata y en el comprobante aparece hasta el id del pago. Como fue a la cuenta 744 de BE habrá que esperar a que concilie para que haya un payback?",Que + Me + No,2026-01-12 16:18:44.840,0,0.023739746,0.7356773,0.4670028
+1768234545.690569,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/8](http://admin.prd.fin/chargebacks/8) 
+    ◦ Fecha del pago: 20/12/2025
+    ◦ Monto: $33.900
+    ◦ ID del pago en Fintoc: pi_375rwQSfLfzqRBuhXMRVZnDoxpy
+    ◦ Ticket número: 63504986
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-12 16:15:45.690,7,-0.11179026,0.03344309,-0.6293379
+1768230020.264399,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-12 15:00:20.264,4,0.03200568,-0.37301266,0.095762715
+1768229269.575329,holaa @S095YD2KQ4S Me ayudan a ver si nos llegó este [pago](http://admin.prd.fin/payments/pi_388SfUPmQWBrMnLGQ8znYbpqOBb) pliss.,Que + Me + No,2026-01-12 14:47:49.575,0,-0.2532083,-0.004088642,0.09020112
+1768222810.827909,Reminder: @S095YD2KQ4S hacer movimiento semanal de BICE a Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-BICE-Banco-Security-1e40ff41a1e98063b074f3d24800e7b1)),Sin Clasificar,2026-01-12 13:00:10.827,-1,-0.32765424,0.16809732,0.049250185
+1768221924.828549,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-12 12:45:24.828,15,0.029602252,-0.5161034,-0.066516966
+1768221024.851159,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-12 12:30:24.851,5,-0.3949151,-0.35502967,0.41611987
+1768221020.304069,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-12 12:30:20.304,6,-0.4931348,1.0502489,0.5204485
+1768221013.832509,Reminder: @S095YD2KQ4S Cambiar los miembros de los tags de ops-auth según [este](https://docs.google.com/spreadsheets/d/1UBmOGkcFJms9e2EU8MYbpkIL6OycVTMC/edit?gid=1884171324#gid=1884171324) calendario.,Sin Clasificar,2026-01-12 12:30:13.832,-1,-0.80101705,-0.50718397,-0.004275347
+1768221008.295649,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-12 12:30:08.295,13,-0.11631487,0.030190436,0.15175918
+1768221006.740499,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-12 12:30:06.740,12,-0.9349955,-0.4704821,0.10213135
+1768154540.721939,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BCI](http://admin.prd.fin/product_configs/6/edit) (ID 6)",18 + Product_Configs + Bancos,2026-01-11 18:02:20.721,8,1.5079699,-0.031636223,-0.0674099
+1768104124.519069,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco BCI](http://admin.prd.fin/product_configs/6/edit) (ID 6)",18 + Product_Configs + Bancos,2026-01-11 04:02:04.519,8,1.5079699,-0.031636223,-0.0674099
+1767991509.007639,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-09 20:45:09.007,14,-0.7555126,-0.3302428,0.60108334
+1767990628.720189,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-09 20:30:28.720,11,-0.119387284,-0.16949992,0.6980122
+1767983577.979949,"@S095YD2KQ4S me ayudas anulando este [refund](http://admin.prd.fin/refunds/ref_q0OYzv0H5ANBJEkA), el merchant me pide que por favor lo ayudemos, que fue un refund hecho por error :dorime:",Que + Me + No,2026-01-09 18:32:57.979,0,-0.1947346,0.24466895,0.5408415
+1767979827.690449,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-09 17:30:27.690,9,0.0014214565,0.17256959,0.38579583
+1767974256.013409,"@S095YD2KQ4S hola!!  me ayudas a cancelar *uno* de estos refund pliss, el merchant creó dos por error, pero solo quieren dejar uno activo (Shopify). :dorime: Gracias!
+• [ref_oBK5nrlHBbX8R4Mp](http://admin.prd.fin/refunds/ref_oBK5nrlHBbX8R4Mp)
+• [ref_g0B7zL0H9mMKzaVM](http://admin.prd.fin/refunds/ref_g0B7zL0H9mMKzaVM)",Que + Me + No,2026-01-09 15:57:36.013,0,-0.24208696,0.1028538,0.3866098
+1767970817.294079,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-09 15:00:17.294,4,0.03200568,-0.37301266,0.095762715
+1767962711.251259,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-09 12:45:11.251,15,0.029602252,-0.5161034,-0.066516966
+1767961830.988719,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-09 12:30:30.988,6,-0.4931348,1.0502489,0.5204485
+1767961821.880369,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-09 12:30:21.880,5,-0.3949151,-0.35502967,0.41611987
+1767961810.983669,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-09 12:30:10.983,12,-0.9349955,-0.4704821,0.10213135
+1767961803.528829,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-09 12:30:03.528,13,-0.11631487,0.030190436,0.15175918
+1767905113.877189,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-08 20:45:13.877,14,-0.7555126,-0.3302428,0.60108334
+1767904227.848809,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-08 20:30:27.848,11,-0.119387284,-0.16949992,0.6980122
+1767903909.131949,Reminder: @S095YD2KQ4S Hacer descuento por refunds de BNPL antes de dispersar a los merchants.,Payouts + Merchants + Refunds,2026-01-08 20:25:09.131,11,-0.020566737,0.15797067,0.46147445
+1767903462.792009," set up a reminder “@tank-ops-chile Hacer descuento por refunds de BNPL antes de dispersar a los merchants” in this channel at 5:25PM today, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-08 20:17:42.792,18,0.33117884,-0.65076417,0.049640782
+1767899479.363649,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/4](http://admin.prd.fin/chargebacks/4)
+    ◦ Fecha del pago: 19/12/2025
+    ◦ Monto: $16.950
+    ◦ ID del pago en Fintoc: pi_374DObXcVmW9YXz27cQJUgUG2Nz
+    ◦ Ticket número: 63141902
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-08 19:11:19.363,7,-0.10856723,-0.016238233,-0.6262725
+1767898524.933379,"@S095YD2KQ4S me ayudas ingresando la Información en Kushki del contracargo:
+• [http://admin.prd.fin/chargebacks/3](http://admin.prd.fin/chargebacks/3)
+    ◦ Fecha del pago: 19/12/2025
+    ◦ Monto: $16.950
+    ◦ ID del pago en Fintoc: pi_374G11xr12tVhUaeXoSNZCKM3aJ
+    ◦ Ticket número: 63141195
+:thread: iré dejando la información que nos mandó el merchant en el hilo por item para ir adjuntando la información por separado",De + Del + Vesti,2026-01-08 18:55:24.933,7,-0.14017773,0.012276273,-0.6683731
+1767893408.770839,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-08 17:30:08.770,9,0.0014214565,0.17256959,0.38579583
+1767884421.501539,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-08 15:00:21.501,4,0.03200568,-0.37301266,0.095762715
+1767879367.243139,"Holaa @S095YD2KQ4S Llegó otro caso de TEF programada de MP, fue de ayer, me tinca que mañana podría estar en la cartola histórica a nombre de ""Pago proveedores"". Me ayudan a revisar entre hoy o mañana plisss :dorime: gracias!",Que + Me + No,2026-01-08 13:36:07.243,0,-0.3398757,-0.30203304,0.032134227
+1767878819.817979,":new:  update error Kushki con 3DS
+voy a dejar un resumen, porque ha pasado tiempo y está peluo pillar los hilos.
+• Kushki empezó a aplicar mal las reglas de 3DS a pagos de Paket, Autosafe y Vesti
+• Lo corrigieron para Autosafe y nosotros también hicimos la corrección (porque les cobramos de más)
+• Siguieron los errores con Paket y Vesti hasta el 19 de dic
+• Quedaron en hacer todas las correcciones que correspondan y mandarme un informe con lo ocurrido
+",De + Del + Vesti,2026-01-08 13:26:59.817,7,-0.36744344,-0.12940216,-0.6616007
+1767876313.218059,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-08 12:45:13.218,15,0.029602252,-0.5161034,-0.066516966
+1767875417.518799,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-08 12:30:17.518,5,-0.3949151,-0.35502967,0.41611987
+1767875406.669459,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-08 12:30:06.669,6,-0.4931348,1.0502489,0.5204485
+1767875403.120569,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-08 12:30:03.120,12,-0.9349955,-0.4704821,0.10213135
+1767875402.023579,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-08 12:30:02.023,13,-0.11631487,0.030190436,0.15175918
+1767874819.905249,"Reminder: @S095YD2KQ4S *NO* hacer proceso de refresh de cuentas BICE. Desde hoy día empieza el proceso automático, revisar que funcione bien.",Refresh + Cuentas + Bice,2026-01-08 12:20:19.905,6,-0.37286088,0.9904087,0.36839968
+1767819924.065759,@S095YD2KQ4S me ayudas subiendo a este merchant (Modo Tumbado) a kushki pls. Te dejo los TyC en el :thread:. Y la fecha de nacimiento del representante legal es: 29/07/2004,Https + Tab + Google,2026-01-07 21:05:24.065,2,-0.46605876,-0.32425585,-1.1317323
+1767818702.816409,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-07 20:45:02.816,14,-0.7555126,-0.3302428,0.60108334
+1767817812.732389,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-07 20:30:12.732,11,-0.119387284,-0.16949992,0.6980122
+1767816592.325319,"@S095YD2KQ4S tengo un caso de Shopify, con un refund creado ayer, están complicados por los plazos y me preguntan si ya tienen saldo para hacer la devolución. Revisé y por los cortes de horarios, la devolución no se hará hoy, ya que tienen una venta de hoy post las 14:00 que sumado a una venta de ayer ya tienen saldo, pero el refund saldría mañana y no hoy. Es posible adelantar el Refud? a mi no me lo permite el retool :sad-cat:
+• [http://admin.prd.fin/refunds/ref_mbpWzP1HVZePngN3](http://admin.prd.fin/refunds/ref_mbpWzP1HVZePngN3) ",Que + Me + No,2026-01-07 20:09:52.325,0,-0.15018582,0.34077415,0.45023027
+1767807007.514919,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-07 17:30:07.514,9,0.0014214565,0.17256959,0.38579583
+1767801918.643009,"@tank-ops-chile Hay orgs con Cards activo sin el documento `card_payout_details`:
+
+• MarketMe SpA Chile
+
+Crea el documento en [este formulario](http://admin.prd.fin/documents/new), basándote en [este documento](http://admin.prd.fin/documents/3363/edit) existente.",Documento + Documents + Spa,2026-01-07 16:05:18.643,16,0.59931654,-0.37566188,-0.07105571
+1767800302.307189,:pepe-alarm: Refund [ref_4BOKzBMHOomDRYPG](http://admin.prd.fin/refunds/139295) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-07 15:38:22.307,17,0.07459156,0.36521938,0.74688387
+1767798622.214949,"sobre auth, creo que deberíamos tratar de ""molestar"" lo menos posible a ahinri y la debbie
+como yo tengo los digipass de la debbie, yo te puedo estar haciendo la 2da autorización del banco chile
+lo dejaría así fijo en todos los bancos hasta cuando estemos ok con los nuevos apoderados",Security + Banco + Estado,2026-01-07 15:10:22.214,4,0.13658394,-0.50043154,-0.050766166
+1767798023.786749,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-07 15:00:23.786,4,0.03200568,-0.37301266,0.095762715
+1767794717.741449," set up a reminder “@tank-ops-chile *NO* hacer proceso de refresh de cuentas BICE. Desde hoy día empieza el proceso automático, revisar que funcione bien” in this channel at 9:20AM tomorrow, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-07 14:05:17.741,18,0.19505337,-0.28497747,-0.06831974
+1767789930.575699,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-07 12:45:30.575,15,0.029602252,-0.5161034,-0.066516966
+1767789029.553179,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-07 12:30:29.553,6,-0.4931348,1.0502489,0.5204485
+1767789023.153929,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-07 12:30:23.153,5,-0.3949151,-0.35502967,0.41611987
+1767789015.818679,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-07 12:30:15.818,12,-0.9349955,-0.4704821,0.10213135
+1767789008.544679,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-07 12:30:08.544,13,-0.11631487,0.030190436,0.15175918
+1767732306.229469,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-06 20:45:06.229,14,-0.7555126,-0.3302428,0.60108334
+1767731421.941329,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-06 20:30:21.941,11,-0.119387284,-0.16949992,0.6980122
+1767720680.539819,"@pablo completé el [handoff](https://www.notion.so/fintoc/Handoffs-Tank-26c0ff41a1e980ceb43bc35fcd25ce5b?source=copy_link), lo único importante son un par de mails que no alcancé a contestar",Que + El + La,2026-01-06 17:31:20.539,10,-0.33956182,-0.29036736,-0.022840198
+1767720671.112219,"@S095YD2KQ4S tengo una duda, este [refund](http://admin.prd.fin/refunds/ref_3qVaJ3mHlP6azyWQ) se debió completar ayer, está en `waiting_user_disbursal_result`, pero se creó el 26/12, hoy es su 5to día, en este estado quedará completada cuando se arregle lo de la API, o puede cambiar a failed al ser el 5to día hábil??? :calculate:",Amp + Paysheets + 5D,2026-01-06 17:31:11.112,5,-0.525547,-0.0058947993,0.17271325
+1767720612.901259,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-06 17:30:12.901,9,0.0014214565,0.17256959,0.38579583
+1767712682.452679,"@S095YD2KQ4S me ayudas con estos dos refunds de BNPL de Ticketplus porfa? Nos estamos demorando 1 dia habil en hacerlo?
+• [http://admin.prd.fin/payments/97591168](http://admin.prd.fin/payments/97591168)
+• [http://admin.prd.fin/payments/105849468](http://admin.prd.fin/payments/105849468)",Que + Me + No,2026-01-06 15:18:02.452,0,-0.05316401,0.1890853,0.37600046
+1767712210.068709,@S095YD2KQ4S me ayudas habilitando esta nueva [org](https://app.hubspot.com/contacts/22188948/record/0-3/52218454649) en la consola de Kushki? en el :thread: dejo los datos. Gracias!,Https + Tab + Google,2026-01-06 15:10:10.068,2,-0.7512937,0.09882686,-0.88551784
+1767711626.655239,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-06 15:00:26.655,4,0.03200568,-0.37301266,0.095762715
+1767704461.503869,"@S095YD2KQ4S hola! me ayudas con este [payback](http://admin.prd.fin/paybacks?q%5Bregularizations_irregular_statement_transaction_id_eq%5D=1660787) plisss, está desde ayer en `Waiting Disbursal Result`. gracias!!",Que + Me + No,2026-01-06 13:01:01.503,0,-0.12968273,0.13583757,0.42467302
+1767703514.836139,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-06 12:45:14.836,15,0.029602252,-0.5161034,-0.066516966
+1767702630.852059,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-06 12:30:30.852,6,-0.4931348,1.0502489,0.5204485
+1767702622.469219,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-06 12:30:22.469,13,-0.11631487,0.030190436,0.15175918
+1767702618.674909,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-06 12:30:18.674,12,-0.9349955,-0.4704821,0.10213135
+1767702608.296719,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-06 12:30:08.296,5,-0.3949151,-0.35502967,0.41611987
+1767700759.479599,"@S095YD2KQ4S no se hicieron algunos refund, me ayudas a revisar plisss
+• [ref_m27bJ29HYOQLnAkB](http://admin.prd.fin/refunds/ref_m27bJ29HYOQLnAkB)
+• [ref_p9LwzDaH8woen0b4](http://admin.prd.fin/refunds/ref_p9LwzDaH8woen0b4)
+• [ref_m985nYQHA03xnqaM](http://admin.prd.fin/refunds/ref_m985nYQHA03xnqaM)",Que + Me + No,2026-01-06 11:59:19.479,0,-0.40345144,0.21189438,0.6393124
+1767671840.777489,:pepe-alarm: Refund [ref_86WxzGpHqemjnyja](http://admin.prd.fin/refunds/137585) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-06 03:57:20.777,17,0.05200044,0.28724676,0.7770786
+1767671834.693979,:pepe-alarm: Refund [ref_3qVaJ3mHlGYEzyWQ](http://admin.prd.fin/refunds/138068) has failed disbursal and needs retry,Alarm + Refund + Needs,2026-01-06 03:57:14.693,17,0.019025842,0.30515808,0.76643676
+1767645927.683849,Reminder: @S095YD2KQ4S Revisar [este](https://fintoc.retool.com/apps/96f7bd9e-76c0-11f0-804e-87bc9964caf6/Ops%20Collection/Ops%20Collection%20Tools/page1) dashboard (pestaña Daily Tasks) antes de cerrar el día.,20Collection + Ops + Pestaña,2026-01-05 20:45:27.683,14,-0.7555126,-0.3302428,0.60108334
+1767645871.862349,"@S095YD2KQ4S Una duda! estamos disponibles con TEF directa en OtrosPagos? un usuario me dice que quiere pagar un arriendo con su cuenta empresa, y no le da la opción :eyes: Me ayudan a revisar plisss :dorime:",Que + Me + No,2026-01-05 20:44:31.862,0,0.3058835,-0.01071602,-0.17991364
+1767645027.212629,Reminder: @S095YD2KQ4S hacer pago de payouts a merchants y refunds ([paso a paso](https://www.notion.so/Dispersi-n-de-payouts-a-merchants-12e0ff41a1e98011ae70f1eb7033ae25?pvs=24#12e0ff41a1e980e792fbde1905fac6fc)),Payouts + Merchants + Refunds,2026-01-05 20:30:27.212,11,-0.119387284,-0.16949992,0.6980122
+1767639064.072529,"@S095YD2KQ4S mini handoff ya que estuve de tank el viernes:
+• hay un correo de servipag con un caso del sernac el viernes que hay que resolver (asunto: CASO SERNAC 513169)
+• tank colleciton levantó que saltaron [25 FP](https://fintoc.slack.com/archives/C073DM81CMC/p1767359097518499) en la conciliación el viernes. dado que son hartos, escribiría al security para que nos confirmen que pasó",Que + El + La,2026-01-05 18:51:04.072,10,-0.33448082,-0.45305392,-0.14016946
+1767637268.704659,@soledad @cristobal.pinto De casualidad ustedes están adelantando varios refunds ahora?,Que + Me + No,2026-01-05 18:21:08.704,0,-0.26972744,-0.1789266,0.35310575
+1767635516.975299,"@S095YD2KQ4S Me ayudas con este [Unknown](http://admin.prd.fin/payment_intents/pi_E2xABaSolVoDd8Gk) pliss, el merchant consulta el estado final de este pago, para ver si le entrega o no el servicio a su cliente plisss :pepe-praying:",Que + Me + No,2026-01-05 17:51:56.975,0,0.054270063,-0.057039298,0.21202272
+1767634201.547339,"Reminder: @S095YD2KQ4S descargar [nómina de cargos](http://admin.prd.fin/charge_batches), subirla al [banco](https://login.portalempresas.bancochile.cl/bancochile-web/empresa/login/index.html#/login) y cambiar el estado del batch a waiting_paysheet_result ([paso a paso)](https://www.notion.so/fintoc/Subir-n-mina-de-cargos-9b9f67db366c4b649af85b3cb595c43a?source=copy_link)",Login + Cargos + Bancochile,2026-01-05 17:30:01.547,9,0.0014214565,0.17256959,0.38579583
+1767630245.901179,@S095YD2KQ4S me ayudas a corroborar [estos unknowns](http://admin.prd.fin/payment_intents?subdomain=admin&amp;order=id_desc&amp;q%5Bbank_account_holder_id_eq%5D=208015796&amp;q%5Bamount_cents_eq%5D=149940&amp;commit=Filtrar) para que Recorrido inicie las devoluciones:dorime:,Que + Me + No,2026-01-05 16:24:05.901,0,0.15088579,0.41979927,0.28640997
+1767625222.568709,Reminder: @S095YD2KQ4S mover plata de Banco Estado al Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-Estado-Banco-Security-12e0ff41a1e9807f8dc1f11009203836)),Security + Banco + Estado,2026-01-05 15:00:22.568,4,0.03200568,-0.37301266,0.095762715
+1767622857.747239," set up a reminder “@tank-ops-chile Reminder para que no se nos olvide hacer el traspaso de :banco-estado: -> :banco-security: ” in this channel at 3:30PM today, Chile Summer Time.",Bancoestado + Chile + Ops,2026-01-05 14:20:57.747,18,0.47646484,-0.6814337,-0.06955532
+1767622419.795749,"@S095YD2KQ4S me ayudas revisando por que no se ha echo este [refund](http://admin.prd.fin/refunds/ref_3qVaJ3mHl9xNzyWQ)
+Y duda: si necesito ayuda de tank ops lo pongo por acá o por tank general?",Amp + Paysheets + 5D,2026-01-05 14:13:39.795,5,-0.35041314,-0.4016288,-0.05733418
+1767618013.159109,Reminder: @S095YD2KQ4S hacer movimiento semanal de BICE a Security ([paso a paso](https://www.notion.so/fintoc/Subir-n-minas-Banco-BICE-Banco-Security-1e40ff41a1e98063b074f3d24800e7b1)),Sin Clasificar,2026-01-05 13:00:13.159,-1,-0.32765424,0.16809732,0.049250185
+1767617110.089149,"Reminder: @S095YD2KQ4S sube el [universo](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/universo) a [upload_contracts](http://admin.prd.fin/contracts/upload_contracts_snapshot_form), después la [rendición](https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/index.html#/portal/recaudacion-pac/nominasProcesadas) a [charge_batches](http://admin.prd.fin/charge_batches) y descarga los paysheets del [payout batch](http://admin.prd.fin/payout_batches?q%5Bproduct_id_eq%5D=8&amp;commit=Filtrar&amp;subdomain=admin&amp;order=id_desc) en :banco-chile: ([paso a paso](https://www.notion.so/fintoc/Actualizaci-n-de-Universo-de-Contratos-9bd924a99fd24fb08cb4d1cd7abe3d30?source=copy_link))",Universo + Front + Pac,2026-01-05 12:45:10.089,15,0.029602252,-0.5161034,-0.066516966
+1767616229.883469,Reminder: @S095YD2KQ4S Cambiar los miembros de los tags de ops-auth según [este](https://docs.google.com/spreadsheets/d/1UBmOGkcFJms9e2EU8MYbpkIL6OycVTMC/edit?gid=1884171324#gid=1884171324) calendario.,Sin Clasificar,2026-01-05 12:30:29.883,-1,-0.80101705,-0.50718397,-0.004275347
+1767616228.602049,Reminder: @S095YD2KQ4S hacer proceso de [refresh de cuentas BICE](https://www.notion.so/fintoc/Refresh-cuentas-BICE-1e40ff41a1e9809c9323cbb614036b37),Refresh + Cuentas + Bice,2026-01-05 12:30:28.602,6,-0.4931348,1.0502489,0.5204485
+1767616224.864279,Reminder: @S08KGHVFHUN Hacer cierre contable de cuentas recaudadoras. [Acá](https://www.notion.so/fintoc/Cierres-contables-v-a-Ledger-2880ff41a1e98032876af54dac9a307f?source=copy_link) la guía.,Cierres + Cierre + Contables,2026-01-05 12:30:24.864,13,-0.11631487,0.030190436,0.15175918
+1767616214.765809,Reminder: @S095YD2KQ4S Revisar [acá](http://admin.prd.fin/batch_paysheets?subdomain=admin&amp;order=id_desc&amp;q%5Bstatus_eq%5D=7&amp;q%5Bcreated_at_gteq%5D=2025-07-01&amp;commit=Filtrar) si hay paysheets pegadas en estado `stuck`. En [este](https://www.notion.so/fintoc/Flujo-para-destrabar-Paysheets-2450ff41a1e98090b777ee3efb4469d2?source=copy_link) manual se explica cómo procesar esas nóminas.,Amp + Paysheets + 5D,2026-01-05 12:30:14.765,5,-0.3949151,-0.35502967,0.41611987
+1767616201.982129,Reminder: @S095YD2KQ4S hacer proceso de [nómina Unired](https://www.notion.so/fintoc/Subir-n-mina-Unired-30a1189fbcb34c2b9d988d3c5347e998),Unired + 30A1189Fbcb34C2B9D988D3C5347E998 + Mina,2026-01-05 12:30:01.982,12,-0.9349955,-0.4704821,0.10213135
+1767614401.223899,:pepe-alarm: Refund [ref_130qJp5HExVbRyKZ](http://admin.prd.fin/refunds/133833)'s refund adjustment is stuck!,Alarm + Refund + Needs,2026-01-05 12:00:01.223,17,0.060593978,0.21419626,0.8522505
+1767614401.095079,"wena @mateo, hay que arreglar [esto](https://fintoc.slack.com/archives/C07887PF18F/p1767391182322839) de la app de retool
+si te fijas, el incidente se creó por el widget solamente pero el template lo solucionó por las 3 cosas
+hay que tener templates distintos dependiendo de que incidentes se declararon",Que + El + La,2026-01-05 12:00:01.095,10,-0.6353751,-0.37450513,-0.08453865
+1767614400.309339,:pepe-alarm: Refund [ref_OEKezbKHlx2LnYpm](http://admin.prd.fin/refunds/134265)'s refund adjustment is stuck!,Alarm + Refund + Needs,2026-01-05 12:00:00.309,17,0.05367938,0.25037098,0.8178445
+1767614400.307909,:pepe-alarm: Refund [ref_9Yl0nOBHrYmZzxmj](http://admin.prd.fin/refunds/134119)'s refund adjustment is stuck!,Alarm + Refund + Needs,2026-01-05 12:00:00.307,17,0.04238099,0.2337673,0.83851
+1767560637.763759,"@tank-ops-chile estos bancos tienen availability_percentage != 100 (payments - individual - CL):
+1. [Banco Estado](http://admin.prd.fin/product_configs/1/edit) (ID 1)",18 + Product_Configs + Bancos,2026-01-04 21:03:57.763,8,1.6243883,-0.19282988,-0.03788916

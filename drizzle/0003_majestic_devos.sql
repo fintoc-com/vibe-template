@@ -1,0 +1,2 @@
+ALTER TABLE "slack_messages" ADD COLUMN "parent_message_id" text;--> statement-breakpoint
+ALTER TABLE "slack_messages" ADD CONSTRAINT "slack_messages_parent_message_id_slack_messages_id_fk" FOREIGN KEY ("parent_message_id") REFERENCES "public"."slack_messages"("id") ON DELETE no action ON UPDATE no action;
