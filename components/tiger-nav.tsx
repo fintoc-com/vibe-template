@@ -31,7 +31,7 @@ export function TigerNav() {
         <div className="flex items-center gap-8">
           <Link href="/tiger" className="flex items-center gap-3 py-4">
             <Image
-              src="/assets/panzer.png"
+              src="/assets/panzer_cropped.png"
               alt="Panzer"
               width={40}
               height={40}
