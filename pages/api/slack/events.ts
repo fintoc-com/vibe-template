@@ -258,6 +258,47 @@ Responde SOLO con el JSON, sin explicaciones.`,
     return;
   }
 
+  // Handle regular message events (automatic ingestion)
+  const isChannelMessage = req.body.type === 'event_callback' && req.body.event.type === 'message';
+
+  if (isChannelMessage) {
+    const event = req.body.event;
+
+    // Only process messages from our configured channel
+    if (event.channel !== env.SLACK_CHANNEL_ID) {
+      return res.status(200).json({ ok: true });
+    }
+
+    try {
+      // Store message in database
+      const response = await fetch(`${env.BETTER_AUTH_URL}/api/slack/ingest`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-internal-request': 'true',
+        },
+        body: JSON.stringify({
+          messageId: event.ts,
+          userId: event.user,
+          text: event.text,
+          channelId: event.channel,
+          threadTs: event.thread_ts,
+          timestamp: event.ts,
+        }),
+      });
+
+      if (!response.ok) {
+        console.error('Failed to ingest message:', await response.text());
+      } else {
+        console.log('✓ Message ingested:', event.ts);
+      }
+    } catch (error) {
+      console.error('Error ingesting message:', error);
+    }
+
+    return res.status(200).json({ ok: true });
+  }
+
   // Unknown event type
   return res.status(200).json({ ok: true });
 }

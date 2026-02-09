@@ -250,13 +250,14 @@ BETTER_AUTH_URL         # URL base de la app
 
 ## 🔄 Flujos de Trabajo
 
-### Flujo 1: Clasificación Automática de Mensajes
+### Flujo 1: Ingestion Automática en Tiempo Real
 
 ```
-1. Slack envía evento nuevo mensaje → /api/slack/events
-2. Sistema guarda mensaje en DB como "Sin Clasificar"
-3. Background job clasifica con Claude (opcional)
-4. Dashboard muestra mensaje clasificado
+1. Nuevo mensaje en canal de Slack
+2. Slack envía evento → /api/slack/events
+3. Sistema guarda mensaje inmediatamente en DB como "Sin Clasificar"
+4. Mensaje aparece automáticamente en el dashboard
+5. Clasificación con Claude se hace bajo demanda (batch)
 ```
 
 ### Flujo 2: Generación de Runbook desde Slack
@@ -284,118 +285,6 @@ BETTER_AUTH_URL         # URL base de la app
 
 ---
 
-## 🚀 Deployment y Configuración
-
-### Desarrollo Local
-
-```bash
-# 1. Instalar dependencias
-bun install
-
-# 2. Levantar PostgreSQL
-docker compose up
-
-# 3. Correr migraciones
-bun run db:migrate
-
-# 4. Seed de arquetipos
-bun run scripts/seed-archetypes-production.ts
-
-# 5. Iniciar dev server
-bun run dev
-```
-
-### Producción (Vercel)
-
-**Pre-requisitos**:
-1. Proyecto Vercel conectado a GitHub
-2. PostgreSQL en Supabase
-3. Todas las env vars configuradas en Vercel
-4. Slack App configurada con webhook URL de producción
-
-**Webhook URL**: `https://your-domain.vercel.app/api/slack/events`
-
----
-
-## 📈 Métricas y Monitoreo
-
-### Datos Actuales
-
-- **Mensajes Clasificados**: 1,317 mensajes principales
-- **Arquetipos Descubiertos**: 15 arquetipos activos
-- **Runbooks Generados**: ~5-10 por semana (estimado)
-- **Usuarios del Dashboard**: Team de Ops (~5-8 personas)
-
-### Logs y Debugging
-
-- Logs de Slack webhook en `/api/slack/events`
-- Logs de generación de runbooks en `/api/runbooks/generate-internal`
-- Vercel logs en dashboard de Vercel
-- PostgreSQL logs en Supabase
-
----
-
-## 🔧 Scripts de Mantenimiento
-
-### Clasificación Batch de Mensajes
-
-```bash
-bun run scripts/classify_all_messages.py
-```
-
-**Qué hace**: Re-clasifica TODOS los mensajes usando Claude y arquetipos actuales
-**Cuándo usar**: Después de modificar arquetipos o agregar nuevos
-**Costo**: ~$1-3 por ejecución completa
-
-### Verificación Pre-Deploy
-
-```bash
-bun run scripts/verify-deploy-ready.ts
-```
-
-**Qué hace**: Verifica que todo esté listo para production:
-- Conexión a DB
-- Arquetipos cargados (espera 15)
-- Variables de entorno configuradas
-- Archivos de configuración presentes
-
----
-
-## 🤝 Equipo y Responsables
-
-**Desarrollador Principal**: Raimundo Sandoval (@raimundo.sandoval)
-**Product Owner**: TBD
-**Usuarios**: Equipo de Operaciones de Fintoc
-
----
-
-## 📝 Convenciones de Código
-
-### Git Commits
-
-```
-feat: descripción del feature
-fix: descripción del fix
-refactor: descripción del refactor
-docs: actualización de documentación
-chore: tareas de mantenimiento
-```
-
-### Branch Strategy
-
-- `main`: Rama de producción (protegida)
-- `feat/*`: Features nuevos
-- `fix/*`: Bug fixes
-- `refactor/*`: Refactorings
-
-**Protecciones de `main`**:
-- Requiere Pull Request
-- Requiere 1 aprobación de Code Owner
-- Requiere review de Code Owners
-- No permite bypass (ni admin)
-
----
-
 ## ⚠️ Riesgos y Limitaciones
 
 ### Riesgos
@@ -415,9 +304,8 @@ chore: tareas de mantenimiento
 ### Limitaciones
 
 - Solo monitorea 1 canal de Slack (configurable)
-- Clasificación no es en tiempo real (es bajo demanda)
+- Clasificación de arquetipos es bajo demanda (batch processing)
 - Runbooks requieren intervención humana para generarse
-- No tiene búsqueda full-text de runbooks (futuro)
 
 ---
 
@@ -425,41 +313,8 @@ chore: tareas de mantenimiento
 
 ### En Desarrollo
 
-- [ ] Función "leer" del bot (buscar docs existentes)
-- [ ] Búsqueda full-text de runbooks
-- [ ] Export de runbooks a Notion/Confluence
-- [ ] Dashboard de métricas de arquetipos en el tiempo
-
-### Ideas Futuras
-
-- [ ] Multi-canal (monitorear múltiples canales)
-- [ ] Alertas automáticas de arquetipos críticos
-- [ ] Integración con sistema de tickets
-- [ ] ML para detección de urgencia de mensajes
-
----
-
-## 📞 Contacto y Soporte
-
-**Repositorio**: https://github.com/fintoc-com/vibe-template
-**Branch Actual**: `feat/tiger-slack-integration`
-**Documentación Adicional**:
-- `DEPLOY_CHECKLIST.md` - Checklist completo de deployment
-- `GITHUB_BRANCH_PROTECTION.md` - Guía de protecciones de GitHub
-- `AGENTS.md` - Documentación del stack técnico
-
-**Para Preguntas**:
-- Development Advocate: [email/slack]
-- Safety Team: [email/slack]
-- Ops Team: [canal de Slack]
-
----
-
-## ✅ Certificación de Seguridad
-
-**Revisado por**: [Pendiente]
-**Fecha**: [Pendiente]
-**Aprobado para Producción**: [Pendiente]
+- [ ] Función "leer" del bot (buscar docs existentes y responder en el canal)
+- [ ] Export de runbooks a Notion
 
 ---
 
