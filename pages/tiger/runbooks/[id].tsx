@@ -102,7 +102,7 @@ export default function RunbookPage(
 
         {/* Content */}
         <div className="bg-card rounded-lg border p-8">
-          <div className="prose prose-zinc dark:prose-invert max-w-none">
+          <div className="prose prose-zinc dark:prose-invert max-w-none prose-p:leading-relaxed prose-p:mb-4 prose-headings:mt-8 prose-headings:mb-4 prose-li:my-1">
             <ReactMarkdown>{runbook.content}</ReactMarkdown>
           </div>
         </div>

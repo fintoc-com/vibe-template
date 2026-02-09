@@ -51,6 +51,39 @@ export default protectedHandler(async (req: NextApiRequest, res: NextApiResponse
     )
     .orderBy(slackMessages.datetime);
 
+  // Helper to normalize type values
+  const normalizeType = (type: string): 'reminder' | 'bot' | 'user' => {
+    if (type === 'reminder') return 'reminder';
+    if (type === 'bot') return 'bot';
+    // Map 'message' and any other unknown types to 'user'
+    return 'user';
+  };
+
+  // Helper to normalize role values
+  const normalizeRole = (role: string): 'support' | 'kam' | 'merchant' | 'bot' | 'unknown' => {
+    const normalized = role.toLowerCase();
+    if (normalized === 'support') return 'support';
+    if (normalized === 'kam') return 'kam';
+    if (normalized === 'merchant') return 'merchant';
+    if (normalized === 'bot') return 'bot';
+    // Map 'User' and any unknown values to 'unknown'
+    return 'unknown';
+  };
+
+  // Helper to normalize confidence values
+  const normalizeConfidence = (confidence: string): 'high' | 'medium' | 'low' => {
+    // Map classification methods to confidence levels
+    if (confidence === 'claude_exhaustive') return 'high';
+    if (confidence === 'bertopic') return 'medium';
+    if (confidence === 'backfill') return 'low';
+    // Use existing values if already in correct format
+    if (confidence === 'high') return 'high';
+    if (confidence === 'medium') return 'medium';
+    if (confidence === 'low') return 'low';
+    // Default to medium for unknown values
+    return 'medium';
+  };
+
   // Transform to match the expected format
   const messages = dbMessages.map(({ message, user }) => ({
     id: message.id,
@@ -64,9 +97,9 @@ export default protectedHandler(async (req: NextApiRequest, res: NextApiResponse
     },
     timestamp: message.timestamp,
     datetime: message.datetime.toISOString(),
-    type: message.type,
+    type: normalizeType(message.type),
     category: {
-      role: message.categoryRole,
+      role: normalizeRole(message.categoryRole),
       group: message.categoryGroup,
     },
     topic: {
@@ -76,7 +109,7 @@ export default protectedHandler(async (req: NextApiRequest, res: NextApiResponse
     summary: message.summary,
     archetype: {
       archetype: message.archetype,
-      confidence: message.archetypeConfidence,
+      confidence: normalizeConfidence(message.archetypeConfidence),
     },
     subtype: message.subtype,
     isIgnored: message.isIgnored,

@@ -141,10 +141,11 @@ output = {
     'observations': analysis['observaciones']
 }
 
-with open('claude_archetype_suggestions.json', 'w', encoding='utf-8') as f:
+output_path = os.path.join(os.path.dirname(__file__), 'claude_archetype_suggestions.json')
+with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
-print('\n✓ Análisis exportado a: claude_archetype_suggestions.json')
+print(f'\n✓ Análisis exportado a: {output_path}')
 
 # Evaluar arquetipos actuales
 print('\n' + '='*80)

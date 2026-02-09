@@ -5,7 +5,7 @@ import type { InferGetServerSidePropsType } from 'next';
 import { useQuery } from '@tanstack/react-query';
 import * as z from 'zod';
 import { RefreshCw, Hash, TrendingUp, Calendar, BarChart3, Moon, Sun, ChevronDown, ChevronUp, Download, Edit as EditIcon, Settings, EyeOff } from 'lucide-react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { requireAuth, serializeUser } from '~/lib/ssr/require-auth';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
@@ -73,10 +73,21 @@ const CHART_COLORS = [
   '#84cc16', // lime
 ];
 
+// Archetipos especiales que no deben mostrarse en gráficos ni listas
+const EXCLUDED_ARCHETYPES = new Set([
+  'Recordatorio Automático',
+  'Sin Clasificar',
+  'RoboCop',
+  'Reminder (Automático)',
+  'RoboCops (Bot)',
+  'Sin Asignar',
+]);
+
 export default function TigerPage({ user }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const [channelId, setChannelId] = useState('');
   const [selectedArchetype, setSelectedArchetype] = useState<{ name: string, messages: Message[] } | null>(null);
   const [chartDays, setChartDays] = useState(30);
+  const [chartType, setChartType] = useState<'area' | 'stacked' | 'stacked100'>('area');
   const [isChartOpen, setIsChartOpen] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [hiddenArchetypes, setHiddenArchetypes] = useState<Set<string>>(new Set());
@@ -89,6 +100,11 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
   const [keywords, setKeywords] = useState('');
   const [addToManual, setAddToManual] = useState(false);
   const [isCorrectingArchetype, setIsCorrectingArchetype] = useState(false);
+
+  // Bulk selection state
+  const [selectedMessages, setSelectedMessages] = useState<Set<string>>(new Set());
+  const [targetArchetype, setTargetArchetype] = useState('');
+  const [isMovingBulk, setIsMovingBulk] = useState(false);
 
   // Apply dark mode class when state changes
   useEffect(() => {
@@ -202,6 +218,56 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
     }
   };
 
+  // Bulk move messages to another archetype
+  const bulkMoveMessages = async () => {
+    if (selectedMessages.size === 0) {
+      alert('Selecciona al menos un mensaje');
+      return;
+    }
+
+    if (!targetArchetype) {
+      alert('Selecciona un arquetipo destino');
+      return;
+    }
+
+    if (!confirm(`¿Mover ${selectedMessages.size} mensajes a "${targetArchetype}"?`)) {
+      return;
+    }
+
+    setIsMovingBulk(true);
+    try {
+      const response = await fetch('/api/messages/bulk-update', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          messageIds: Array.from(selectedMessages),
+          archetype: targetArchetype,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to move messages');
+      }
+
+      // Refetch messages to show updated archetypes
+      await refetch();
+
+      // Reset selection
+      setSelectedMessages(new Set());
+      setTargetArchetype('');
+      setSelectedArchetype(null);
+
+      alert(`${selectedMessages.size} mensajes movidos exitosamente`);
+    } catch (error) {
+      console.error('Bulk move error:', error);
+      alert('Error al mover mensajes');
+    } finally {
+      setIsMovingBulk(false);
+    }
+  };
+
   // Ignore message
   const ignoreMessage = async (messageId: string) => {
     if (!confirm('¿Estás seguro de ignorar este mensaje? No aparecerá en ninguna vista del dashboard.')) {
@@ -254,10 +320,21 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
   const archetypeGroups = useMemo(() => {
     if (!data?.messages) return new Map();
 
+    // Calculate cutoff date based on chartDays filter
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - chartDays);
+
     const groups = new Map<string, Message[]>();
 
     for (const msg of data.messages) {
+      // Filter by date range (same as chart)
+      if (msg.datetime && new Date(msg.datetime) < cutoffDate) continue;
+
       const archetype = msg.archetype.archetype;
+
+      // Skip excluded archetypes
+      if (EXCLUDED_ARCHETYPES.has(archetype)) continue;
+
       if (!groups.has(archetype)) {
         groups.set(archetype, []);
       }
@@ -269,7 +346,7 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
       Array.from(groups.entries())
         .sort(([, a], [, b]) => b.length - a.length),
     );
-  }, [data]);
+  }, [data, chartDays]);
 
   // Process data for chart - group by date and archetype
   const chartData = useMemo(() => {
@@ -304,17 +381,19 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
       archetypeCounts.set(archetype, (archetypeCounts.get(archetype) || 0) + 1);
     }
 
-    // Get top 10 archetypes by total count
+    // Get top 10 archetypes by total count (excluding special archetypes)
     const archetypeTotals = new Map<string, number>();
     for (const archetypeCounts of dateGroups.values()) {
       for (const [archetype, count] of archetypeCounts.entries()) {
+        // Skip excluded archetypes
+        if (EXCLUDED_ARCHETYPES.has(archetype)) continue;
         archetypeTotals.set(archetype, (archetypeTotals.get(archetype) || 0) + count);
       }
     }
 
     const topArchetypes = Array.from(archetypeTotals.entries())
       .sort(([, a], [, b]) => b - a)
-      .slice(0, 10) // Show top 10 archetypes instead of 5
+      .slice(0, 10) // Show top 10 archetypes
       .map(([archetype]) => archetype);
 
     // Convert to chart format
@@ -328,6 +407,31 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
       })
       .slice(-chartDays); // Limit to chartDays data points
   }, [data, chartDays]);
+
+  // Transform data to percentages for stacked100 chart
+  const chartDataTransformed = useMemo(() => {
+    if (chartType !== 'stacked100') return chartData;
+
+    return chartData.map((dataPoint) => {
+      const transformed: Record<string, string | number> = { date: dataPoint.date };
+
+      // Calculate total for this date
+      const total = Object.keys(dataPoint)
+        .filter((key) => key !== 'date')
+        .reduce((sum, key) => sum + (dataPoint[key] as number), 0);
+
+      // Convert to percentages
+      if (total > 0) {
+        Object.keys(dataPoint)
+          .filter((key) => key !== 'date')
+          .forEach((key) => {
+            transformed[key] = ((dataPoint[key] as number) / total) * 100;
+          });
+      }
+
+      return transformed;
+    });
+  }, [chartData, chartType]);
 
   const formatDate = (datetime: string | null) => {
     if (!datetime) return '';
@@ -551,25 +655,58 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
                   {isChartOpen ? <ChevronUp className="h-5 w-5 text-gray-400" /> : <ChevronDown className="h-5 w-5 text-gray-400" />}
                 </div>
                 {isChartOpen && (
-                  <div className="flex gap-2" onClick={(e) => e.stopPropagation()}>
-                    {[7, 14, 30, 60, 90].map((days) => (
+                  <div className="flex gap-4" onClick={(e) => e.stopPropagation()}>
+                    {/* Chart type selector */}
+                    <div className="flex gap-1 border border-zinc-200 dark:border-zinc-700 rounded-sm">
                       <Button
-                        key={days}
-                        variant={chartDays === days ? 'default' : 'outline'}
+                        variant={chartType === 'area' ? 'default' : 'ghost'}
                         size="sm"
-                        onClick={() => setChartDays(days)}
-                        className="rounded-sm h-7 text-xs"
+                        onClick={() => setChartType('area')}
+                        className="rounded-none rounded-l-sm h-7 text-xs px-2"
+                        title="Área"
                       >
-                        {days}
-                        d
+                        Área
                       </Button>
-                    ))}
+                      <Button
+                        variant={chartType === 'stacked' ? 'default' : 'ghost'}
+                        size="sm"
+                        onClick={() => setChartType('stacked')}
+                        className="rounded-none h-7 text-xs px-2"
+                        title="Barras apiladas"
+                      >
+                        Barras
+                      </Button>
+                      <Button
+                        variant={chartType === 'stacked100' ? 'default' : 'ghost'}
+                        size="sm"
+                        onClick={() => setChartType('stacked100')}
+                        className="rounded-none rounded-r-sm h-7 text-xs px-2"
+                        title="Barras 100%"
+                      >
+                        100%
+                      </Button>
+                    </div>
+                    {/* Days selector */}
+                    <div className="flex gap-2">
+                      {[7, 14, 30, 60, 90].map((days) => (
+                        <Button
+                          key={days}
+                          variant={chartDays === days ? 'default' : 'outline'}
+                          size="sm"
+                          onClick={() => setChartDays(days)}
+                          className="rounded-sm h-7 text-xs"
+                        >
+                          {days}
+                          d
+                        </Button>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
-              {isChartOpen && chartData.length > 0 && (
+              {isChartOpen && chartDataTransformed.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-2" onClick={(e) => e.stopPropagation()}>
-                  {Object.keys(chartData[0])
+                  {Object.keys(chartDataTransformed[0])
                     .filter((key) => key !== 'date')
                     .map((archetype, index) => {
                       const color = CHART_COLORS[index % CHART_COLORS.length];
@@ -596,61 +733,121 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
             </CardHeader>
             {isChartOpen && (
               <CardContent className="pt-0">
-                <div className="h-[350px] w-full">
+                <div className="h-[450px] w-full">
                   <ResponsiveContainer width="100%" height="100%">
-                    <AreaChart data={chartData}>
-                      <defs>
-                        {chartData.length > 0 && Object.keys(chartData[0])
-                          .filter((key) => key !== 'date')
-                          .map((archetype, index) => {
-                            const color = CHART_COLORS[index % CHART_COLORS.length];
+                    {chartType === 'area' ? (
+                      <AreaChart data={chartDataTransformed}>
+                        <defs>
+                          {chartDataTransformed.length > 0 && Object.keys(chartDataTransformed[0])
+                            .filter((key) => key !== 'date')
+                            .map((archetype, index) => {
+                              const color = CHART_COLORS[index % CHART_COLORS.length];
+                              return (
+                                <linearGradient key={`gradient-${archetype}`} id={`color-${index}`} x1="0" y1="0" x2="0" y2="1">
+                                  <stop offset="5%" stopColor={color} stopOpacity={0.3} />
+                                  <stop offset="95%" stopColor={color} stopOpacity={0.05} />
+                                </linearGradient>
+                              );
+                            })}
+                        </defs>
+                        <CartesianGrid strokeDasharray="3 3" className="stroke-zinc-200 dark:stroke-zinc-800" />
+                        <XAxis
+                          dataKey="date"
+                          className="text-xs text-zinc-600 dark:text-zinc-400"
+                          tick={{ fill: 'currentColor' }}
+                        />
+                        <YAxis
+                          className="text-xs text-zinc-600 dark:text-zinc-400"
+                          tick={{ fill: 'currentColor' }}
+                        />
+                        <Tooltip
+                          contentStyle={{
+                            backgroundColor: 'var(--background)',
+                            border: '1px solid var(--border)',
+                            borderRadius: '0.25rem',
+                          }}
+                        />
+                        <Legend
+                          wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }}
+                          iconType="circle"
+                          formatter={(value: string) => {
+                            if (value.length > 40) {
+                              return value.substring(0, 37) + '...';
+                            }
+                            return value;
+                          }}
+                        />
+                        {chartDataTransformed.length > 0 && Object.keys(chartDataTransformed[0])
+                          .filter((key) => key !== 'date' && !hiddenArchetypes.has(key))
+                          .map((archetype) => {
+                            const originalIndex = Object.keys(chartDataTransformed[0])
+                              .filter((key) => key !== 'date')
+                              .indexOf(archetype);
+                            const color = CHART_COLORS[originalIndex % CHART_COLORS.length];
                             return (
-                              <linearGradient key={`gradient-${archetype}`} id={`color-${index}`} x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="5%" stopColor={color} stopOpacity={0.3} />
-                                <stop offset="95%" stopColor={color} stopOpacity={0.05} />
-                              </linearGradient>
+                              <Area
+                                key={archetype}
+                                type="monotone"
+                                dataKey={archetype}
+                                stroke={color}
+                                strokeWidth={2}
+                                fill={`url(#color-${originalIndex})`}
+                                name={archetype}
+                              />
                             );
                           })}
-                      </defs>
-                      <CartesianGrid strokeDasharray="3 3" className="stroke-zinc-200 dark:stroke-zinc-800" />
-                      <XAxis
-                        dataKey="date"
-                        className="text-xs text-zinc-600 dark:text-zinc-400"
-                        tick={{ fill: 'currentColor' }}
-                      />
-                      <YAxis
-                        className="text-xs text-zinc-600 dark:text-zinc-400"
-                        tick={{ fill: 'currentColor' }}
-                      />
-                      <Tooltip
-                        contentStyle={{
-                          backgroundColor: 'var(--background)',
-                          border: '1px solid var(--border)',
-                          borderRadius: '0.25rem',
-                        }}
-                      />
-                      <Legend />
-                      {chartData.length > 0 && Object.keys(chartData[0])
-                        .filter((key) => key !== 'date' && !hiddenArchetypes.has(key))
-                        .map((archetype) => {
-                          // Get original index to maintain color consistency
-                          const originalIndex = Object.keys(chartData[0])
-                            .filter((key) => key !== 'date')
-                            .indexOf(archetype);
-                          const color = CHART_COLORS[originalIndex % CHART_COLORS.length];
-                          return (
-                            <Area
-                              key={archetype}
-                              type="monotone"
-                              dataKey={archetype}
-                              stroke={color}
-                              strokeWidth={2}
-                              fill={`url(#color-${originalIndex})`}
-                              name={archetype}
-                            />
-                          );
-                        })}
-                    </AreaChart>
+                      </AreaChart>
+                    ) : (
+                      <BarChart data={chartDataTransformed}>
+                        <CartesianGrid strokeDasharray="3 3" className="stroke-zinc-200 dark:stroke-zinc-800" />
+                        <XAxis
+                          dataKey="date"
+                          className="text-xs text-zinc-600 dark:text-zinc-400"
+                          tick={{ fill: 'currentColor' }}
+                        />
+                        <YAxis
+                          className="text-xs text-zinc-600 dark:text-zinc-400"
+                          tick={{ fill: 'currentColor' }}
+                          tickFormatter={chartType === 'stacked100' ? (value) => `${value.toFixed(0)}%` : undefined}
+                          domain={chartType === 'stacked100' ? [0, 100] : undefined}
+                        />
+                        <Tooltip
+                          contentStyle={{
+                            backgroundColor: 'var(--background)',
+                            border: '1px solid var(--border)',
+                            borderRadius: '0.25rem',
+                          }}
+                          formatter={chartType === 'stacked100' ? (value: number | undefined) => value != null ? `${value.toFixed(1)}%` : '' : undefined}
+                        />
+                        <Legend
+                          wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }}
+                          iconType="circle"
+                          formatter={(value: string) => {
+                            if (value.length > 40) {
+                              return value.substring(0, 37) + '...';
+                            }
+                            return value;
+                          }}
+                        />
+                        {chartDataTransformed.length > 0 && Object.keys(chartDataTransformed[0])
+                          .filter((key) => key !== 'date' && !hiddenArchetypes.has(key))
+                          .map((archetype) => {
+                            const originalIndex = Object.keys(chartDataTransformed[0])
+                              .filter((key) => key !== 'date')
+                              .indexOf(archetype);
+                            const color = CHART_COLORS[originalIndex % CHART_COLORS.length];
+                            return (
+                              <Bar
+                                key={archetype}
+                                dataKey={archetype}
+                                fill={color}
+                                name={archetype}
+                                stackId="1"
+                              />
+                            );
+                          })}
+                      </BarChart>
+                    )}
                   </ResponsiveContainer>
                 </div>
               </CardContent>
@@ -843,7 +1040,11 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
         </Dialog>
 
         {/* Archetype Detail Dialog */}
-        <Dialog open={!!selectedArchetype} onOpenChange={() => setSelectedArchetype(null)}>
+        <Dialog open={!!selectedArchetype} onOpenChange={() => {
+          setSelectedArchetype(null);
+          setSelectedMessages(new Set());
+          setTargetArchetype('');
+        }}>
           <DialogContent className="!max-w-[1600px] !w-[90vw] max-h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="text-2xl flex items-center gap-3">
@@ -859,6 +1060,54 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
 
             {selectedArchetype && (
               <div className="space-y-6 mt-6">
+                {/* Bulk Actions Toolbar */}
+                <div className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 flex items-center gap-4 flex-wrap">
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={selectedMessages.size === selectedArchetype.messages.length && selectedArchetype.messages.length > 0}
+                      onChange={(e) => {
+                        if (e.target.checked) {
+                          setSelectedMessages(new Set(selectedArchetype.messages.map(m => m.id)));
+                        } else {
+                          setSelectedMessages(new Set());
+                        }
+                      }}
+                      className="h-4 w-4 rounded border-zinc-300 dark:border-zinc-700"
+                    />
+                    <span className="text-sm font-medium">
+                      {selectedMessages.size > 0 ? `${selectedMessages.size} seleccionados` : 'Seleccionar todos'}
+                    </span>
+                  </div>
+
+                  {selectedMessages.size > 0 && (
+                    <>
+                      <div className="h-6 w-px bg-zinc-300 dark:bg-zinc-700" />
+                      <div className="flex items-center gap-2 flex-1">
+                        <label className="text-sm font-medium">Mover a:</label>
+                        <select
+                          value={targetArchetype}
+                          onChange={(e) => setTargetArchetype(e.target.value)}
+                          className="px-3 py-1.5 text-sm border border-zinc-300 dark:border-zinc-700 rounded-md bg-white dark:bg-zinc-800"
+                        >
+                          <option value="">Selecciona arquetipo...</option>
+                          {Array.from(archetypeGroups.keys())
+                            .filter(name => name !== selectedArchetype.name)
+                            .map(name => (
+                              <option key={name} value={name}>{name}</option>
+                            ))}
+                        </select>
+                        <Button
+                          onClick={bulkMoveMessages}
+                          disabled={!targetArchetype || isMovingBulk}
+                          size="sm"
+                        >
+                          {isMovingBulk ? 'Moviendo...' : 'Mover'}
+                        </Button>
+                      </div>
+                    </>
+                  )}
+                </div>
                 {/* Timeline */}
                 <div>
                   <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
@@ -874,29 +1123,44 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
                           <div className="absolute -left-5 mt-1.5 h-4 w-4 rounded-sm bg-blue-500 border-2 border-white dark:border-zinc-900" />
                           <Card className="border rounded-md">
                             <CardContent className="p-4">
-                              <div className="flex items-start justify-between gap-4 mb-2">
-                                <div className="flex-1">
+                              <div className="flex items-start gap-4 mb-2">
+                                {/* Checkbox for selection */}
+                                <input
+                                  type="checkbox"
+                                  checked={selectedMessages.has(msg.id)}
+                                  onChange={(e) => {
+                                    const newSelected = new Set(selectedMessages);
+                                    if (e.target.checked) {
+                                      newSelected.add(msg.id);
+                                    } else {
+                                      newSelected.delete(msg.id);
+                                    }
+                                    setSelectedMessages(newSelected);
+                                  }}
+                                  className="mt-1 h-4 w-4 rounded border-zinc-300 dark:border-zinc-700 shrink-0"
+                                  onClick={(e) => e.stopPropagation()}
+                                />
+                                <div className="flex-1 flex items-start justify-between gap-4">
+                                  <div className="flex-1">
                                   <div className="flex items-center gap-2 mb-1">
                                     {msg.user.isBot && (
-                                      <span className="text-xs px-2 py-0.5 rounded-sm bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
+                                      <span className="text-xs px-2 py-0.5 rounded-sm bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300">
                                         BOT
+                                      </span>
+                                    )}
+                                    {msg.type === 'reminder' && (
+                                      <span className="text-xs px-2 py-0.5 rounded-sm bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
+                                        REMINDER
                                       </span>
                                     )}
                                     <span className="font-semibold text-zinc-900 dark:text-zinc-100">
                                       {msg.user.name}
                                     </span>
-                                    <span className="text-xs px-2 py-0.5 rounded-sm bg-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
-                                      {msg.category.group}
-                                    </span>
-                                    <span className={`text-xs px-2 py-0.5 rounded-sm ${
-                                      msg.archetype.confidence === 'high'
-                                        ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
-                                        : msg.archetype.confidence === 'medium'
-                                        ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300'
-                                        : 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300'
-                                    }`}>
-                                      {msg.archetype.confidence}
-                                    </span>
+                                    {msg.user.realName && msg.user.realName !== msg.user.name && (
+                                      <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                                        ({msg.user.realName})
+                                      </span>
+                                    )}
                                   </div>
                                   <p className="text-sm text-zinc-600 dark:text-zinc-400">
                                     {msg.summary}
@@ -933,6 +1197,7 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
                                   >
                                     <EyeOff className="h-3 w-3" />
                                   </Button>
+                                </div>
                                 </div>
                               </div>
                               <div className="mt-2 text-sm text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-900 p-3 rounded-sm break-words whitespace-pre-wrap overflow-wrap-anywhere">

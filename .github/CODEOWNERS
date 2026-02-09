@@ -1,0 +1,17 @@
+# Code owners for automatic review requests
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+* @raimundo.sandoval
+
+# Backend and API changes require review
+/pages/api/ @raimundo.sandoval
+/db/ @raimundo.sandoval
+/lib/ @raimundo.sandoval
+
+# Database migrations are critical
+/drizzle/ @raimundo.sandoval
+
+# Configuration files
+*.config.* @raimundo.sandoval
+.env* @raimundo.sandoval

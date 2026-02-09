@@ -36,7 +36,8 @@ print('='*80)
 
 # Cargar arquetipos
 print('\n📋 Cargando arquetipos...')
-with open('claude_exhaustive_archetypes.json', 'r', encoding='utf-8') as f:
+archetype_path = os.path.join(os.path.dirname(__file__), 'claude_exhaustive_archetypes.json')
+with open(archetype_path, 'r', encoding='utf-8') as f:
     archetype_data = json.load(f)
 
 arquetipos = archetype_data['archetipos']  # Note: 'archetipos' in JSON
@@ -50,15 +51,13 @@ for i, arch in enumerate(arquetipos, 1):
     arquetipos_descripcion += f"   Keywords: {', '.join(arch['keywords'][:8])}\n"
     arquetipos_descripcion += f"   Cuándo usar: {arch['cuando_usar']}\n\n"
 
-# Obtener mensajes a clasificar
+# Obtener TODOS los mensajes a clasificar (sin excepciones)
 print('\n📥 Cargando mensajes a clasificar...')
 cursor.execute("""
     SELECT id, text
     FROM slack_messages
     WHERE is_thread_reply = false
-      AND archetype IN ('Sin Clasificar', 'backfill')
     ORDER BY datetime DESC
-    LIMIT 500
 """)
 
 messages = cursor.fetchall()
@@ -86,13 +85,19 @@ for batch_num, batch in enumerate(batches, 1):
 ARQUETIPOS DISPONIBLES:
 {arquetipos_descripcion}
 
+ARQUETIPOS ESPECIALES (puedes usar sub-arquetipos si detectas diferencias claras):
+- Para reminders automáticos de Slack, puedes usar sub-arquetipos específicos si hay diferencias temáticas
+- Para mensajes del bot RoboCop, puedes dividir por tipo de alerta si tiene sentido
+- Para mensajes de usuarios específicos (como Jared), puedes crear sub-arquetipos por temática
+
 MENSAJES A CLASIFICAR:
 {messages_text}
 
 INSTRUCCIONES:
-1. Para cada mensaje, asigna el arquetipo más apropiado
-2. Si NO encaja en ningún arquetipo, asigna "Sin Clasificar"
-3. Sé específico: cada arquetipo tiene "cuando_usar" claro
+1. Para cada mensaje, asigna el arquetipo más apropiado de la lista
+2. Si es un reminder/RoboCop/usuario específico pero cabe mejor en un arquetipo de negocio específico, úsalo
+3. Si NO encaja en ningún arquetipo, asigna "Sin Clasificar"
+4. Sé específico: cada arquetipo tiene "cuando_usar" claro
 
 RESPONDE EN JSON:
 {{

@@ -92,10 +92,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   console.log('Not a challenge, checking signature...');
 
-  // Ignore bot's own messages and message_changed events to avoid signature issues
-  const isBotMessage = req.body.event?.bot_id || req.body.event?.subtype === 'message_changed';
-  if (isBotMessage) {
-    console.log('Ignoring bot message or message_changed event');
+  // Ignore bot's own messages and maintenance events
+  const ignoredSubtypes = ['message_changed', 'message_deleted', 'message_replied', 'channel_join', 'channel_leave'];
+  const isBotMessage = req.body.event?.bot_id;
+  const isIgnoredSubtype = ignoredSubtypes.includes(req.body.event?.subtype);
+
+  if (isBotMessage || isIgnoredSubtype) {
+    console.log('Ignoring bot message or maintenance event:', req.body.event?.subtype || 'bot_message');
     return res.status(200).json({ ok: true });
   }
 
@@ -105,13 +108,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(401).json({ error: 'Invalid signature' });
   }
 
-  // Handle app_mention or message events that mention the bot
+  // Handle ONLY app_mention events (Slack always sends this when bot is mentioned)
+  // Don't process message events with mentions to avoid duplicates
   const isAppMention = req.body.type === 'event_callback' && req.body.event.type === 'app_mention';
-  const isMessageWithMention = req.body.type === 'event_callback' &&
-    req.body.event.type === 'message' &&
-    req.body.event.text?.includes(`<@${req.body.authorizations?.[0]?.user_id}>`);
 
-  if (isAppMention || isMessageWithMention) {
+  if (isAppMention) {
     const event = req.body.event;
     const eventId = req.body.event_id;
     const text = event.text || '';
@@ -161,15 +162,14 @@ Mensaje: "${text}"
 
 Responde en JSON con:
 {
-  "action": "escribir" | "leer" | "resumir" | "none",
-  "type": "documentacion" | "resumen" | "issue" | "reporte" | null,
+  "action": "escribir" | "leer" | "none",
+  "type": "runbook" | "documentacion" | "resumen" | "issue" | "reporte" | null,
   "instructions": "instrucciones específicas del usuario o null"
 }
 
 Intenciones:
-- "escribir": crear/generar documentación, runbooks, issues, reportes, resúmenes desde threads
-- "leer": leer documentación existente (futuro)
-- "resumir": resumir threads o docs (futuro)
+- "escribir": Generar cualquier tipo de documento desde este thread (runbooks formales, documentación, resúmenes rápidos, issues, reportes). Claude decidirá el formato según el contexto: si pides "resumen" será breve y casual, si pides "runbook" será estructurado y formal.
+- "leer": Buscar y leer documentación existente guardada (futuro)
 - "none": no es una petición válida
 
 Responde SOLO con el JSON, sin explicaciones.`,
@@ -181,7 +181,20 @@ Responde SOLO con el JSON, sin explicaciones.`,
         throw new Error('Unexpected response from Claude');
       }
 
-      const intent = JSON.parse(content.text);
+      // Extract JSON from markdown code block if present
+      let jsonText = content.text.trim();
+      if (jsonText.includes('```json')) {
+        const jsonStart = jsonText.indexOf('```json') + 7;
+        const jsonEnd = jsonText.indexOf('```', jsonStart);
+        jsonText = jsonText.substring(jsonStart, jsonEnd).trim();
+      } else if (jsonText.includes('```')) {
+        // Handle plain ``` code blocks
+        const jsonStart = jsonText.indexOf('```') + 3;
+        const jsonEnd = jsonText.indexOf('```', jsonStart);
+        jsonText = jsonText.substring(jsonStart, jsonEnd).trim();
+      }
+
+      const intent = JSON.parse(jsonText);
       console.log('Intent classification:', intent);
 
       if (intent.action === 'none') {
@@ -222,21 +235,14 @@ Responde SOLO con el JSON, sin explicaciones.`,
         await slack.chat.postMessage({
           channel: channelId,
           thread_ts: threadTs,
-          text: `✅ Documento creado exitosamente!\n\n*${result.runbook.title}*\n\nVer completo: ${env.BETTER_AUTH_URL}/tiger/runbooks/${result.runbook.id}`,
+          text: `✅ Documento creado exitosamente!\n\n*${result.runbook.title}*\n\nVer documentos: ${env.BETTER_AUTH_URL}/tiger/runbooks`,
         });
       } else if (intent.action === 'leer') {
-        // Future: Handle "read" action
+        // Future: Handle "read" action - search and read existing documentation
         await slack.chat.postMessage({
           channel: channelId,
           thread_ts: threadTs,
           text: '🚧 La función de lectura de documentación está en desarrollo.',
-        });
-      } else if (intent.action === 'resumir') {
-        // Future: Handle "summarize" action
-        await slack.chat.postMessage({
-          channel: channelId,
-          thread_ts: threadTs,
-          text: '🚧 La función de resumen está en desarrollo.',
         });
       }
     } catch (error) {

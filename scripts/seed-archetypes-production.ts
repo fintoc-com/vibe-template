@@ -8,7 +8,7 @@
 
 import { db } from '~/db';
 import { manualArchetypes } from '~/db/schema';
-import archetypeData from '../claude_exhaustive_archetypes.json';
+import archetypeData from './claude_exhaustive_archetypes.json';
 
 async function seedArchetypes() {
   console.log('='.repeat(80));

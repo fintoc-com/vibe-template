@@ -323,10 +323,11 @@ output = {
     'raw_insights': [insight['patrones_generales'] for insight in all_insights if 'patrones_generales' in insight]
 }
 
-with open('claude_exhaustive_archetypes.json', 'w', encoding='utf-8') as f:
+output_path = os.path.join(os.path.dirname(__file__), 'claude_exhaustive_archetypes.json')
+with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
-print('✓ Arquetipos exportados a: claude_exhaustive_archetypes.json')
+print(f'✓ Arquetipos exportados a: {output_path}')
 
 # PASO 9: Generar archivo listo para importar a Tiger
 print('\n📋 Paso 9: Generando archivo para importar a Tiger...')
@@ -341,10 +342,11 @@ for arch in final_results['arquetipos_finales']:
         'notes': arch.get('cuando_usar', '')
     })
 
-with open('tiger_import_archetypes.json', 'w', encoding='utf-8') as f:
+import_path = os.path.join(os.path.dirname(__file__), 'tiger_import_archetypes.json')
+with open(import_path, 'w', encoding='utf-8') as f:
     json.dump(tiger_import, f, indent=2, ensure_ascii=False)
 
-print('✓ Archivo de importación generado: tiger_import_archetypes.json')
+print(f'✓ Archivo de importación generado: {import_path}')
 
 # RESUMEN FINAL
 print('\n' + '='*80)
