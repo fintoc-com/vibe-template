@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import { cn } from '~/lib/utils';
 import { BarChart3, Tag, FileText } from 'lucide-react';
 
@@ -27,7 +28,18 @@ export function TigerNav() {
   return (
     <nav className="border-b mb-6">
       <div className="container mx-auto px-4">
-        <div className="flex gap-6">
+        <div className="flex items-center gap-8">
+          <Link href="/tiger" className="flex items-center gap-3 py-4">
+            <Image
+              src="/assets/panzer.png"
+              alt="Panzer"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+            <span className="text-xl font-bold text-foreground">Panzer</span>
+          </Link>
+          <div className="flex gap-6 flex-1">
           {navItems.map((item) => {
             const Icon = item.icon;
             // For /tiger (dashboard), only match exact path
@@ -52,6 +64,7 @@ export function TigerNav() {
               </Link>
             );
           })}
+          </div>
         </div>
       </div>
     </nav>

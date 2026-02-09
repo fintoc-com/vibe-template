@@ -109,7 +109,7 @@ export default function RunbooksPage(
             <FileText className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
             <h3 className="text-lg font-semibold mb-2">No hay runbooks todavía</h3>
             <p className="text-muted-foreground mb-4">
-              Menciona @Tiger I en un thread de Slack con "crea el runbook" para generar
+              Menciona @Panzer en un thread de Slack con "crea el runbook" para generar
               uno.
             </p>
           </div>

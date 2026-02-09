@@ -1,8 +1,8 @@
-# Tiger I - Operations Dashboard
+# Panzer - Operations Dashboard
 
 ## 📋 Resumen Ejecutivo
 
-Tiger I es un dashboard de operaciones interno que analiza mensajes de Slack del canal de soporte, clasifica automáticamente los temas usando Claude AI, y genera documentación operativa desde threads de Slack.
+Panzer es un dashboard de operaciones interno que analiza mensajes de Slack del canal de soporte, clasifica automáticamente los temas usando Claude AI, y genera documentación operativa desde threads de Slack.
 
 **Propósito**: Ayudar al equipo de operaciones a identificar patrones en solicitudes de soporte, generar runbooks desde resoluciones exitosas, y tener visibilidad de arquetipos de problemas recurrentes.
 
@@ -28,7 +28,7 @@ Tiger I es un dashboard de operaciones interno que analiza mensajes de Slack del
 ```
 Slack Channel → Webhook → Next.js API → Claude AI → PostgreSQL → Dashboard UI
                     ↓
-                 Bot TigerI (responde en Slack)
+                 Bot Panzer (responde en Slack)
 ```
 
 ---
@@ -49,7 +49,7 @@ Slack Channel → Webhook → Next.js API → Claude AI → PostgreSQL → Dashb
 
 **Scopes de Slack**:
 ```
-- app_mentions:read      # Detectar cuando mencionan @TigerI
+- app_mentions:read      # Detectar cuando mencionan @Panzer
 - channels:history       # Leer historial del canal
 - chat:write            # Responder mensajes
 - users:read            # Obtener info de usuarios
@@ -118,7 +118,7 @@ Slack Channel → Webhook → Next.js API → Claude AI → PostgreSQL → Dashb
 **Casos de Uso**:
 
 1. **Clasificación de Intención** (Slack Bot)
-   - **Input**: Mensaje de usuario mencionando @TigerI
+   - **Input**: Mensaje de usuario mencionando @Panzer
    - **Output**: JSON con acción (escribir/leer/none) y parámetros
    - **Tokens**: ~200 por clasificación
    - **Frecuencia**: Solo cuando mencionan al bot
@@ -230,20 +230,20 @@ BETTER_AUTH_URL         # URL base de la app
 - Lee de `runbooks` en PostgreSQL
 - Contenido generado por Claude desde threads de Slack
 
-### 4. Bot de Slack (TigerI)
+### 4. Bot de Slack (Panzer)
 
 **Qué hace**:
-- Responde cuando lo mencionan con `@TigerI`
+- Responde cuando lo mencionan con `@Panzer`
 - Detecta intención: escribir documentación o leer docs existentes
 - Genera runbooks desde threads de Slack
 - Responde en el mismo thread
 
 **Comandos**:
 ```
-@TigerI escribe un runbook de esto
-@TigerI documenta esta resolución
-@TigerI haz un resumen de este thread
-@TigerI lee la documentación de X (futuro)
+@Panzer escribe un runbook de esto
+@Panzer documenta esta resolución
+@Panzer haz un resumen de este thread
+@Panzer lee la documentación de X (futuro)
 ```
 
 ---
@@ -263,7 +263,7 @@ BETTER_AUTH_URL         # URL base de la app
 ### Flujo 2: Generación de Runbook desde Slack
 
 ```
-1. Usuario menciona @TigerI en thread: "escribe un runbook"
+1. Usuario menciona @Panzer en thread: "escribe un runbook"
 2. Webhook llega a /api/slack/events
 3. Claude clasifica intención → "escribir"
 4. Sistema lee todo el thread desde Slack API

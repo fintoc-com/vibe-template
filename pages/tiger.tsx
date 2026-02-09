@@ -475,17 +475,17 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-red-900 to-amber-600 opacity-20"></div>
                 <div className="relative flex h-full w-full items-center justify-center bg-zinc-900">
                   <Image
-                    src="/assets/resized-image.png"
-                    alt="Tiger I"
+                    src="/assets/panzer.png"
+                    alt="Panzer"
                     width={48}
                     height={48}
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">
-                  Tiger I
+                  Panzer
                 </h1>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Slack Operations Dashboard

@@ -232,7 +232,7 @@ export default function ArchetypesManagementPage({ user }: InferGetServerSidePro
             <Link href="/tiger">
               <Button variant="outline" size="sm">
                 <ArrowLeft className="h-4 w-4 mr-2" />
-                Volver a Tiger
+                Volver a Panzer
               </Button>
             </Link>
           </div>
