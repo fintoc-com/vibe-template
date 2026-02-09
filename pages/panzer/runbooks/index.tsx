@@ -6,7 +6,7 @@ import { desc } from 'drizzle-orm';
 import { Button } from '~/components/ui/button';
 import { ExternalLink, FileText } from 'lucide-react';
 import Link from 'next/link';
-import { TigerNav } from '~/components/tiger-nav';
+import { PanzerNav } from '~/components/panzer-nav';
 
 export const getServerSideProps = requireAuth(async (_ctx, session) => {
   const allRunbooks = await db
@@ -44,7 +44,7 @@ export default function RunbooksPage(
 
   return (
     <div className="min-h-screen bg-background">
-      <TigerNav />
+      <PanzerNav />
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
         <div className="mb-8">
@@ -122,7 +122,7 @@ export default function RunbooksPage(
               >
                 <div className="flex items-start justify-between gap-4">
                   <Link
-                    href={`/tiger/runbooks/${runbook.id}`}
+                    href={`/panzer/runbooks/${runbook.id}`}
                     className="flex-1 min-w-0 cursor-pointer"
                   >
                     <h3 className="text-lg font-semibold mb-2 truncate hover:text-primary">

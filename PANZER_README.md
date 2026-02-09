@@ -193,7 +193,7 @@ BETTER_AUTH_URL         # URL base de la app
 
 ## 📊 Funcionalidades Principales
 
-### 1. Dashboard de Operaciones (`/tiger`)
+### 1. Dashboard de Operaciones (`/panzer`)
 
 **Qué hace**:
 - Muestra mensajes del canal de Slack clasificados por arquetipo
@@ -207,7 +207,7 @@ BETTER_AUTH_URL         # URL base de la app
 - Lee de `slack_messages` y `slack_users` en PostgreSQL
 - Sincroniza desde Slack API cuando usuario hace "Sync"
 
-### 2. Gestión de Arquetipos (`/tiger/arquetipos`)
+### 2. Gestión de Arquetipos (`/panzer/arquetipos`)
 
 **Qué hace**:
 - Lista todos los arquetipos manuales creados
@@ -219,7 +219,7 @@ BETTER_AUTH_URL         # URL base de la app
 - Lee de `manual_archetypes` en PostgreSQL
 - Llama a Claude API para reclasificación
 
-### 3. Runbooks (`/tiger/runbooks`)
+### 3. Runbooks (`/panzer/runbooks`)
 
 **Qué hace**:
 - Lista todos los runbooks/documentos generados
@@ -320,4 +320,4 @@ BETTER_AUTH_URL         # URL base de la app
 
 **Última actualización**: 2025-02-09
 **Versión**: 1.0
-**Status**: En desarrollo (branch feat/tiger-slack-integration)
+**Status**: En desarrollo (branch feat/panzer-slack-integration)

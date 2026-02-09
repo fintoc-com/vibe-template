@@ -16,7 +16,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '~/components/ui/dialog';
-import { TigerNav } from '~/components/tiger-nav';
+import { PanzerNav } from '~/components/panzer-nav';
 
 const messagesSchema = z.object({
   messages: z.array(z.object({
@@ -461,7 +461,7 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
         ? '#000000'
         : 'radial-gradient(circle at bottom left, rgba(0, 69, 215, 0.15) 0%, rgba(0, 69, 215, 0.015) 50%, #F6F7F8 80%)'
     }}>
-      <TigerNav />
+      <PanzerNav />
       <main className="mx-auto w-full max-w-[1400px] px-6 py-8 relative z-10">
         {/* Modern Header with German flag accent */}
         <div className="mb-8 bg-white dark:bg-zinc-900 rounded shadow-sm border-b-4" style={{
@@ -498,7 +498,7 @@ export default function TigerPage({ user }: InferGetServerSidePropsType<typeof g
               <span className="text-sm text-gray-600 dark:text-gray-400 hidden md:block">
                 {user.email}
               </span>
-              <Link href="/tiger/archetipos">
+              <Link href="/panzer/archetipos">
                 <Button
                   variant="outline"
                   size="sm"

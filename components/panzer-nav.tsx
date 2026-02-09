@@ -6,30 +6,30 @@ import { BarChart3, Tag, FileText } from 'lucide-react';
 
 const navItems = [
   {
-    href: '/tiger',
+    href: '/panzer',
     label: 'Dashboard',
     icon: BarChart3,
   },
   {
-    href: '/tiger/archetipos',
+    href: '/panzer/archetipos',
     label: 'Arquetipos',
     icon: Tag,
   },
   {
-    href: '/tiger/runbooks',
+    href: '/panzer/runbooks',
     label: 'Runbooks',
     icon: FileText,
   },
 ];
 
-export function TigerNav() {
+export function PanzerNav() {
   const router = useRouter();
 
   return (
     <nav className="border-b mb-6">
       <div className="container mx-auto px-4">
         <div className="flex items-center gap-8">
-          <Link href="/tiger" className="flex items-center gap-3 py-4">
+          <Link href="/panzer" className="flex items-center gap-3 py-4">
             <Image
               src="/assets/panzer_cropped.png"
               alt="Panzer"
@@ -42,10 +42,10 @@ export function TigerNav() {
           <div className="flex gap-6 flex-1">
           {navItems.map((item) => {
             const Icon = item.icon;
-            // For /tiger (dashboard), only match exact path
+            // For /panzer (dashboard), only match exact path
             // For other routes, match exact path or subpaths
-            const isActive = item.href === '/tiger'
-              ? router.pathname === '/tiger'
+            const isActive = item.href === '/panzer'
+              ? router.pathname === '/panzer'
               : router.pathname === item.href || router.pathname.startsWith(item.href + '/');
 
             return (

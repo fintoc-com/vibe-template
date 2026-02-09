@@ -14,7 +14,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '~/components/ui/dialog';
-import { TigerNav } from '~/components/tiger-nav';
+import { PanzerNav } from '~/components/panzer-nav';
 
 const archetypesSchema = z.object({
   archetypes: z.array(z.object({
@@ -224,12 +224,12 @@ export default function ArchetypesManagementPage({ user }: InferGetServerSidePro
 
   return (
     <div className="min-h-screen bg-background">
-      <TigerNav />
+      <PanzerNav />
       <main className="mx-auto w-full max-w-[1400px] px-8 py-12">
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-4 mb-4">
-            <Link href="/tiger">
+            <Link href="/panzer">
               <Button variant="outline" size="sm">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Volver a Panzer
