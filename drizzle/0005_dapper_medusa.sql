@@ -1,0 +1,1 @@
+ALTER TABLE "card_applications" DROP COLUMN "months_with_us";

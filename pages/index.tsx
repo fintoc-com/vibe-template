@@ -42,6 +42,12 @@ export default function Index() {
           >
             About
           </Link>
+          <Link
+            className="flex h-12 w-full items-center justify-center rounded-full bg-emerald-300 px-5 text-black shadow-sm transition-all hover:bg-emerald-200 hover:shadow-md hover:shadow-emerald-200/50 md:w-[200px]"
+            href="/cards/apply"
+          >
+            Cards Application
+          </Link>
         </div>
       </main>
     </div>

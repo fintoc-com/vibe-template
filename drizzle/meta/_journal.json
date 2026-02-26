@@ -15,6 +15,41 @@
       "when": 1769695022332,
       "tag": "0001_loose_killer_shrike",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771511236302,
+      "tag": "0002_mighty_microbe",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1771516081763,
+      "tag": "0003_luxuriant_prism",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1771517935830,
+      "tag": "0004_parched_trauma",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1771518047264,
+      "tag": "0005_dapper_medusa",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1772044668499,
+      "tag": "0006_striped_the_hunter",
+      "breakpoints": true
     }
   ]
 }
