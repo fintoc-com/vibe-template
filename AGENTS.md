@@ -183,3 +183,11 @@ export default protectedHandler(async (req: NextApiRequest, res: NextApiResponse
   return res.status(200).json({ data: 'value' });
 });
 ```
+
+## Deployment
+
+The app deploys to Cloud Run through CircleCI (`.circleci/config.yml`). Merging to `main` runs `test → build → migrate → deploy`, authenticating with Workload Identity Federation (no keys).
+
+- The production image is built from `Dockerfile`, which requires `output: 'standalone'` in `next.config.ts`. Keep it.
+- The migration step runs automatically, but only when migrations exist (`drizzle/*.sql`). Apps without a database skip it.
+- **Do not provision deploy / GCP / CI infrastructure yourself.** The infra team handles it. When the user wants to deploy or make the app public, use the `initial-deployment` skill — it lists what to request in the #dev-infra Slack channel.
