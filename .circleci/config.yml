@@ -1,0 +1,83 @@
+version: 2.1
+
+orbs:
+  gcp-cli: circleci/gcp-cli@3.3.2
+
+jobs:
+  test:
+    docker:
+      - image: oven/bun:1
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: bun install
+      - run:
+          name: lint
+          command: bun run lint
+      - run:
+          name: build
+          command: bun run build
+
+  build:
+    executor: gcp-cli/default
+    steps:
+      - checkout
+      - gcp-cli/setup:
+          use_oidc: true
+      - run:
+          name: build image
+          command: sh ./build_prd.sh
+
+  migrate_prd:
+    executor: gcp-cli/default
+    steps:
+      - checkout
+      - gcp-cli/setup:
+          use_oidc: true
+      - run:
+          name: run database migrations
+          command: sh ./deploy_migrate.sh
+
+  deploy_prd:
+    executor: gcp-cli/default
+    steps:
+      - checkout
+      - gcp-cli/setup:
+          use_oidc: true
+      - run:
+          name: deploy to production
+          command: sh ./deploy_prd.sh
+
+workflows:
+  pull_request:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore: main
+
+  deploy_production:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only: main
+      - build:
+          filters:
+            branches:
+              only: main
+          requires:
+            - test
+      - migrate_prd:
+          filters:
+            branches:
+              only: main
+          requires:
+            - build
+      - deploy_prd:
+          filters:
+            branches:
+              only: main
+          requires:
+            - migrate_prd
