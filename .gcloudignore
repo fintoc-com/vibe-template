@@ -1,0 +1,12 @@
+.git
+.github
+.claude
+.env*
+.next
+.vercel
+node_modules
+coverage
+*.md
+*.pem
+.DS_Store
+docker-compose*.yml
