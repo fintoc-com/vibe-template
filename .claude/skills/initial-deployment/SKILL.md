@@ -11,29 +11,25 @@ description: >-
 
 # Desplegar tu app
 
-El equipo de infraestructura se encarga del despliegue. Tu parte es pedirlo en Slack con la
-información correcta para que puedan ayudarte rápido.
+El equipo de infraestructura se encarga del despliegue. El usuario tiene que pedirlo en Slack con la información correcta para que el equipo pueda ayudarlo rápido.
 
-## Cómo pedirlo
+## Descubre qué necesita la app
 
-Escribe en el canal de Slack **#dev-infra** que necesitas desplegar tu app y comparte el
-repositorio. Cuéntales qué necesita para funcionar, por ejemplo:
+Revisa el código y arma la lista de lo que necesita la app para funcionar, por ejemplo:
 
 - Una base de datos.
 - Un bucket para guardar archivos.
 - Si es interna (se accede por Twingate) o externa (con un dominio de fintoc.com o fintoc.dev).
 - Permisos para BigQuery.
 - Permisos para otros servicios de GCP.
-- Secretos como claves o tokens, que también te ayudan a configurar.
+- Secretos como claves o tokens, que el equipo también ayuda a configurar.
 
-## Si no sabes qué necesita la app
+Dedúcelo del código; no le pidas estos detalles técnicos al usuario.
 
-Revisa el código junto al usuario y ármale la lista: qué servicios usa (base de datos,
-BigQuery, otros), si guarda archivos, qué variables de entorno o secretos espera, y si debería
-ser interna o pública. Entrega esa lista lista para copiar y pegar en #dev-infra.
+## Cómo pedirlo
+
+Pídele al usuario que escriba en el canal de Slack **#dev-infra** para desplegar su app, comparta el repositorio y mencione esa lista. Entrégasela lista para copiar y pegar.
 
 ## Qué pasa después
 
-El equipo configura el repo en CircleCI y los recursos en GCP. Desde ahí, cada merge a `main`
-despliega solo (`test → build → migrate → deploy`). Mientras el repo no esté configurado, el
-pipeline no se gatilla, así que es seguro durante el desarrollo.
+El equipo configura el repo en CircleCI y los recursos en GCP. Desde ahí, cada merge a `main` despliega solo (`test → build → migrate → deploy`). Mientras el repo no esté configurado, el pipeline no se gatilla, así que es seguro durante el desarrollo.
