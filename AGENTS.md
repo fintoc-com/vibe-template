@@ -27,6 +27,7 @@ import { Button } from '~/components/ui/button';
 | `bun run components:add <name>` | Add shadcn component |
 | `docker compose up` | Start PostgreSQL database |
 | `bun run lint` | Run ESLint |
+| `bun run check:deploy` | Verify the deploy contract (needs a build first) |
 | `bun run db:generate` | Generate migration from schema changes |
 | `bun run db:migrate` | Apply migrations to database |
 | `bun run db:studio` | Open Drizzle Studio |
@@ -186,8 +187,11 @@ export default protectedHandler(async (req: NextApiRequest, res: NextApiResponse
 
 ## Deployment
 
-The app deploys to Cloud Run through CircleCI (`.circleci/config.yml`). Merging to `main` runs `test → build → migrate → deploy`, authenticating with Workload Identity Federation (no keys).
+The app deploys to Cloud Run through CircleCI (`.circleci/config.yml`). Merging to `main` runs `test → build → migrate → deploy`, authenticating with Workload Identity Federation (no keys). Production hands the app its config in a fixed shape; `bun run check:deploy` boots the standalone output with nothing but `DOPPLER_SECRETS` set and hits `/api/auth/ok` to prove the app still meets it.
 
-- The production image is built from `Dockerfile`, which requires `output: 'standalone'` in `next.config.ts`. Keep it.
-- The migration step runs automatically, but only when migrations exist (`drizzle/*.sql`). Apps without a database skip it.
 - **Do not provision deploy / GCP / CI infrastructure yourself.** The infra team handles it. When the user wants to deploy or make the app public, use the `initial-deployment` skill — it lists what to request in the #dev-infra Slack channel.
+- The production image is built from `Dockerfile`, which requires `output: 'standalone'` in `next.config.ts`. Keep it.
+- **Doppler arrives as one JSON blob** in `DOPPLER_SECRETS`, not one variable per key. Both entry points expand it through `scripts/load-doppler-secrets.mjs` before anything reads `config/env.ts` — that is why the image starts at `scripts/start.mjs` and not `server.js`.
+- **Migrations run automatically** when `drizzle/*.sql` exists, **as the migrations user**: the app user cannot run DDL, so `scripts/migrate.mjs` swaps in `MIGRATIONS_DATABASE_URL`. Pointing drizzle at `DATABASE_URL` fails on the tracking table with the infrastructure looking healthy.
+- **A scheduled endpoint is authenticated by the caller's ID token.** The scheduler infra provides sends an OIDC token and no custom headers, so a shared bearer secret is a local-development affordance, not the production check.
+- **GCP clients read credentials from the environment.** An inline `GOOGLE_APPLICATION_CREDENTIALS_JSON` is for running locally and does not belong in Doppler.

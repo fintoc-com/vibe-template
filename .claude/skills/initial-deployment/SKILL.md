@@ -26,6 +26,13 @@ Revisa el código y arma la lista de lo que necesita la app para funcionar, por 
 
 Dedúcelo del código; no le pidas estos detalles técnicos al usuario.
 
+## Antes de pedirlo
+
+Dos cosas bloquean el despliegue:
+
+- **El repo tiene que vivir en la organización `fintoc-com`.** Desde un repo personal, CircleCI no lo encuentra y el pipeline nunca se configura.
+- **Si la app usa base de datos, el nombre del servicio no puede pasar de 15 caracteres.** GCP rechaza nombres de SA de más de 30. El repo puede conservar su nombre.
+
 ## Cómo pedirlo
 
 Pídele al usuario que escriba en el canal de Slack **#dev-infra** para desplegar su app, comparta el repositorio y mencione esa lista. Entrégasela lista para copiar y pegar.
