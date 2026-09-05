@@ -17,7 +17,10 @@ jobs:
           command: bun run lint
       - run:
           name: build
-          command: bun run build
+          command: BETTER_AUTH_SECRET=build-time-placeholder-not-a-secret bun run build
+      - run:
+          name: check deploy contract
+          command: bun run check:deploy
 
   build:
     executor: gcp-cli/default

@@ -9,6 +9,8 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+# `next build` imports config/env.ts; the real value comes from Doppler at runtime.
+ENV BETTER_AUTH_SECRET=build-time-placeholder-not-a-secret
 RUN bun run build
 
 FROM node:22-slim AS runner
@@ -26,4 +28,5 @@ COPY --from=builder /app/config ./config
 COPY --from=builder /app/db ./db
 COPY --from=builder /app/scripts ./scripts
 EXPOSE 8080
-CMD ["node", "server.js"]
+# start.mjs expands DOPPLER_SECRETS before handing over to server.js.
+CMD ["node", "scripts/start.mjs"]

@@ -1,13 +1,12 @@
 import { execSync } from 'child_process';
 
-const dopplerSecrets = process.env.DOPPLER_SECRETS;
-if (dopplerSecrets) {
-  const secrets = JSON.parse(dopplerSecrets);
-  for (const [key, value] of Object.entries(secrets)) {
-    if (!process.env[key]) {
-      process.env[key] = value;
-    }
-  }
+import { loadDopplerSecrets } from './load-doppler-secrets.mjs';
+
+loadDopplerSecrets();
+
+// Migrations run as the migrations user (the app user is least-privilege, no CREATE).
+if (process.env.MIGRATIONS_DATABASE_URL) {
+  process.env.DATABASE_URL = process.env.MIGRATIONS_DATABASE_URL;
 }
 
 execSync('npx drizzle-kit migrate', { stdio: 'inherit', env: process.env });
